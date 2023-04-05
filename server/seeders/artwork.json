@@ -1,0 +1,407 @@
+[
+	{
+		"title": "Field of Dreams",
+		"artist": "The Digital Da Vinci",
+		"created": "03/25/2432",
+		"price": 2400000,
+		"quantity": 1,
+		"storage_id": "001",
+		"categories": ["abstract"]
+	},
+	{
+		"title": "What Time It Is",
+		"artist": "Futuristicon",
+		"created": "11/03/2211",
+		"price": 1700000,
+		"quantity": 1,
+		"storage_id": "002",
+		"categories": ["abstract"]
+	},
+	{
+		"title": "Dark Chaos",
+		"artist": "Synthetix",
+		"created": "02/14/2346",
+		"price": 1300000,
+		"quantity": 1,
+		"storage_id": "003",
+		"categories": ["abstract"]
+	},
+	{
+		"title": "Musical Expression",
+		"artist": "Mechamorph",
+		"created": "05/12/2345",
+		"price": 2100000,
+		"quantity": 1,
+		"storage_id": "004",
+		"categories": ["abstract"]
+	},
+	{
+		"title": "Light Chaos",
+		"artist": "ElectroNexus",
+		"created": "01/31/2288",
+		"price": 1800000,
+		"quantity": 1,
+		"storage_id": "005",
+		"categories": ["abstract"]
+	},
+	{
+		"title": "Series 1",
+		"artist": "Artibotica",
+		"created": "06/23/2291",
+		"price": 1800000,
+		"quantity": 1,
+		"storage_id": "006",
+		"categories": ["abstract"]
+	},
+	{
+		"title": "Grizzly River",
+		"artist": "CybersonicX",
+		"created": "02/23/2184",
+		"price": 2300000,
+		"quantity": 1,
+		"storage_id": "007",
+		"categories": ["animals", "nature"]
+	},
+	{
+		"title": "Dracarys",
+		"artist": "RoboRhythms",
+		"created": "08/12/2187",
+		"price": 2200000,
+		"quantity": 1,
+		"storage_id": "008",
+		"categories": ["animals", "nature"]
+	},
+	{
+		"title": "Lioness and Cub",
+		"artist": "Mechadelic",
+		"created": "07/30/2127",
+		"price": 1100000,
+		"quantity": 1,
+		"storage_id": "009",
+		"categories": ["animals", "nature"]
+	},
+	{
+		"title": "King of the Jungle",
+		"artist": "Synthron 9000",
+		"created": "10/02/2203",
+		"price": 900000,
+		"quantity": 1,
+		"storage_id": "010",
+		"categories": ["animals", "nature"]
+	},
+	{
+		"title": "Leader of the Pack",
+		"artist": "The Digital Da Vinci",
+		"created": "09/12/2432",
+		"price": 2200000,
+		"quantity": 1,
+		"storage_id": "011",
+		"categories": ["animals", "nature"]
+	},
+	{
+		"title": "This Little Piggy",
+		"artist": "Futuristicon",
+		"created": "04/11/2211",
+		"price": 1300000,
+		"quantity": 1,
+		"storage_id": "012",
+		"categories": ["animals", "nature"]
+	},
+	{
+		"title": "Plugged In",
+		"artist": "Synthetix",
+		"created": "05/30/2346",
+		"price": 1100000,
+		"quantity": 1,
+		"storage_id": "013",
+		"categories": ["abstract, body parts"]
+	},
+	{
+		"title": "Eye See You",
+		"artist": "Mechamorph",
+		"created": "01/12/2276",
+		"price": 1300000,
+		"quantity": 1,
+		"storage_id": "014",
+		"categories": ["abstract, body parts"]
+	},
+	{
+		"title": "Day at the Beach",
+		"artist": "ElectroNexus",
+		"created": "02/28/2288",
+		"price": 3100000,
+		"quantity": 1,
+		"storage_id": "015",
+		"categories": ["body parts"]
+	},
+	{
+		"title": "Reaching Out",
+		"artist": "Artibotica",
+		"created": "01/02/2291",
+		"price": 900000,
+		"quantity": 1,
+		"storage_id": "016",
+		"categories": ["abstract, body parts"]
+	},
+	{
+		"title": "Waves of Love",
+		"artist": "CybersonicX",
+		"created": "04/23/2184",
+		"price": 2100000,
+		"quantity": 1,
+		"storage_id": "017",
+		"categories": ["abstract, body parts"]
+	},
+	{
+		"title": "Smokey Lungs",
+		"artist": "RoboRhythms",
+		"created": "09/21/2187",
+		"price": 1700000,
+		"quantity": 1,
+		"storage_id": "018",
+		"categories": ["abstract, body parts"]
+	},
+	{
+		"title": "Nervous Much",
+		"artist": "Mechadelic",
+		"created": "05/30/2127",
+		"price": 1600000,
+		"quantity": 1,
+		"storage_id": "019",
+		"categories": ["abstract, body parts"]
+	},
+	{
+		"title": "Death of a Rose",
+		"artist": "Synthron 9000",
+		"created": "08/02/2203",
+		"price": 1300000,
+		"quantity": 1,
+		"storage_id": "020",
+		"categories": ["abstract, body parts"]
+	},
+	{
+		"title": "Amazonian Puma",
+		"artist": "The Digital Da Vinci",
+		"created": "11/11/2432",
+		"price": 2100000,
+		"quantity": 1,
+		"storage_id": "021",
+		"categories": ["animals", "nature"]
+	},
+	{
+		"title": "Relaxing Polar Bear",
+		"artist": "Futuristicon",
+		"created": "04/11/2312",
+		"price": 1800000,
+		"quantity": 1,
+		"storage_id": "022",
+		"categories": ["animals, nature"]
+	},
+	{
+		"title": "Happy Feet",
+		"artist": "Synthetix",
+		"created": "07/31/2332",
+		"price": 1805000,
+		"quantity": 1,
+		"storage_id": "023",
+		"categories": ["animals, nature"]
+	},
+	{
+		"title": "Fields of Poppy",
+		"artist": "Mechamorph",
+		"created": "03/21/2276",
+		"price": 1100000,
+		"quantity": 1,
+		"storage_id": "024",
+		"categories": ["nature"]
+	},
+	{
+		"title": "Fields of Corn",
+		"artist": "ElectroNexus",
+		"created": "09/28/2288",
+		"price": 1150000,
+		"quantity": 1,
+		"storage_id": "025",
+		"categories": ["nature"]
+	},
+	{
+		"title": "Bambi's Dad",
+		"artist": "Artibotica",
+		"created": "05/22/2291",
+		"price": 1250000,
+		"quantity": 1,
+		"storage_id": "026",
+		"categories": ["animals, nature"]
+	},
+	{
+		"title": "Rapid Stream",
+		"artist": "CybersonicX",
+		"created": "06/23/2184",
+		"price": 1300000,
+		"quantity": 1,
+		"storage_id": "027",
+		"categories": ["nature"]
+	},
+	{
+		"title": "Barren Desert",
+		"artist": "RoboRhythms",
+		"created": "11/21/2187",
+		"price": 800000,
+		"quantity": 1,
+		"storage_id": "028",
+		"categories": ["nature"]
+	},
+	{
+		"title": "Fields of Lavendar",
+		"artist": "Mechadelic",
+		"created": "04/30/2127",
+		"price": 1100000,
+		"quantity": 1,
+		"storage_id": "029",
+		"categories": ["nature"]
+	},
+	{
+		"title": "Restful Lake",
+		"artist": "Synthron 9000",
+		"created": "01/02/2203",
+		"price": 1900000,
+		"quantity": 1,
+		"storage_id": "030",
+		"categories": ["nature"]
+	},
+	{
+		"title": "Settling Sunset",
+		"artist": "The Digital Da Vinci",
+		"created": "02/11/2432",
+		"price": 1400000,
+		"quantity": 1,
+		"storage_id": "031",
+		"categories": ["nature"]
+	},
+	{
+		"title": "The Wright Brothers",
+		"artist": "Futuristicon",
+		"created": "04/11/2312",
+		"price": 1100000,
+		"quantity": 1,
+		"storage_id": "032",
+		"categories": ["people, vehicles"]
+	},
+	{
+		"title": "Da Terminator",
+		"artist": "Synthetix",
+		"created": "01/01/2332",
+		"price": 750000,
+		"quantity": 1,
+		"storage_id": "033",
+		"categories": ["people"]
+	},
+	{
+		"title": "Father Elon",
+		"artist": "Mechamorph",
+		"created": "02/02/2332",
+		"price": 750000,
+		"quantity": 1,
+		"storage_id": "034",
+		"categories": ["people"]
+	},
+	{
+		"title": "Mr. Wick",
+		"artist": "ElectroNexus",
+		"created": "03/03/2332",
+		"price": 750000,
+		"quantity": 1,
+		"storage_id": "035",
+		"categories": ["people"]
+	},
+	{
+		"title": "Human Spawns At Play",
+		"artist": "Artibotica",
+		"created": "04/04/2332",
+		"price": 750000,
+		"quantity": 1,
+		"storage_id": "036",
+		"categories": ["people"]
+	},
+	{
+		"title": "King of Pop",
+		"artist": "CybersonicX",
+		"created": "05/05/2332",
+		"price": 750000,
+		"quantity": 1,
+		"storage_id": "037",
+		"categories": ["people"]
+	},
+	{
+		"title": "His Airness",
+		"artist": "RoboRhythms",
+		"created": "06/06/2332",
+		"price": 750000,
+		"quantity": 1,
+		"storage_id": "038",
+		"categories": ["people"]
+	},
+	{
+		"title": "A Moaning Lady Named Lisa",
+		"artist": "Mechadelic",
+		"created": "07/07/2332",
+		"price": 750000,
+		"quantity": 1,
+		"storage_id": "039",
+		"categories": ["people"]
+	},
+	{
+		"title": "Pretty Woman",
+		"artist": "Synthron 9000",
+		"created": "08/08/2332",
+		"price": 750000,
+		"quantity": 1,
+		"storage_id": "040",
+		"categories": ["people"]
+	},
+	{
+		"title": "The Minister of Defense",
+		"artist": "The Digital Da Vinci",
+		"created": "12/12/2332",
+		"price": 850000,
+		"quantity": 1,
+		"storage_id": "041",
+		"categories": ["people"]
+	},
+	{
+		"title": "The Colonizer",
+		"artist": "Futuristicon",
+		"created": "10/14/2257",
+		"price": 900000,
+		"quantity": 1,
+		"storage_id": "042",
+		"categories": ["vehicles"]
+	},
+	{
+		"title": "First Shuttle to the Moon",
+		"artist": "Synthetix",
+		"created": "10/30/2402",
+		"price": 900000,
+		"quantity": 1,
+		"storage_id": "043",
+		"categories": ["vehicles"]
+	},
+	{
+		"title": "Industrial Revolution",
+		"artist": "Mechamorph",
+		"created": "08/14/2184",
+		"price": 2200000,
+		"quantity": 1,
+		"storage_id": "044",
+		"categories": ["vehicles"]
+	},
+	{
+		"title": "First Automobile",
+		"artist": "ElectroNexus",
+		"created": "10/31/2200",
+		"price": 925000,
+		"quantity": 1,
+		"storage_id": "045",
+		"categories": ["vehicles"]
+	}
+]
