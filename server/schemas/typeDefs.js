@@ -6,7 +6,9 @@ const typeDefs = gql`
   type Artist {
     _id: ID!
     name: String!
+    image: String!
     age: Int!
+
     story: String!
     work: [Artwork!]!
   }
