@@ -54,7 +54,7 @@ const artworkSchema = new Schema({
 		unique: false,
 		trim: true,
 	},
-	storage_id: {
+	image_id: {
 		type: String,
 		required: true,
 		unique: false,

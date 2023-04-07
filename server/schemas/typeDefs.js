@@ -16,7 +16,7 @@ const typeDefs = gql`
 		created: String!
 		price: Float!
 		quantity: Int!
-		storage_id: String!
+		image_id: String!
 		lore: String!
 		categories: String!
 	}
@@ -45,7 +45,7 @@ const typeDefs = gql`
 		artist: [ArtistInput!]!
 		price: Float!
 		quantity: Int!
-		storage_id: String!
+		image_id: String!
 		lore: String!
 		categories: String!
 	}
