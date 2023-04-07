@@ -1,14 +1,16 @@
+// import { GlobalStyles } from './components/styles/Global.styled';
 import { GlobalStyles } from './components/styles/Global.styled';
 import { ThemeProvider } from 'styled-components';
 
 // import Header from './components/Header';
 // Import Pages
 import { ArtistProfile } from './components/pages/ArtistProfile';
-import { Gallery } from './components/pages/gallery';
-import { Homepage } from './components/pages/homepage';
 import { Login } from './components/pages/Login';
 import { Register } from './components/pages/Register';
 import { SingleArtworkView } from './components/pages/SingleArtworkView';
+import { Homepage } from './components/pages/Homepage';
+import { Gallery } from './components/pages/Gallery';
+
 
 const App = () => {
 
