@@ -1,20 +1,26 @@
 [
 	{
+		"id": "01",
 		"name": "abstract"
 	},
 	{
+		"id": "02",
 		"name": "animals"
 	},
 	{
+		"id": "03",
 		"name": "body parts"
 	},
 	{
+		"id": "04",
 		"name": "nature"
 	},
 	{
+		"id": "05",
 		"name": "people"
 	},
 	{
+		"id": "06",
 		"name": "vehicles"
 	}
 ]

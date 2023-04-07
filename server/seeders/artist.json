@@ -1,5 +1,6 @@
 [
     {
+        "id": "001",
         "name": "The Digital Da Vinci",
         "age": 1000,
         "image": "./profile-img/01.jpg",
@@ -19,13 +20,11 @@
             },
             {
                 "title": "The Minister of Defense"
-            },
-            {
-                "title": "The Minister of Defense"
             }
         ]
     },
     {
+        "id": "002",
         "name": "Futuristicon",
         "age": 50,
         "image": "./profile-img/02.jpg",
@@ -49,6 +48,7 @@
         ]
     },
     {
+        "id": "003",
         "name": "Synthetix",
         "age": 2,
         "image": "./profile-img/02.jpg",
@@ -72,6 +72,7 @@
         ]
     },
     {
+        "id": "004",
         "name": "Mechamorph",
         "age": 666,
         "image": "./profile-img/03.jpg",
@@ -95,6 +96,7 @@
         ]
     },
     {
+        "id": "005",
         "name": "ElectroNexus",
         "age": 150,
         "image": "./profile-img/04.jpg",
@@ -118,6 +120,7 @@
         ]
     },
     {
+        "id": "006",
         "name": "Artibotica",
         "age": 15000000,
         "image": "./profile-img/05.jpg",
@@ -138,6 +141,7 @@
         ]
     },
     {
+        "id": "007",
         "name": "CybersonicX",
         "age": 16,
         "image": "./profile-img/06.jpg",
@@ -158,6 +162,7 @@
         ]
     },
     {
+        "id": "008",
         "name": "RoboRhythms",
         "age": 65,
         "image": "./profile-img/07.jpg",
@@ -178,6 +183,7 @@
         ]
     },
     {
+        "id": "009",
         "name": "Mechadelic",
         "age": 5,
         "image": "./profile-img/08.jpg",
@@ -198,7 +204,8 @@
         ]
     },
     {
-        "name": "Mechadelic",
+        "id": "010",
+        "name": "Synthron 9000",
         "age": 5000,
         "image": "./profile-img/09.jpg",
         "story": "Born in Salt Lake City, Utah",
