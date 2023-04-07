@@ -2,7 +2,32 @@
 	{
 		"id": "001",
 		"title": "Field of Dreams",
-		"artist": "The Digital Da Vinci",
+		"artist": {
+			"name": "The Digital Da Vinci",
+			"age": 1000,
+			"image": "./profile-img/01.jpg",
+			"story": "Born in Los Angeles",
+			"work": [
+				{
+					"title": "Field of Dreams"
+				},
+				{
+					"title": "Leader of the Pack"
+				},
+				{
+					"title": "Amazonian Puma"
+				},
+				{
+					"title": "Settling Sunset"
+				},
+				{
+					"title": "The Minister of Defense"
+				},
+				{
+					"title": "The Minister of Defense"
+				}
+			]
+		},
 		"created": "03/25/2432",
 		"price": 2400000,
 		"quantity": 1,
@@ -18,7 +43,29 @@
 	{
 		"id": "002",
 		"title": "What Time It Is",
-		"artist": "Futuristicon",
+		"artist": {
+			"name": "Futuristicon",
+			"age": 50,
+			"image": "./profile-img/02.jpg",
+			"story": "Born in Arlington, TX",
+			"work": [
+				{
+					"title": "What Time It Is"
+				},
+				{
+					"title": "This Little Piggy"
+				},
+				{
+					"title": "Relaxing Polar Bear"
+				},
+				{
+					"title": "The Wright Brothers"
+				},
+				{
+					"title": "The Colonizer"
+				}
+			]
+		},
 		"created": "11/03/2211",
 		"price": 1700000,
 		"quantity": 1,
@@ -34,7 +81,29 @@
 	{
 		"id": "003",
 		"title": "Dark Chaos",
-		"artist": "Synthetix",
+		"artist": {
+			"name": "Synthetix",
+			"age": 2,
+			"image": "./profile-img/02.jpg",
+			"story": "Born in Sante Fe, NM",
+			"work": [
+				{
+					"title": "Dark Chaos"
+				},
+				{
+					"title": "Plugged In"
+				},
+				{
+					"title": "Happy Feet"
+				},
+				{
+					"title": "Da Terminator"
+				},
+				{
+					"title": "First Shuttle to the Moon"
+				}
+			]
+		},
 		"created": "02/14/2346",
 		"price": 1300000,
 		"quantity": 1,
@@ -50,7 +119,29 @@
 	{
 		"id": "004",
 		"title": "Musical Expression",
-		"artist": "Mechamorph",
+		"artist": {
+			"name": "Mechamorph",
+			"age": 666,
+			"image": "./profile-img/03.jpg",
+			"story": "Born in Lisbon, Spain",
+			"work": [
+				{
+					"title": "Eye See You"
+				},
+				{
+					"title": "Fields of Poppy"
+				},
+				{
+					"title": "Father Elon"
+				},
+				{
+					"title": "Musical Expression"
+				},
+				{
+					"title": "Industrial Revolution"
+				}
+			]
+		},
 		"created": "05/12/2345",
 		"price": 2100000,
 		"quantity": 1,
@@ -66,7 +157,29 @@
 	{
 		"id": "005",
 		"title": "Light Chaos",
-		"artist": "ElectroNexus",
+		"artist": {
+			"name": "ElectroNexus",
+			"age": 150,
+			"image": "./profile-img/04.jpg",
+			"story": "Born in Melbourne, Australia",
+			"work": [
+				{
+					"title": "Light Chaos"
+				},
+				{
+					"title": "Day at the Beach"
+				},
+				{
+					"title": "Fields of Corn"
+				},
+				{
+					"title": "Mr. Wick"
+				},
+				{
+					"title": "First Automobile"
+				}
+			]
+		},
 		"created": "01/31/2288",
 		"price": 1800000,
 		"quantity": 1,
@@ -82,7 +195,26 @@
 	{
 		"id": "006",
 		"title": "Series 1",
-		"artist": "Artibotica",
+		"artist": {
+			"name": "Artibotica",
+			"age": 15000000,
+			"image": "./profile-img/05.jpg",
+			"story": "Born in Melbourne, Australia",
+			"work": [
+				{
+					"title": "Series 1"
+				},
+				{
+					"title": "Reaching Out"
+				},
+				{
+					"title": "Bambi's Dad"
+				},
+				{
+					"title": "Human Spawns At Play"
+				}
+			]
+		},
 		"created": "06/23/2291",
 		"price": 1800000,
 		"quantity": 1,
@@ -98,7 +230,26 @@
 	{
 		"id": "007",
 		"title": "Grizzly River",
-		"artist": "CybersonicX",
+		"artist": {
+			"name": "CybersonicX",
+			"age": 16,
+			"image": "./profile-img/06.jpg",
+			"story": "Born in Bangor, Maine",
+			"work": [
+				{
+					"title": "Grizzly River"
+				},
+				{
+					"title": "Waves of Love"
+				},
+				{
+					"title": "Rapid Stream"
+				},
+				{
+					"title": "King of Pop"
+				}
+			]
+		},
 		"created": "02/23/2184",
 		"price": 2300000,
 		"quantity": 1,
@@ -109,7 +260,26 @@
 	{
 		"id": "008",
 		"title": "Dracarys",
-		"artist": "RoboRhythms",
+		"artist": {
+			"name": "RoboRhythms",
+			"age": 65,
+			"image": "./profile-img/07.jpg",
+			"story": "Born in Mobile, Alabama",
+			"work": [
+				{
+					"title": "Dracarys"
+				},
+				{
+					"title": "Smokey Lungs"
+				},
+				{
+					"title": "Barren Desert"
+				},
+				{
+					"title": "His Airness"
+				}
+			]
+		},
 		"created": "08/12/2187",
 		"price": 2200000,
 		"quantity": 1,
@@ -129,7 +299,26 @@
 	{
 		"id": "009",
 		"title": "Lioness and Cub",
-		"artist": "Mechadelic",
+		"artist": {
+			"name": "Mechadelic",
+			"age": 5,
+			"image": "./profile-img/08.jpg",
+			"story": "Born in Mobile, Alabama",
+			"work": [
+				{
+					"title": "Lioness and Cub"
+				},
+				{
+					"title": "Nervous Much"
+				},
+				{
+					"title": "Fields of Lavendar"
+				},
+				{
+					"title": "A Moaning Lady Named Lisa"
+				}
+			]
+		},
 		"created": "07/30/2127",
 		"price": 1100000,
 		"quantity": 1,
@@ -149,7 +338,26 @@
 	{
 		"id": "010",
 		"title": "King of the Jungle",
-		"artist": "Synthron 9000",
+		"artist": {
+			"name": "Synthron 9000",
+			"age": 5000,
+			"image": "./profile-img/09.jpg",
+			"story": "Born in Salt Lake City, Utah",
+			"work": [
+				{
+					"title": "King of the Jungle"
+				},
+				{
+					"title": "Death of a Rose"
+				},
+				{
+					"title": "Restful Lake"
+				},
+				{
+					"title": "Pretty Woman"
+				}
+			]
+		},
 		"created": "10/02/2203",
 		"price": 900000,
 		"quantity": 1,
@@ -169,7 +377,32 @@
 	{
 		"id": "011",
 		"title": "Leader of the Pack",
-		"artist": "The Digital Da Vinci",
+		"artist": {
+			"name": "The Digital Da Vinci",
+			"age": 1000,
+			"image": "./profile-img/01.jpg",
+			"story": "Born in Los Angeles",
+			"work": [
+				{
+					"title": "Field of Dreams"
+				},
+				{
+					"title": "Leader of the Pack"
+				},
+				{
+					"title": "Amazonian Puma"
+				},
+				{
+					"title": "Settling Sunset"
+				},
+				{
+					"title": "The Minister of Defense"
+				},
+				{
+					"title": "The Minister of Defense"
+				}
+			]
+		},
 		"created": "09/12/2432",
 		"price": 2200000,
 		"quantity": 1,
@@ -189,7 +422,29 @@
 	{
 		"id": "012",
 		"title": "This Little Piggy",
-		"artist": "Futuristicon",
+		"artist": {
+			"name": "Futuristicon",
+			"age": 50,
+			"image": "./profile-img/02.jpg",
+			"story": "Born in Arlington, TX",
+			"work": [
+				{
+					"title": "What Time It Is"
+				},
+				{
+					"title": "This Little Piggy"
+				},
+				{
+					"title": "Relaxing Polar Bear"
+				},
+				{
+					"title": "The Wright Brothers"
+				},
+				{
+					"title": "The Colonizer"
+				}
+			]
+		},
 		"created": "04/11/2211",
 		"price": 1300000,
 		"quantity": 1,
@@ -209,7 +464,29 @@
 	{
 		"id": "013",
 		"title": "Plugged In",
-		"artist": "Synthetix",
+		"artist": {
+			"name": "Synthetix",
+			"age": 2,
+			"image": "./profile-img/02.jpg",
+			"story": "Born in Sante Fe, NM",
+			"work": [
+				{
+					"title": "Dark Chaos"
+				},
+				{
+					"title": "Plugged In"
+				},
+				{
+					"title": "Happy Feet"
+				},
+				{
+					"title": "Da Terminator"
+				},
+				{
+					"title": "First Shuttle to the Moon"
+				}
+			]
+		},
 		"created": "05/30/2346",
 		"price": 1100000,
 		"quantity": 1,
@@ -229,7 +506,29 @@
 	{
 		"id": "014",
 		"title": "Eye See You",
-		"artist": "Mechamorph",
+		"artist": {
+			"name": "Mechamorph",
+			"age": 666,
+			"image": "./profile-img/03.jpg",
+			"story": "Born in Lisbon, Spain",
+			"work": [
+				{
+					"title": "Eye See You"
+				},
+				{
+					"title": "Fields of Poppy"
+				},
+				{
+					"title": "Father Elon"
+				},
+				{
+					"title": "Musical Expression"
+				},
+				{
+					"title": "Industrial Revolution"
+				}
+			]
+		},
 		"created": "01/12/2276",
 		"price": 1300000,
 		"quantity": 1,
@@ -249,7 +548,29 @@
 	{
 		"id": "015",
 		"title": "Day at the Beach",
-		"artist": "ElectroNexus",
+		"artist": {
+			"name": "ElectroNexus",
+			"age": 150,
+			"image": "./profile-img/04.jpg",
+			"story": "Born in Melbourne, Australia",
+			"work": [
+				{
+					"title": "Light Chaos"
+				},
+				{
+					"title": "Day at the Beach"
+				},
+				{
+					"title": "Fields of Corn"
+				},
+				{
+					"title": "Mr. Wick"
+				},
+				{
+					"title": "First Automobile"
+				}
+			]
+		},
 		"created": "02/28/2288",
 		"price": 3100000,
 		"quantity": 1,
@@ -265,7 +586,26 @@
 	{
 		"id": "016",
 		"title": "Reaching Out",
-		"artist": "Artibotica",
+		"artist": {
+			"name": "Artibotica",
+			"age": 15000000,
+			"image": "./profile-img/05.jpg",
+			"story": "Born in Melbourne, Australia",
+			"work": [
+				{
+					"title": "Series 1"
+				},
+				{
+					"title": "Reaching Out"
+				},
+				{
+					"title": "Bambi's Dad"
+				},
+				{
+					"title": "Human Spawns At Play"
+				}
+			]
+		},
 		"created": "01/02/2291",
 		"price": 900000,
 		"quantity": 1,
@@ -285,7 +625,26 @@
 	{
 		"id": "017",
 		"title": "Waves of Love",
-		"artist": "CybersonicX",
+		"artist": {
+			"name": "CybersonicX",
+			"age": 16,
+			"image": "./profile-img/06.jpg",
+			"story": "Born in Bangor, Maine",
+			"work": [
+				{
+					"title": "Grizzly River"
+				},
+				{
+					"title": "Waves of Love"
+				},
+				{
+					"title": "Rapid Stream"
+				},
+				{
+					"title": "King of Pop"
+				}
+			]
+		},
 		"created": "04/23/2184",
 		"price": 2100000,
 		"quantity": 1,
@@ -305,7 +664,26 @@
 	{
 		"id": "018",
 		"title": "Smokey Lungs",
-		"artist": "RoboRhythms",
+		"artist": {
+			"name": "RoboRhythms",
+			"age": 65,
+			"image": "./profile-img/07.jpg",
+			"story": "Born in Mobile, Alabama",
+			"work": [
+				{
+					"title": "Dracarys"
+				},
+				{
+					"title": "Smokey Lungs"
+				},
+				{
+					"title": "Barren Desert"
+				},
+				{
+					"title": "His Airness"
+				}
+			]
+		},
 		"created": "09/21/2187",
 		"price": 1700000,
 		"quantity": 1,
@@ -325,7 +703,26 @@
 	{
 		"id": "019",
 		"title": "Nervous Much",
-		"artist": "Mechadelic",
+		"artist": {
+			"name": "Mechadelic",
+			"age": 5,
+			"image": "./profile-img/08.jpg",
+			"story": "Born in Mobile, Alabama",
+			"work": [
+				{
+					"title": "Lioness and Cub"
+				},
+				{
+					"title": "Nervous Much"
+				},
+				{
+					"title": "Fields of Lavendar"
+				},
+				{
+					"title": "A Moaning Lady Named Lisa"
+				}
+			]
+		},
 		"created": "05/30/2127",
 		"price": 1600000,
 		"quantity": 1,
@@ -345,7 +742,26 @@
 	{
 		"id": "020",
 		"title": "Death of a Rose",
-		"artist": "Synthron 9000",
+		"artist": {
+			"name": "Synthron 9000",
+			"age": 5000,
+			"image": "./profile-img/09.jpg",
+			"story": "Born in Salt Lake City, Utah",
+			"work": [
+				{
+					"title": "King of the Jungle"
+				},
+				{
+					"title": "Death of a Rose"
+				},
+				{
+					"title": "Restful Lake"
+				},
+				{
+					"title": "Pretty Woman"
+				}
+			]
+		},
 		"created": "08/02/2203",
 		"price": 1300000,
 		"quantity": 1,
@@ -365,7 +781,32 @@
 	{
 		"id": "021",
 		"title": "Amazonian Puma",
-		"artist": "The Digital Da Vinci",
+		"artist": {
+			"name": "The Digital Da Vinci",
+			"age": 1000,
+			"image": "./profile-img/01.jpg",
+			"story": "Born in Los Angeles",
+			"work": [
+				{
+					"title": "Field of Dreams"
+				},
+				{
+					"title": "Leader of the Pack"
+				},
+				{
+					"title": "Amazonian Puma"
+				},
+				{
+					"title": "Settling Sunset"
+				},
+				{
+					"title": "The Minister of Defense"
+				},
+				{
+					"title": "The Minister of Defense"
+				}
+			]
+		},
 		"created": "11/11/2432",
 		"price": 2100000,
 		"quantity": 1,
@@ -385,7 +826,29 @@
 	{
 		"id": "022",
 		"title": "Relaxing Polar Bear",
-		"artist": "Futuristicon",
+		"artist": {
+			"name": "Futuristicon",
+			"age": 50,
+			"image": "./profile-img/02.jpg",
+			"story": "Born in Arlington, TX",
+			"work": [
+				{
+					"title": "What Time It Is"
+				},
+				{
+					"title": "This Little Piggy"
+				},
+				{
+					"title": "Relaxing Polar Bear"
+				},
+				{
+					"title": "The Wright Brothers"
+				},
+				{
+					"title": "The Colonizer"
+				}
+			]
+		},
 		"created": "04/11/2312",
 		"price": 1800000,
 		"quantity": 1,
@@ -405,7 +868,29 @@
 	{
 		"id": "023",
 		"title": "Happy Feet",
-		"artist": "Synthetix",
+		"artist": {
+			"name": "Synthetix",
+			"age": 2,
+			"image": "./profile-img/02.jpg",
+			"story": "Born in Sante Fe, NM",
+			"work": [
+				{
+					"title": "Dark Chaos"
+				},
+				{
+					"title": "Plugged In"
+				},
+				{
+					"title": "Happy Feet"
+				},
+				{
+					"title": "Da Terminator"
+				},
+				{
+					"title": "First Shuttle to the Moon"
+				}
+			]
+		},
 		"created": "07/31/2332",
 		"price": 1805000,
 		"quantity": 1,
@@ -425,7 +910,29 @@
 	{
 		"id": "024",
 		"title": "Fields of Poppy",
-		"artist": "Mechamorph",
+		"artist": {
+			"name": "Mechamorph",
+			"age": 666,
+			"image": "./profile-img/03.jpg",
+			"story": "Born in Lisbon, Spain",
+			"work": [
+				{
+					"title": "Eye See You"
+				},
+				{
+					"title": "Fields of Poppy"
+				},
+				{
+					"title": "Father Elon"
+				},
+				{
+					"title": "Musical Expression"
+				},
+				{
+					"title": "Industrial Revolution"
+				}
+			]
+		},
 		"created": "03/21/2276",
 		"price": 1100000,
 		"quantity": 1,
@@ -441,7 +948,29 @@
 	{
 		"id": "025",
 		"title": "Fields of Corn",
-		"artist": "ElectroNexus",
+		"artist": {
+			"name": "ElectroNexus",
+			"age": 150,
+			"image": "./profile-img/04.jpg",
+			"story": "Born in Melbourne, Australia",
+			"work": [
+				{
+					"title": "Light Chaos"
+				},
+				{
+					"title": "Day at the Beach"
+				},
+				{
+					"title": "Fields of Corn"
+				},
+				{
+					"title": "Mr. Wick"
+				},
+				{
+					"title": "First Automobile"
+				}
+			]
+		},
 		"created": "09/28/2288",
 		"price": 1150000,
 		"quantity": 1,
@@ -457,7 +986,26 @@
 	{
 		"id": "026",
 		"title": "Bambi's Dad",
-		"artist": "Artibotica",
+		"artist": {
+			"name": "Artibotica",
+			"age": 15000000,
+			"image": "./profile-img/05.jpg",
+			"story": "Born in Melbourne, Australia",
+			"work": [
+				{
+					"title": "Series 1"
+				},
+				{
+					"title": "Reaching Out"
+				},
+				{
+					"title": "Bambi's Dad"
+				},
+				{
+					"title": "Human Spawns At Play"
+				}
+			]
+		},
 		"created": "05/22/2291",
 		"price": 1250000,
 		"quantity": 1,
@@ -477,7 +1025,26 @@
 	{
 		"id": "027",
 		"title": "Rapid Stream",
-		"artist": "CybersonicX",
+		"artist": {
+			"name": "CybersonicX",
+			"age": 16,
+			"image": "./profile-img/06.jpg",
+			"story": "Born in Bangor, Maine",
+			"work": [
+				{
+					"title": "Grizzly River"
+				},
+				{
+					"title": "Waves of Love"
+				},
+				{
+					"title": "Rapid Stream"
+				},
+				{
+					"title": "King of Pop"
+				}
+			]
+		},
 		"created": "06/23/2184",
 		"price": 1300000,
 		"quantity": 1,
@@ -493,7 +1060,26 @@
 	{
 		"id": "028",
 		"title": "Barren Desert",
-		"artist": "RoboRhythms",
+		"artist": {
+			"name": "RoboRhythms",
+			"age": 65,
+			"image": "./profile-img/07.jpg",
+			"story": "Born in Mobile, Alabama",
+			"work": [
+				{
+					"title": "Dracarys"
+				},
+				{
+					"title": "Smokey Lungs"
+				},
+				{
+					"title": "Barren Desert"
+				},
+				{
+					"title": "His Airness"
+				}
+			]
+		},
 		"created": "11/21/2187",
 		"price": 800000,
 		"quantity": 1,
@@ -509,7 +1095,26 @@
 	{
 		"id": "029",
 		"title": "Fields of Lavendar",
-		"artist": "Mechadelic",
+		"artist": {
+			"name": "Mechadelic",
+			"age": 5,
+			"image": "./profile-img/08.jpg",
+			"story": "Born in Mobile, Alabama",
+			"work": [
+				{
+					"title": "Lioness and Cub"
+				},
+				{
+					"title": "Nervous Much"
+				},
+				{
+					"title": "Fields of Lavendar"
+				},
+				{
+					"title": "A Moaning Lady Named Lisa"
+				}
+			]
+		},
 		"created": "04/30/2127",
 		"price": 1100000,
 		"quantity": 1,
@@ -525,7 +1130,26 @@
 	{
 		"id": "030",
 		"title": "Restful Lake",
-		"artist": "Synthron 9000",
+		"artist": {
+			"name": "Synthron 9000",
+			"age": 5000,
+			"image": "./profile-img/09.jpg",
+			"story": "Born in Salt Lake City, Utah",
+			"work": [
+				{
+					"title": "King of the Jungle"
+				},
+				{
+					"title": "Death of a Rose"
+				},
+				{
+					"title": "Restful Lake"
+				},
+				{
+					"title": "Pretty Woman"
+				}
+			]
+		},
 		"created": "01/02/2203",
 		"price": 1900000,
 		"quantity": 1,
@@ -541,7 +1165,32 @@
 	{
 		"id": "031",
 		"title": "Settling Sunset",
-		"artist": "The Digital Da Vinci",
+		"artist": {
+			"name": "The Digital Da Vinci",
+			"age": 1000,
+			"image": "./profile-img/01.jpg",
+			"story": "Born in Los Angeles",
+			"work": [
+				{
+					"title": "Field of Dreams"
+				},
+				{
+					"title": "Leader of the Pack"
+				},
+				{
+					"title": "Amazonian Puma"
+				},
+				{
+					"title": "Settling Sunset"
+				},
+				{
+					"title": "The Minister of Defense"
+				},
+				{
+					"title": "The Minister of Defense"
+				}
+			]
+		},
 		"created": "02/11/2432",
 		"price": 1400000,
 		"quantity": 1,
@@ -557,7 +1206,51 @@
 	{
 		"id": "032",
 		"title": "The Wright Brothers",
-		"artist": "Futuristicon",
+		"artist": {
+			"name": {
+				"name": "Futuristicon",
+				"age": 50,
+				"image": "./profile-img/02.jpg",
+				"story": "Born in Arlington, TX",
+				"work": [
+					{
+						"title": "What Time It Is"
+					},
+					{
+						"title": "This Little Piggy"
+					},
+					{
+						"title": "Relaxing Polar Bear"
+					},
+					{
+						"title": "The Wright Brothers"
+					},
+					{
+						"title": "The Colonizer"
+					}
+				]
+			},
+			"age": 50,
+			"image": "./profile-img/02.jpg",
+			"story": "Born in Arlington, TX",
+			"work": [
+				{
+					"title": "What Time It Is"
+				},
+				{
+					"title": "This Little Piggy"
+				},
+				{
+					"title": "Relaxing Polar Bear"
+				},
+				{
+					"title": "The Wright Brothers"
+				},
+				{
+					"title": "The Colonizer"
+				}
+			]
+		},
 		"created": "04/11/2312",
 		"price": 1100000,
 		"quantity": 1,
@@ -577,7 +1270,29 @@
 	{
 		"id": "033",
 		"title": "Da Terminator",
-		"artist": "Synthetix",
+		"artist": {
+			"name": "Synthetix",
+			"age": 2,
+			"image": "./profile-img/02.jpg",
+			"story": "Born in Sante Fe, NM",
+			"work": [
+				{
+					"title": "Dark Chaos"
+				},
+				{
+					"title": "Plugged In"
+				},
+				{
+					"title": "Happy Feet"
+				},
+				{
+					"title": "Da Terminator"
+				},
+				{
+					"title": "First Shuttle to the Moon"
+				}
+			]
+		},
 		"created": "01/01/2332",
 		"price": 750000,
 		"quantity": 1,
@@ -593,7 +1308,29 @@
 	{
 		"id": "034",
 		"title": "Father Elon",
-		"artist": "Mechamorph",
+		"artist": {
+			"name": "Mechamorph",
+			"age": 666,
+			"image": "./profile-img/03.jpg",
+			"story": "Born in Lisbon, Spain",
+			"work": [
+				{
+					"title": "Eye See You"
+				},
+				{
+					"title": "Fields of Poppy"
+				},
+				{
+					"title": "Father Elon"
+				},
+				{
+					"title": "Musical Expression"
+				},
+				{
+					"title": "Industrial Revolution"
+				}
+			]
+		},
 		"created": "02/02/2332",
 		"price": 750000,
 		"quantity": 1,
@@ -609,7 +1346,29 @@
 	{
 		"id": "035",
 		"title": "Mr. Wick",
-		"artist": "ElectroNexus",
+		"artist": {
+			"name": "ElectroNexus",
+			"age": 150,
+			"image": "./profile-img/04.jpg",
+			"story": "Born in Melbourne, Australia",
+			"work": [
+				{
+					"title": "Light Chaos"
+				},
+				{
+					"title": "Day at the Beach"
+				},
+				{
+					"title": "Fields of Corn"
+				},
+				{
+					"title": "Mr. Wick"
+				},
+				{
+					"title": "First Automobile"
+				}
+			]
+		},
 		"created": "03/03/2332",
 		"price": 750000,
 		"quantity": 1,
@@ -625,7 +1384,26 @@
 	{
 		"id": "036",
 		"title": "Human Spawns At Play",
-		"artist": "Artibotica",
+		"artist": {
+			"name": "Artibotica",
+			"age": 15000000,
+			"image": "./profile-img/05.jpg",
+			"story": "Born in Melbourne, Australia",
+			"work": [
+				{
+					"title": "Series 1"
+				},
+				{
+					"title": "Reaching Out"
+				},
+				{
+					"title": "Bambi's Dad"
+				},
+				{
+					"title": "Human Spawns At Play"
+				}
+			]
+		},
 		"created": "04/04/2332",
 		"price": 750000,
 		"quantity": 1,
@@ -641,7 +1419,26 @@
 	{
 		"id": "037",
 		"title": "King of Pop",
-		"artist": "CybersonicX",
+		"artist": {
+			"name": "CybersonicX",
+			"age": 16,
+			"image": "./profile-img/06.jpg",
+			"story": "Born in Bangor, Maine",
+			"work": [
+				{
+					"title": "Grizzly River"
+				},
+				{
+					"title": "Waves of Love"
+				},
+				{
+					"title": "Rapid Stream"
+				},
+				{
+					"title": "King of Pop"
+				}
+			]
+		},
 		"created": "05/05/2332",
 		"price": 750000,
 		"quantity": 1,
@@ -657,7 +1454,26 @@
 	{
 		"id": "038",
 		"title": "His Airness",
-		"artist": "RoboRhythms",
+		"artist": {
+			"name": "RoboRhythms",
+			"age": 65,
+			"image": "./profile-img/07.jpg",
+			"story": "Born in Mobile, Alabama",
+			"work": [
+				{
+					"title": "Dracarys"
+				},
+				{
+					"title": "Smokey Lungs"
+				},
+				{
+					"title": "Barren Desert"
+				},
+				{
+					"title": "His Airness"
+				}
+			]
+		},
 		"created": "06/06/2332",
 		"price": 750000,
 		"quantity": 1,
@@ -673,7 +1489,26 @@
 	{
 		"id": "039",
 		"title": "A Moaning Lady Named Lisa",
-		"artist": "Mechadelic",
+		"artist": {
+			"name": "Mechadelic",
+			"age": 5,
+			"image": "./profile-img/08.jpg",
+			"story": "Born in Mobile, Alabama",
+			"work": [
+				{
+					"title": "Lioness and Cub"
+				},
+				{
+					"title": "Nervous Much"
+				},
+				{
+					"title": "Fields of Lavendar"
+				},
+				{
+					"title": "A Moaning Lady Named Lisa"
+				}
+			]
+		},
 		"created": "07/07/2332",
 		"price": 750000,
 		"quantity": 1,
@@ -689,7 +1524,26 @@
 	{
 		"id": "040",
 		"title": "Pretty Woman",
-		"artist": "Synthron 9000",
+		"artist": {
+			"name": "Synthron 9000",
+			"age": 5000,
+			"image": "./profile-img/09.jpg",
+			"story": "Born in Salt Lake City, Utah",
+			"work": [
+				{
+					"title": "King of the Jungle"
+				},
+				{
+					"title": "Death of a Rose"
+				},
+				{
+					"title": "Restful Lake"
+				},
+				{
+					"title": "Pretty Woman"
+				}
+			]
+		},
 		"created": "08/08/2332",
 		"price": 750000,
 		"quantity": 1,
@@ -705,7 +1559,32 @@
 	{
 		"id": "041",
 		"title": "The Minister of Defense",
-		"artist": "The Digital Da Vinci",
+		"artist": {
+			"name": "The Digital Da Vinci",
+			"age": 1000,
+			"image": "./profile-img/01.jpg",
+			"story": "Born in Los Angeles",
+			"work": [
+				{
+					"title": "Field of Dreams"
+				},
+				{
+					"title": "Leader of the Pack"
+				},
+				{
+					"title": "Amazonian Puma"
+				},
+				{
+					"title": "Settling Sunset"
+				},
+				{
+					"title": "The Minister of Defense"
+				},
+				{
+					"title": "The Minister of Defense"
+				}
+			]
+		},
 		"created": "12/12/2332",
 		"price": 850000,
 		"quantity": 1,
@@ -721,7 +1600,29 @@
 	{
 		"id": "042",
 		"title": "The Colonizer",
-		"artist": "Futuristicon",
+		"artist": {
+			"name": "Futuristicon",
+			"age": 50,
+			"image": "./profile-img/02.jpg",
+			"story": "Born in Arlington, TX",
+			"work": [
+				{
+					"title": "What Time It Is"
+				},
+				{
+					"title": "This Little Piggy"
+				},
+				{
+					"title": "Relaxing Polar Bear"
+				},
+				{
+					"title": "The Wright Brothers"
+				},
+				{
+					"title": "The Colonizer"
+				}
+			]
+		},
 		"created": "10/14/2257",
 		"price": 900000,
 		"quantity": 1,
@@ -737,7 +1638,29 @@
 	{
 		"id": "043",
 		"title": "First Shuttle to the Moon",
-		"artist": "Synthetix",
+		"artist": {
+			"name": "Synthetix",
+			"age": 2,
+			"image": "./profile-img/02.jpg",
+			"story": "Born in Sante Fe, NM",
+			"work": [
+				{
+					"title": "Dark Chaos"
+				},
+				{
+					"title": "Plugged In"
+				},
+				{
+					"title": "Happy Feet"
+				},
+				{
+					"title": "Da Terminator"
+				},
+				{
+					"title": "First Shuttle to the Moon"
+				}
+			]
+		},
 		"created": "10/30/2402",
 		"price": 900000,
 		"quantity": 1,
@@ -753,7 +1676,29 @@
 	{
 		"id": "044",
 		"title": "Industrial Revolution",
-		"artist": "Mechamorph",
+		"artist": {
+			"name": "Mechamorph",
+			"age": 666,
+			"image": "./profile-img/03.jpg",
+			"story": "Born in Lisbon, Spain",
+			"work": [
+				{
+					"title": "Eye See You"
+				},
+				{
+					"title": "Fields of Poppy"
+				},
+				{
+					"title": "Father Elon"
+				},
+				{
+					"title": "Musical Expression"
+				},
+				{
+					"title": "Industrial Revolution"
+				}
+			]
+		},
 		"created": "08/14/2184",
 		"price": 2200000,
 		"quantity": 1,
@@ -769,7 +1714,29 @@
 	{
 		"id": "045",
 		"title": "First Automobile",
-		"artist": "ElectroNexus",
+		"artist": {
+			"name": "ElectroNexus",
+			"age": 150,
+			"image": "./profile-img/04.jpg",
+			"story": "Born in Melbourne, Australia",
+			"work": [
+				{
+					"title": "Light Chaos"
+				},
+				{
+					"title": "Day at the Beach"
+				},
+				{
+					"title": "Fields of Corn"
+				},
+				{
+					"title": "Mr. Wick"
+				},
+				{
+					"title": "First Automobile"
+				}
+			]
+		},
 		"created": "10/31/2200",
 		"price": 925000,
 		"quantity": 1,
