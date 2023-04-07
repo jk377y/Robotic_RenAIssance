@@ -40,7 +40,7 @@ const artworkSchema = new Schema({
 		trim: true,
 	},
     lore: {
-        type: Text,
+        type: String,
         required: false,
     },
 	categories: [
