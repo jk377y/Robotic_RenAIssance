@@ -1,7 +1,31 @@
-const { Schema, model } = require("mongoose");
-const dateFormat = require("../utils/dateFormat");
+const { Schema, model, SchemaType } = require("mongoose");
+
+const artistSchema = new Schema({
+	name: {
+		type: String,
+		required: true,
+	},
+	age: {
+		type: Number,
+		required: true,
+	},
+	image: {
+		type: String,
+		required: true,
+	},
+	story: {
+		type: String,
+		required: true,
+	},
+});
 
 const artworkSchema = new Schema({
+	id: {
+		type: String,
+		required: true,
+		unique: true,
+		trim: true,
+	},
 	title: {
 		type: String,
 		required: true,
@@ -9,17 +33,14 @@ const artworkSchema = new Schema({
 		trim: true,
 	},
 	artist: {
+		type: [artistSchema],
+		required: true,
+	},
+	created: {
 		type: String,
 		required: true,
 		unique: false,
-		trim: true,
-	},
-	created: {
-		type: Date,
-		default: Date.now,
-		set: (createdAtVal) => new Date(createdAtVal),
-		get: (createdAtVal) =>
-			new Date(createdAtVal).toLocaleDateString("en-US"),
+		trim: true
 	},
 	price: {
 		type: Number,
@@ -39,18 +60,16 @@ const artworkSchema = new Schema({
 		unique: false,
 		trim: true,
 	},
-    lore: {
-        type: String,
-        required: false,
-    },
-	categories: [
-		{
-			type: String,
-			required: true,
-			unique: false,
-			trim: true,
-		},
-	],
+	lore: {
+		type: String,
+		required: true,
+	},
+	categories: {
+		type: String,
+		required: true,
+		unique: false,
+		trim: true,
+	},
 });
 
 const Artwork = model("Artwork", artworkSchema);

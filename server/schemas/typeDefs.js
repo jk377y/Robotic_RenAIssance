@@ -1,45 +1,67 @@
 const { gql } = require("apollo-server-express");
 
-
-// needs modification
 const typeDefs = gql`
-  type Artist {
-    _id: ID!
-    name: String!
-    image: String!
-    age: Int!
+	type Artist {
+		name: String!
+		age: Int!
+		image: String!
+		story: String!
+	}
 
-    story: String!
-    work: [Artwork!]!
-  }
+	type Artwork {
+		_id: ID!
+		id: ID!
+		title: String!
+		artist: [Artist!]!
+		created: String!
+		price: Float!
+		quantity: Int!
+		storage_id: String!
+		lore: String!
+		categories: String!
+	}
 
-  type Artwork {
-    _id: ID!
-    title: String!
-    artist: [Artist!]!
-    created: String!
-    price: Float!
-    quantity: Int!
-    storage_id: String!
-    lore: String!
-    categories: String!
-  }
-  type Query {
-    artists: [Artist!]!
-    artwork: [Artwork!]!
-    categories: [Categories!]!
-    user: [User!]!
-  }
-  type Categories {
-    _id: ID!
-    name: String!
-  }
-  type User {
-    _id: ID!
-    username: String!
-    email: String!
-    password: String!
-  }
+	type User {
+		_id: ID!
+		username: String!
+		email: String!
+		password: String!
+	}
+
+	type Auth {
+		token: ID!
+		user: User
+	}
+
+	input ArtistInput {
+		name: String!
+		age: Int!
+		image: String!
+		story: String!
+	}
+
+	input ArtworkInput {
+		title: String!
+		artist: [ArtistInput!]!
+		price: Float!
+		quantity: Int!
+		storage_id: String!
+		lore: String!
+		categories: String!
+	}
+
+	type Query {
+		artwork(_id: ID!): Artwork
+		artworks: [Artwork!]!
+		user(_id: ID!): User
+		users: [User!]!
+	}
+
+	type Mutation {
+		createArtwork(input: ArtworkInput!): Artwork!
+		updateArtwork(_id: ID!, input: ArtworkInput!): Artwork!
+		deleteArtwork(_id: ID!): Artwork!
+	}
 `;
 
 module.exports = typeDefs;
