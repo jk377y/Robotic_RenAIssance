@@ -11,6 +11,9 @@ import { SingleArtworkView } from './components/pages/SingleArtworkView';
 import { Homepage } from './components/pages/Homepage';
 import { Gallery } from './components/pages/Gallery';
 
+// used for testing graphql : remove later
+import { Gql } from './components/pages/Gql';
+// ========================================
 
 const App = () => {
 
@@ -60,6 +63,13 @@ const App = () => {
     {/* <div className="">
       <Header/>
     </div> */}
+
+    
+    {/*used for testing graphql : remove later*/}
+    <Gql />
+    {/* ======================================== */}
+
+    
     </ThemeProvider>
     </>
   );
