@@ -45,7 +45,7 @@ const App = () => {
       darkTeal: "#72f8f750"
     },
     mobile: "768px",
-  }
+}
 
   return (
     <>
