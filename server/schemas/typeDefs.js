@@ -12,7 +12,7 @@ const typeDefs = gql`
 		_id: ID!
 		id: ID!
 		title: String!
-		artist: [Artist!]!
+		artist: Artist!
 		created: String!
 		price: Float!
 		quantity: Int!

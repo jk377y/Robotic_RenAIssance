@@ -13,6 +13,7 @@ import { Gallery } from './components/pages/Gallery';
 
 // used for testing graphql : remove later
 import { Gql } from './components/pages/Gql';
+import Gallerytest from './components/pages/Gallerytest';
 // ========================================
 
 const App = () => {
@@ -67,6 +68,7 @@ const App = () => {
     
     {/*used for testing graphql : remove later*/}
     <Gql />
+	<Gallerytest />
     {/* ======================================== */}
 
     

@@ -63,10 +63,10 @@ const Artwork = ({ artwork }) => {
 			{image && <img src={image} style={style} alt={artwork.title} />}
 			<p>_id: {artwork._id}</p>
 			<p>id: {artwork.id}</p>
-			<p>artist name: {artwork.artist[0].name}</p>
-			<p>artist story: {artwork.artist[0].story}</p>
-			<p>artist image: {artwork.artist[0].image}</p>
-			<p>artist age: {artwork.artist[0].age}</p>
+			<p>artist name: {artwork.artist.name}</p>
+			<p>artist story: {artwork.artist.story}</p>
+			<p>artist image: {artwork.artist.image}</p>
+			<p>artist age: {artwork.artist.age}</p>
 			<p>category: {artwork.categories}</p>
 			<p>created: {artwork.created}</p>
 			<p>price: {artwork.price}</p>

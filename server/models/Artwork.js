@@ -33,7 +33,7 @@ const artworkSchema = new Schema({
 		trim: true,
 	},
 	artist: {
-		type: [artistSchema],
+		type: artistSchema,
 		required: true,
 	},
 	created: {
