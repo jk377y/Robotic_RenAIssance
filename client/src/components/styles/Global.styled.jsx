@@ -15,4 +15,10 @@ export const GlobalStyles = createGlobalStyle`
     h1 {
         font-family: 'Orbitron', sans-serif;
     }
+    h2 {
+        font-size: 1.2rem;
+        padding: 0.2rem;
+        color: ${({theme}) => theme.colors.white};
+        font-weight: 300;
+    }
 `
