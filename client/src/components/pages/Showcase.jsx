@@ -91,3 +91,10 @@ const GalleryList = () => {
           handleClick={handleClick}
         />
         ))}
+        </div>
+		{selectedArtwork && (
+		  <div
+			className={`modalOverlay ${showModal ? "show" : ""}`}
+			onClick={handleClose}
+		  ></div>
+
