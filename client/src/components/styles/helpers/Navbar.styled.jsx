@@ -16,22 +16,28 @@ export const NavBarWrapper = styled.nav`
 export const NavItems = styled.div`
   display: flex;
   flex-direction: row;
+  
+
+  &:hover {
+    animation-play-state: running;
+  }
 
   a {
     font-size: 2.5rem;
     color: ${({theme}) => theme.colors.black};
+     
 
     svg:hover {
       /* transform: rotate(180deg); */
       animation: spin 1s infinite linear;
-      filter: invert(0.5) sepia(1) hue-rotate(100deg);
+      filter: invert(0.5) sepia(3) hue-rotate(180deg);
 
       @keyframes spin {
         from {
           transform: scale(1) rotate(0deg);
         }
         to {
-          transform: scale(1) rotate(180deg);
+          transform: scale(1) rotate(300deg);
         }
       }
     }
