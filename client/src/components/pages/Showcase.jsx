@@ -97,4 +97,9 @@ const GalleryList = () => {
 			className={`modalOverlay ${showModal ? "show" : ""}`}
 			onClick={handleClose}
 		  ></div>
+      <div className="modalContainer">
+			  <div className="modalContent">
+				<div className="modalHeader">
+				  <h5 className="modalTitle">{selectedArtwork.title}</h5>
+				</div>
 
