@@ -62,3 +62,8 @@ const GalleryList = () => {
 	const [showModal, setShowModal] = useState(false);
 	const [selectedImage, setSelectedImage] = useState(null); // new state variable to hold the image
   
+  const handleClose = () => setShowModal(false);
+	const handleShow = () => setShowModal(true);
+	const handleClick = (artwork) => {
+	  setSelectedArtwork(artwork);
+	  handleShow();
