@@ -1,7 +1,8 @@
-import React from 'react'
-
-export const Showcase = () => {
-  return (
-    <div>Showcase</div>
-  )
-}
+import {
+	ApolloClient,
+	InMemoryCache,
+	ApolloProvider,
+	useQuery,
+	gql,
+} from "@apollo/client";
+import React, { useState, useEffect } from "react";
