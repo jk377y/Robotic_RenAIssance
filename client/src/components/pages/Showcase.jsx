@@ -80,3 +80,14 @@ const GalleryList = () => {
     if (error) {
       return <div>Error: {error.message}</div>;
     }
+    return (
+      <div id="gallery" className="galleryMain">
+      <h1 className="galleryTitle">All Artworks On Display</h1>
+      <div className="galleryWrapper">
+        {data.artworks.map((artwork) => (
+        <Eachartwork
+          artwork={artwork}
+          key={artwork._id}
+          handleClick={handleClick}
+        />
+        ))}
