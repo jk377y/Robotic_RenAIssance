@@ -123,4 +123,24 @@ const GalleryList = () => {
 						<p>Price: {selectedArtwork.price}</p>
 						<p>Lore: {selectedArtwork.lore}</p>
 				  	</div>
+            /div>
+				<button className="modalCloseBtn" onClick={() => setSelectedArtwork(null)}>
+				  Back to Gallery
+				</button>
+			  </div>
+			</div>
+		  </div>
+		)}
+	  </div>
+	);
+  };
 
+const Gallerytest = () => {
+	return (
+		<ApolloProvider client={client}>
+			<GalleryList />
+		</ApolloProvider>
+	);
+};
+
+export default Gallerytest;
