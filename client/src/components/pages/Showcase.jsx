@@ -39,3 +39,11 @@ const ARTWORKS_QUERY = gql`
 		}
 	}
 `;
+
+const Eachartwork = ({ artwork, handleClick }) => {
+	const [image, setImage] = useState(null);
+	useEffect(() => {
+		const loadImage = async () => {
+			const module = await import(`../images/${artwork.image_id}.JPG`);
+			setImage(module.default);
+		};
