@@ -47,3 +47,11 @@ const Eachartwork = ({ artwork, handleClick }) => {
 			const module = await import(`../images/${artwork.image_id}.JPG`);
 			setImage(module.default);
 		};
+    loadImage();
+	}, [artwork.image_id]);
+	return (
+		<div onClick={() => handleClick(artwork)}>
+			{image && (<img className="galleryImages" src={image} alt={artwork.title} title={artwork.title} />)}
+		</div>
+	);
+};
