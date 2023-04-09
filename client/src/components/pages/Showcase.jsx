@@ -55,3 +55,10 @@ const Eachartwork = ({ artwork, handleClick }) => {
 		</div>
 	);
 };
+
+const GalleryList = () => {
+	const { loading, error, data } = useQuery(ARTWORKS_QUERY);
+	const [selectedArtwork, setSelectedArtwork] = useState(null);
+	const [showModal, setShowModal] = useState(false);
+	const [selectedImage, setSelectedImage] = useState(null); // new state variable to hold the image
+  
