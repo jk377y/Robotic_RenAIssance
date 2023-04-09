@@ -1,0 +1,10 @@
+.galleryWrapper {
+    background-color: red;
+}
+
+.galleryImages {
+    width: 300px;
+    height: 300px;
+    border: 2px solid green;
+    margin: 1rem;
+}

@@ -10,7 +10,13 @@ import { Register } from './components/pages/Register';
 import { SingleArtworkView } from './components/pages/SingleArtworkView';
 import { Homepage } from './components/pages/Homepage';
 import { Gallery } from './components/pages/Gallery';
+
+
+
+import { Gql } from './components/pages/Gql';
+import Gallerytest from './components/pages/Gallerytest';
 import { NavBar } from './components/helpercomponent/NavBar';
+
 
 const App = () => {
 
@@ -61,6 +67,14 @@ const App = () => {
     {/* <div className="">
       <Header/>
     </div> */}
+
+    
+    {/*used for testing graphql : remove later*/}
+    <Gql />
+	<Gallerytest />
+    {/* ======================================== */}
+
+    
     </ThemeProvider>
     </>
   );
