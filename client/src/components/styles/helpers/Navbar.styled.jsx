@@ -21,9 +21,10 @@ export const NavItems = styled.div`
     font-size: 2.5rem;
     color: ${({theme}) => theme.colors.black};
 
-    &:hover {
+    svg:hover {
       /* transform: rotate(180deg); */
       animation: spin 1s infinite linear;
+      filter: invert(0.5) sepia(1) hue-rotate(100deg);
 
       @keyframes spin {
         from {
