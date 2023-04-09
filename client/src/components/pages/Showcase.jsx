@@ -103,3 +103,10 @@ const GalleryList = () => {
 				  <h5 className="modalTitle">{selectedArtwork.title}</h5>
 				</div>
 
+        <div className="modalBody">
+					<div className="modalArtistDiv">
+						<p>Artist: {selectedArtwork.artist.name}</p>
+						<p>Age: {selectedArtwork.artist.age}</p>
+						<p>Bio: {selectedArtwork.artist.story}</p>
+					</div>
+
