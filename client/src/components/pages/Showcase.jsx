@@ -110,3 +110,9 @@ const GalleryList = () => {
 						<p>Bio: {selectedArtwork.artist.story}</p>
 					</div>
 
+          <div className="modalImageDiv">
+				  		{selectedImage && ( // conditionally render the image only when it's available
+							<img className="modalImage" src={selectedImage} alt={selectedArtwork.title} title={selectedArtwork.title} />
+				  		)}
+				  	</div>
+
