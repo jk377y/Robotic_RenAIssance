@@ -116,3 +116,11 @@ const GalleryList = () => {
 				  		)}
 				  	</div>
 
+            <div className="modalArtworkDetailDiv">
+						<p>Title: {selectedArtwork.title}</p>
+						<p>Created: {selectedArtwork.created}</p>
+						<p>Categories: {selectedArtwork.categories}</p>
+						<p>Price: {selectedArtwork.price}</p>
+						<p>Lore: {selectedArtwork.lore}</p>
+				  	</div>
+
