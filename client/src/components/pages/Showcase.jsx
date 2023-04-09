@@ -67,3 +67,9 @@ const GalleryList = () => {
 	const handleClick = (artwork) => {
 	  setSelectedArtwork(artwork);
 	  handleShow();
+    const loadImage = async () => {
+      const module = await import(`../images/${artwork.image_id}.JPG`);
+      setSelectedImage(module.default); // set the selected image as state
+      };
+      loadImage();
+    };
