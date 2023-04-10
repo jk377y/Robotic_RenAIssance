@@ -92,3 +92,35 @@
 .modalOverlay {
     background-color: rgba(0, 0, 0, 0.493);
 }
+
+.modalContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.664);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 75%;
+    height: 75%;
+    background-color: #1e576d;
+    z-index: 1;
+    margin: auto auto;
+}
+
+.modalHeader {
+    width: 100%;
+    height: 10%;
+}
