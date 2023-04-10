@@ -45,3 +45,22 @@
     color: white;
     font-size: 3rem;
 }
+
+.galleryWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    overflow-y: hidden;
+    height: 320px + 2rem;
+    width: 1100px;
+    background-color: #9ea8ac;
+    z-index: 1;
+}
+
+.galleryImages {
+    width: 300px;
+    height: 300px;
+    margin: 1rem;
+    border: 5px inset white;
+    border-radius: 10px;
+}
