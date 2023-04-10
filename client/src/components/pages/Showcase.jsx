@@ -84,7 +84,7 @@ const GalleryList = () => {
 	}
 	return (
 	  <div id="gallery" className="galleryMain">
-		<h1 className="galleryTitle">All Artworks On Display</h1>
+		<h1 className="galleryTitle">Ren<span>AI</span>ssance</h1>
 		<div className="galleryWrapper">
 		  {data.artworks.map((artwork) => (
 			<Eachartwork

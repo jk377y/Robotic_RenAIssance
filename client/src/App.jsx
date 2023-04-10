@@ -90,11 +90,11 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
     <>      
-      <ThemeProvider theme={theme}>
+      {/* <ThemeProvider theme={theme}>
         <GlobalStyles />
-        <NavBar />
+        <NavBar /> */}
         <Routes>
-              <Route 
+              {/* <Route 
                 path="/"
                 element={<Homepage />}
               />
@@ -105,21 +105,21 @@ function App() {
               <Route 
                 path="/register" 
                 element={<Register />}
-              />
+              /> */}
               <Route 
                 path="/showcase" 
                 element={<Showcase />}
               />
-              <Route 
+              {/* <Route 
                 path="/gallery/:galleryId" 
                 element={<SingleArtworkView />}
               />
               <Route 
                 path="/profile" 
                 element={<ArtistProfile />}
-              />
+              /> */}
             </Routes>
-      </ThemeProvider>
+      {/* </ThemeProvider> */}
     </>
     </Router>
     </ApolloProvider>
