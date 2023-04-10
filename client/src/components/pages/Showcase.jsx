@@ -1,4 +1,3 @@
-
 import {
 	ApolloClient,
 	InMemoryCache,
@@ -6,7 +5,7 @@ import {
 	useQuery,
 	gql,
 } from "@apollo/client";
-import React, { useState, useEffect } from "react";
+import { React, useState, useEffect } from "react";
 
 const client = new ApolloClient({
 	uri: "http://localhost:3001/graphql",
@@ -45,7 +44,7 @@ const Eachartwork = ({ artwork, handleClick }) => {
 	const [image, setImage] = useState(null);
 	useEffect(() => {
 		const loadImage = async () => {
-			const module = await import(`../images/${artwork.image_id}.JPG`);
+			const module = await import(`../../images/${artwork.image_id}.JPG`);
 			setImage(module.default);
 		};
 		loadImage();
@@ -69,7 +68,7 @@ const GalleryList = () => {
 	  setSelectedArtwork(artwork);
 	  handleShow();
 	  const loadImage = async () => {
-		const module = await import(`../images/${artwork.image_id}.JPG`);
+		const module = await import(`../../images/${artwork.image_id}.JPG`);
 		setSelectedImage(module.default); // set the selected image as state
 	  };
 	  loadImage();
@@ -133,7 +132,7 @@ const GalleryList = () => {
 	);
   };
 
-const Gallerytest = () => {
+const Showcase = () => {
 	return (
 		<ApolloProvider client={client}>
 			<GalleryList />
@@ -141,4 +140,4 @@ const Gallerytest = () => {
 	);
 };
 
-export default Gallerytest;
+export default Showcase;
