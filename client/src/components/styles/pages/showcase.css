@@ -143,3 +143,14 @@
     color: white;
     text-align: center;
 }
+
+.modalArtistDiv, .modalImageDiv, .modalArtworkDetailDiv {
+    width: 33%;
+}
+
+.modalArtistDiv {
+    color: rgb(216, 198, 159);
+    text-align: right;
+}
+
+.modalImageDiv {}
