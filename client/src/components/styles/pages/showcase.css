@@ -79,3 +79,16 @@
     align-items: center;
     gap: 3rem;
 }
+
+.artworkTextDiv1 {
+    width: 300px;
+    text-align: center;
+}
+
+.artworkTextDiv2 {
+    width: 300px;
+}
+
+.modalOverlay {
+    background-color: rgba(0, 0, 0, 0.493);
+}
