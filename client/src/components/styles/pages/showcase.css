@@ -28,3 +28,15 @@
 	position: relative;
 	overflow: hidden;
 }
+
+.galleryMain {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100vw;
+    height: 100vh;
+
+}
