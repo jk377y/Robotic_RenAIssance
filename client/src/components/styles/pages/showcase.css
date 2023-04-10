@@ -23,12 +23,7 @@
     z-index: -100;
 	position: relative;
 	overflow: hidden;
-    
 	line-height: 1.5;
-	background-image: url(./images/background.JPG);
-	background-size: cover;
-	background-repeat: no-repeat;
-	
 }
 
 .galleryMain {
