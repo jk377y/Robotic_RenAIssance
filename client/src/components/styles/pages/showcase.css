@@ -164,3 +164,15 @@
 .modalArtworkDetailDiv {
     color: rgb(216, 198, 159);
 }
+
+.modalCloseBtn {
+    width: 16rem;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    background-color: #526970;
+}
+
+.modalCloseBtn:hover {
+    background-color: #7c97a0;
+    color: white;
+}
