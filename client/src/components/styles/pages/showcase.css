@@ -153,4 +153,14 @@
     text-align: right;
 }
 
-.modalImageDiv {}
+.modalImage {
+    width: 400px;
+    height: 400px;
+    margin: 1rem;
+    border: 5px inset white;
+    border-radius: 10px;
+}
+
+.modalArtworkDetailDiv {
+    color: rgb(216, 198, 159);
+}
