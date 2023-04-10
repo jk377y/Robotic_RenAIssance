@@ -40,3 +40,8 @@
     height: 100vh;
 
 }
+
+.galleryTitle {
+    color: white;
+    font-size: 3rem;
+}
