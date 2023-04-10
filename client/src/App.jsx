@@ -107,8 +107,8 @@ function App() {
                 element={<Register />}
               />
               <Route 
-                path="/gallery" 
-                element={<Gallery />}
+                path="/showcase" 
+                element={<Showcase />}
               />
               <Route 
                 path="/gallery/:galleryId" 
@@ -117,10 +117,6 @@ function App() {
               <Route 
                 path="/profile" 
                 element={<ArtistProfile />}
-              />
-               <Route 
-                path="/showcase" 
-                element={<Showcase />}
               />
             </Routes>
       </ThemeProvider>
