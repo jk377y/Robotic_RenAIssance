@@ -1,0 +1,175 @@
+::-webkit-scrollbar {
+    height: 1.5rem;
+  }
+  
+  /* track */
+  ::-webkit-scrollbar-track {
+    background: #7b8386;
+  }
+  
+  /* handle */
+  ::-webkit-scrollbar-thumb {
+    background: #00c3ff;
+    border-radius: 10px;
+  }
+  
+  /* handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+  }
+
+  body {
+    width: 100vw;
+    z-index: -100;
+	position: relative;
+	overflow: hidden;
+	line-height: 1.5;
+}
+
+.galleryMain {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.galleryTitle {
+    color: white;
+    font-size: 3rem;
+}
+
+.galleryWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    overflow-y: hidden;
+    height: 320px + 2rem;
+    width: 1100px;
+    background-color: #9ea8ac;
+    z-index: 1;
+}
+
+.galleryImages {
+    width: 300px;
+    height: 300px;
+    margin: 1rem;
+    border: 5px inset white;
+    border-radius: 10px;
+}
+
+.artworkWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.artworkInsideWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.artworkTextDiv1 {
+    width: 300px;
+    text-align: center;
+}
+
+.artworkTextDiv2 {
+    width: 300px;
+}
+
+.modalOverlay {
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+.modalContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.664);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 75%;
+    height: 75%;
+    background-color: #1e576d;
+    z-index: 1;
+    margin: auto auto;
+}
+
+.modalHeader {
+    width: 100%;
+    height: 10%;
+}
+
+.modalTitle {
+    font-size: 2rem;
+}
+
+.modalBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+
+
+.modalTitle {
+    color: white;
+    text-align: center;
+}
+
+.modalArtistDiv, .modalImageDiv, .modalArtworkDetailDiv {
+    width: 33%;
+}
+
+.modalArtistDiv {
+    color: rgb(216, 198, 159);
+    text-align: right;
+}
+
+.modalImage {
+    width: 400px;
+    height: 400px;
+    margin: 1rem;
+    border: 5px inset white;
+    border-radius: 10px;
+}
+
+.modalArtworkDetailDiv {
+    color: rgb(216, 198, 159);
+}
+
+.modalCloseBtn {
+    width: 16rem;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    background-color: #526970;
+}
+
+.modalCloseBtn:hover {
+    background-color: #7c97a0;
+    color: white;
+}

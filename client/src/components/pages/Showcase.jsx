@@ -1,3 +1,5 @@
+import "../styles/pages/showcase.css";
+
 import {
 	ApolloClient,
 	InMemoryCache,
