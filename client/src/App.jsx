@@ -8,11 +8,45 @@ import { SingleArtworkView } from './components/pages/SingleArtworkView';
 import { Homepage } from './components/pages/Homepage';
 import { Gallery } from './components/pages/Gallery';
 import { NavBar } from './components/helpercomponent/NavBar';
+//by sosa 
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from '@apollo/client';
+import { setContext } from '@apollo/client/link/context';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+
+const httpLink = createHttpLink({
+  uri: '/graphql',
+});
+
+
+const authLink = setContext((_, { headers }) => {
+  
+  const token = localStorage.getItem('id_token');
+
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : '',
+    },
+  };
+});
+
+const client = new ApolloClient({
+  
+  link: authLink.concat(httpLink),
+  cache: new InMemoryCache(),
+});
+
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
 
-  const toggelForm = () => {
+  const toggelForm = (formName) => {
     setCurrentForm(formName);
   }
   const theme = {
@@ -49,22 +83,47 @@ function App() {
   };
 
   return (
+    <ApolloProvider client={client}>
+      <Router>
     <>
-      <div className="App">
-        {currentForm === 'login' ? <Login onFormSwitch{toggelForm} /> : <Register onFormSwitch{toggelForm} />}
-      </div>
+      
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <NavBar />
-        <Homepage />
-        <Login />
-        <Register />
-        <Gallery />
-        <SingleArtworkView />
-        <ArtistProfile />
+        <Routes>
+              <Route 
+                path="/"
+                element={<Homepage />}
+              />
+              <Route 
+                path="/login" 
+                element={<Login />}
+              />
+              <Route 
+                path="/register" 
+                element={<Register />}
+              />
+              <Route 
+                path="/gallery" 
+                element={<Gallery />}
+              />
+              <Route 
+                path="/gallery/:galleryId" 
+                element={<SingleArtworkView />}
+              />
+              <Route 
+                path="/profile" 
+                element={<ArtistProfile />}
+              />
+            </Routes>
       </ThemeProvider>
     </>
+    </Router>
+    </ApolloProvider>
   );
 }
 
 export default App;
+
+
+
