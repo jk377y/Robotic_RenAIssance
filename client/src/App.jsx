@@ -1,15 +1,11 @@
-// import { GlobalStyles } from './components/styles/Global.styled';
 import { GlobalStyles } from './components/styles/Global.styled';
 import { ThemeProvider } from 'styled-components';
-
-// import Header from './components/Header';
-// Import Pages
 import { ArtistProfile } from './components/pages/ArtistProfile';
 import { Login } from './components/pages/Login';
 import { Register } from './components/pages/Register';
 import { SingleArtworkView } from './components/pages/SingleArtworkView';
 import { Homepage } from './components/pages/Homepage';
-import { Showcase } from './components/pages/Showcase';
+import Showcase from './components/pages/Showcase';
 import { NavBar } from './components/helpercomponent/NavBar';
 
 
