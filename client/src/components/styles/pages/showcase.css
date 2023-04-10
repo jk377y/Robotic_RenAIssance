@@ -41,6 +41,7 @@
 .galleryTitle {
     color: rgba(67, 202, 255, 0.57);
     font-size: 3rem;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .galleryWrapper {
