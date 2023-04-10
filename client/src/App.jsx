@@ -1,13 +1,15 @@
 import { GlobalStyles } from './components/styles/Global.styled';
 import { ThemeProvider } from 'styled-components';
 import React, { useState } from 'react';
+
 import { ArtistProfile } from './components/pages/ArtistProfile';
 import { Login } from './components/pages/Login';
 import { Register } from './components/pages/Register';
 import { SingleArtworkView } from './components/pages/SingleArtworkView';
 import { Homepage } from './components/pages/Homepage';
-import { Gallery } from './components/pages/Gallery';
+import Showcase from './components/pages/Showcase';
 import { NavBar } from './components/helpercomponent/NavBar';
+
 //by sosa 
 import {
   ApolloClient,
@@ -43,12 +45,14 @@ const client = new ApolloClient({
 });
 
 
+
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
 
   const toggelForm = (formName) => {
     setCurrentForm(formName);
   }
+  
   const theme = {
     colors: {
       mayaBlue: 'rgba(67, 202, 255, 0.57)',
@@ -85,8 +89,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-    <>
-      
+    <>      
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <NavBar />
@@ -114,6 +117,10 @@ function App() {
               <Route 
                 path="/profile" 
                 element={<ArtistProfile />}
+              />
+               <Route 
+                path="/showcase" 
+                element={<Showcase />}
               />
             </Routes>
       </ThemeProvider>
