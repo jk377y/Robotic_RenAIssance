@@ -64,3 +64,18 @@
     border: 5px inset white;
     border-radius: 10px;
 }
+
+.artworkWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.artworkInsideWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
