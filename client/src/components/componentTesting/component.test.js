@@ -4,7 +4,7 @@ import { render } from "@testing-library/react";
 // import { Homepage } from "../pages/Homepage";
 import Showcase from "../pages/Showcase";
 import { Login } from "../pages/Login";
-
+import { Register } from "../pages/Register";
 
 
 // Component Rendering Tests
@@ -32,6 +32,10 @@ describe("Login component", () => {
 	});
 });
 
-
+describe("Register component", () => {
+	test("renders without crashing", () => {
+		render(<Register />);
+	});
+});
 
 
