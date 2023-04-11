@@ -45,6 +45,11 @@ const client = new ApolloClient({
 });
 
 function App() {
+  const [currentForm, setCurrentForm] = useState('login');
+
+  const toggleForm = (formName) => {
+    setCurrentForm(formName);
+  }
   
   const theme = {
     colors: {

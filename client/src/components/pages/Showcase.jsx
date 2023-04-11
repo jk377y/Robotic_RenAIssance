@@ -1,5 +1,6 @@
 import "../styles/pages/showcase.css";
 
+
 import {
 	ApolloClient,
 	InMemoryCache,
@@ -84,7 +85,7 @@ const GalleryList = () => {
 	}
 	return (
 	  <div id="gallery" className="galleryMain">
-		<h1 className="galleryTitle">All Artworks On Display</h1>
+		<h1 className="galleryTitle">Ren<span>AI</span>ssance Gallery</h1>
 		<div className="galleryWrapper">
 		  {data.artworks.map((artwork) => (
 			<Eachartwork
@@ -106,9 +107,9 @@ const GalleryList = () => {
 				</div>
 				<div className="modalBody">
 					<div className="modalArtistDiv">
-						<p>Artist: {selectedArtwork.artist.name}</p>
-						<p>Age: {selectedArtwork.artist.age}</p>
-						<p>Bio: {selectedArtwork.artist.story}</p>
+						<p><span className="art-caption">Artist:</span> {selectedArtwork.artist.name}</p>
+						<p><span className="art-caption">Age:</span> {selectedArtwork.artist.age}</p>
+						<p><span className="art-caption">Origin:</span> {selectedArtwork.artist.story}</p>
 					</div>
 					<div className="modalImageDiv">
 				  		{selectedImage && ( // conditionally render the image only when it's available
@@ -116,15 +117,15 @@ const GalleryList = () => {
 				  		)}
 				  	</div>
 					<div className="modalArtworkDetailDiv">
-						<p>Title: {selectedArtwork.title}</p>
-						<p>Created: {selectedArtwork.created}</p>
-						<p>Categories: {selectedArtwork.categories}</p>
-						<p>Price: {selectedArtwork.price}</p>
-						<p>Lore: {selectedArtwork.lore}</p>
+						<p><span className="art-caption">Title:</span> {selectedArtwork.title}</p>
+						<p><span className="art-caption">Created:</span> {selectedArtwork.created}</p>
+						<p><span className="art-caption">Categories:</span> {selectedArtwork.categories}</p>
+						<p><span className="art-caption">Price: </span>{selectedArtwork.price}</p>
+						<p><span className="art-caption">Lore:</span>  {selectedArtwork.lore}</p>
 				  	</div>
 				</div>
 				<button className="modalCloseBtn" onClick={() => setSelectedArtwork(null)}>
-				  Back to Gallery
+				  Back
 				</button>
 			  </div>
 			</div>
