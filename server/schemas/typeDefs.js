@@ -53,11 +53,14 @@ const typeDefs = gql`
 	type Query {
 		artwork(_id: ID!): Artwork
 		artworks: [Artwork!]!
-		user(_id: ID!): User
-		users: [User!]!
+
+		users: [User]
+		user(username: String!): User
 	}
 
 	type Mutation {
+		addUser(username: String!, email: String!, password: String!): Auth
+		login(username: String!, password: String!): Auth
 		createArtwork(input: ArtworkInput!): Artwork!
 		updateArtwork(_id: ID!, input: ArtworkInput!): Artwork!
 		deleteArtwork(_id: ID!): Artwork!
