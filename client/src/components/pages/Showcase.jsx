@@ -120,7 +120,7 @@ const GalleryList = () => {
 						<p><span className="art-caption">Title:</span> {selectedArtwork.title}</p>
 						<p><span className="art-caption">Created:</span> {selectedArtwork.created}</p>
 						<p><span className="art-caption">Categories:</span> {selectedArtwork.categories}</p>
-						<p>Price: {selectedArtwork.price}</p>
+						<p><span className="art-caption">Price:</span>{selectedArtwork.price}</p>
 						<p>Lore: {selectedArtwork.lore}</p>
 				  	</div>
 				</div>
