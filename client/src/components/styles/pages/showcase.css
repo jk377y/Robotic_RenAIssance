@@ -155,6 +155,7 @@
 .modalArtistDiv {
     color: rgb(216, 198, 159);
     text-align: right;
+    font-size: 20px;
 }
 
 .modalImage {
