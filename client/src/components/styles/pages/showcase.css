@@ -4,12 +4,12 @@
   
   /* track */
   ::-webkit-scrollbar-track {
-    background: #7b8386;
+    background: #04a5df00;
   }
   
   /* handle */
   ::-webkit-scrollbar-thumb {
-    background: #00c3ff;
+    background: rgba(67, 202, 255, 0.991);
     border-radius: 10px;
   }
   
@@ -24,6 +24,8 @@
 	position: relative;
 	overflow: hidden;
 	line-height: 1.5;
+    background-image: url('../../../images/roboticbackground.jpg');
+    object-fit: cover;
 }
 
 .galleryMain {
@@ -35,11 +37,11 @@
     gap: 3rem;
     width: 100vw;
     height: 100vh;
-
+   
 }
 
 .galleryTitle {
-    color: rgba(67, 202, 255, 0.57);
+    color: rgba(67, 202, 255, 0.963);
     font-size: 3rem;
     font-family: 'Orbitron', sans-serif;
 }
@@ -51,7 +53,7 @@
     overflow-y: hidden;
     height: 320px + 2rem;
     width: 1100px;
-    background-color: #9ea8ac;
+    background-color: #9ea8ac12;
     z-index: 1;
 }
 
@@ -81,6 +83,7 @@
 .artworkTextDiv1 {
     width: 300px;
     text-align: center;
+   
 }
 
 .artworkTextDiv2 {
@@ -103,6 +106,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .modalContent {

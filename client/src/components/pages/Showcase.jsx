@@ -1,5 +1,6 @@
 import "../styles/pages/showcase.css";
 
+
 import {
 	ApolloClient,
 	InMemoryCache,
@@ -108,7 +109,7 @@ const GalleryList = () => {
 					<div className="modalArtistDiv">
 						<p>Artist: {selectedArtwork.artist.name}</p>
 						<p>Age: {selectedArtwork.artist.age}</p>
-						<p>Bio: {selectedArtwork.artist.story}</p>
+						<p>Date-of-Build: {selectedArtwork.artist.story}</p>
 					</div>
 					<div className="modalImageDiv">
 				  		{selectedImage && ( // conditionally render the image only when it's available
