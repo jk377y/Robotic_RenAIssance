@@ -1,20 +1,24 @@
 import React from 'react';
 import { render } from "@testing-library/react";
-import { App } from "../../App";
+// import { App } from "../../App";
+import { Homepage } from "../pages/Homepage";
 
 
 
 
 
+// Component Rendering Tests
+// describe("App component", () => {
+// 	test("renders without crashing", () => {
+// 		render(<App />);
+// 	});
+// });
 
-Component Rendering Tests
-describe("App component", () => {
+describe("Homepage component", () => {
 	test("renders without crashing", () => {
-		render(<App />);
+		render(<Homepage />);
 	});
 });
-
-
 
 
 
