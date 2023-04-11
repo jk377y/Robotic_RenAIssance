@@ -3,7 +3,7 @@ import { render } from "@testing-library/react";
 // import { App } from "../../App";
 // import { Homepage } from "../pages/Homepage";
 import Showcase from "../pages/Showcase";
-
+import { Login } from "../pages/Login";
 
 
 
@@ -26,7 +26,11 @@ describe("Showcase component", () => {
 	});
 });
 
-
+describe("Login component", () => {
+	test("renders without crashing", () => {
+		render(<Login />);
+	});
+});
 
 
 
