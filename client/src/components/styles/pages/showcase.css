@@ -1,21 +1,34 @@
 ::-webkit-scrollbar {
-    height: 1.5rem;
+    height: 5rem;
   }
   
   /* track */
   ::-webkit-scrollbar-track {
     background: #04a5df00;
+    
   }
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; 
+ border-radius: 20px;
+}
   
   /* handle */
   ::-webkit-scrollbar-thumb {
-    background: rgba(67, 202, 255, 0.991);
-    border-radius: 10px;
+    background-image: url('../../../images/roboicon.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    mix-blend-mode: lighten;
+    background-blend-mode: screen;
+    background-color: transparent;
+    border-radius: 50%;
+    /* background: rgba(67, 202, 255, 0.991); */
+    /* border-radius: 10px; */
   }
   
-  /* handle on hover */
+ 
   ::-webkit-scrollbar-thumb:hover {
-    background: #ffffff;
+    cursor: hand;
   }
 
   body {
