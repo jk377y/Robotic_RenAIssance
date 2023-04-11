@@ -7,9 +7,8 @@ export const Homepage = () => {
     <HomepageSection>
     <HomepageHeading>Robotic Ren<span>AI</span>ssance</HomepageHeading>
     </HomepageSection>
-    <body>
-    
-    </body>
+    <div className="container"></div>
+
     </>
     
 }
