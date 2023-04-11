@@ -3,7 +3,7 @@ mongoose.set('strictQuery', false);
 
 mongoose.connect(
 	process.env.MONGODB_URI ||
-		"mongodb://127.0.0.1:27017/robotic_renaissance",
+		"mongodb+srv://admin:adminpasswordadmin@robotic-renaissance.uhtmdad.mongodb.net/robotic-renaissance",
 	{
 		useNewUrlParser: true,
 		useUnifiedTopology: true,

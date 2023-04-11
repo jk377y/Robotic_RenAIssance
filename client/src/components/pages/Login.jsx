@@ -92,5 +92,3 @@ export const Login = (props) => {
     </main>
   );
 };
-
-
