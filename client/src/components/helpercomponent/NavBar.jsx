@@ -10,6 +10,8 @@ export const NavBar = () => {
         <ToolTip title={<h2>Click to Login or Register</h2>} placement="left" arrow>
         <a href="/login" target="_blank"><VscGear style={{ stroke: "url(#blue-gradient)" }}/></a> 
         </ToolTip> 
+        <a href="/">Can I get a Hoiyyyaaaaaaaah</a> 
+        <a href="/showcase">Showcase</a>
         </NavItems>
     </NavBarWrapper>   
     </>
