@@ -16,18 +16,26 @@ const server = new ApolloServer({
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static('public'));
 
-
+// Serve static files from the React build directory
 if (process.env.NODE_ENV === "production") {
 	app.use(express.static(path.join(__dirname, "../client/build")));
 }
 
-// middleware for images
+//! REMOVE middleware for images 
 // app.use(express.static('public'));
 
-app.get("/", (req, res) => {
-	res.sendFile(path.join(__dirname, "../client/build/index.html"));
+//! REMOVE probably removing this before final deployment
+// app.get("/", (req, res) => {
+// 	res.sendFile(path.join(__dirname, "../client/build/index.html"));
+// });
+
+app.get("*", (req, res) => {
+	let url = path.join(__dirname, "../client/build", "index.html");
+	if (!url.startsWith("/app/"))
+		// since we're on local windows
+		url = url.substring(1);
+	res.sendFile(url);
 });
 
 // Create a new instance of an Apollo server with the GraphQL schema
@@ -35,13 +43,16 @@ const startApolloServer = async (typeDefs, resolvers) => {
 	await server.start();
 	server.applyMiddleware({ app });
 
+	// Start listening for incoming requests
+	app.listen(PORT, () => {
+		console.log(`API server running on port ${PORT}!`);
+		console.log(
+			`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`
+		);
+	});
+
 	db.once("open", () => {
-		app.listen(PORT, () => {
-			console.log(`API server running on port ${PORT}!`);
-			console.log(
-				`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`
-			);
-		});
+		console.log("Connected to MongoDB database.");
 	});
 };
 
