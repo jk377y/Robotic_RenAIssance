@@ -37,5 +37,3 @@ describe("Showcase component", () => {
 // 		render(<Register />);
 // 	});
 // });
-
-
