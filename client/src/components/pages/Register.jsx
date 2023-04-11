@@ -25,7 +25,7 @@ export const Register = () => {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    window.location.href='/showcase'
+    // window.location.href='/showcase'
     console.log(formState);
 
     try {
@@ -34,6 +34,7 @@ export const Register = () => {
       });
 
       Auth.login(data.addUser.token);
+      window.location.href='/showcase'
     } catch (e) {
       console.error(e);
     }

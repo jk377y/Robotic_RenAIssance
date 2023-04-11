@@ -24,14 +24,14 @@ const resolvers = {
 			const token = signToken(user);
 			return { token, user };
 		},
-		login: async (parent, { username, password }) => {
-			const user = await User.findOne({ username });
+		login: async (parent, { email, password }) => {
+			const user = await User.findOne({ email });
 			if (!user) {
-				throw new AuthenticationError('No human found with this username and password!');
+				throw new AuthenticationError('No human found with this email and password!');
 			}
 			const correctPw = await user.isCorrectPassword(password);
 			if (!correctPw) {
-				throw new AuthenticationError('No human found with this username and password!');
+				throw new AuthenticationError('No human found with this email and password!');
 			}
 			const token = signToken(user);
 
