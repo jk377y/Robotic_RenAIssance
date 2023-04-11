@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
 export const Register = (props) => {
-    const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
     const onFormSwitch = (form) => {
         window.location.href='/login'
     };
@@ -15,8 +15,8 @@ export const Register = (props) => {
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="name">Full name</label>
-                <input value={name} type="text" id="name" placeholder="Full name" onChange={(e) => setName(e.target.value)} />
+                <label htmlFor="username">username</label>
+                <input value={username} type="text" id="username" placeholder="username" onChange={(e) => setUsername(e.target.value)} />
                 <div>
                     <label htmlFor="email">Email:</label>
                     <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" id="email" placeholder="user@email.com" name="email" />
