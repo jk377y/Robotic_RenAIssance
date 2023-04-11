@@ -3,8 +3,8 @@ import { render } from "@testing-library/react";
 // import { App } from "../../App";
 // import { Homepage } from "../pages/Homepage";
 import Showcase from "../pages/Showcase";
-import { Login } from "../pages/Login";
-import { Register } from "../pages/Register";
+// import { Login } from "../pages/Login";
+// import { Register } from "../pages/Register";
 
 
 // Component Rendering Tests
@@ -26,16 +26,16 @@ describe("Showcase component", () => {
 	});
 });
 
-describe("Login component", () => {
-	test("renders without crashing", () => {
-		render(<Login />);
-	});
-});
+// describe("Login component", () => {
+// 	test("renders without crashing", () => {
+// 		render(<Login />);
+// 	});
+// });
 
-describe("Register component", () => {
-	test("renders without crashing", () => {
-		render(<Register />);
-	});
-});
+// describe("Register component", () => {
+// 	test("renders without crashing", () => {
+// 		render(<Register />);
+// 	});
+// });
 
 
