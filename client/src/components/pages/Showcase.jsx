@@ -125,7 +125,7 @@ const GalleryList = () => {
 				  	</div>
 				</div>
 				<button className="modalCloseBtn" onClick={() => setSelectedArtwork(null)}>
-				  Back to Gallery
+				  Back
 				</button>
 			  </div>
 			</div>

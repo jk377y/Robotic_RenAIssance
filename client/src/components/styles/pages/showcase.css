@@ -118,7 +118,7 @@
     gap: 3rem;
     width: 75%;
     height: 75%;
-    background-color: #1e576d;
+    background-color: #4c849a;
     z-index: 1;
     margin: auto auto;
     border-radius: 12px;
@@ -162,7 +162,7 @@
     height: 400px;
     margin: 1rem;
     border: 5px inset white;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.499);
 }
 
@@ -175,8 +175,9 @@
     font-size: 2rem;
     margin-bottom: 4rem;
     background-color: #526970;
-    border-radius: 12px;
-    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.499);
+    border-radius: 10px;
+    border: 4px inset white;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.499);
 }
 
 .modalCloseBtn:hover {
