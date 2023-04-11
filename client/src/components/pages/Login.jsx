@@ -1,14 +1,14 @@
 import { useState } from 'react';
 
 export const Login = ({ onClose }) => {
-    const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const onFormSwitch = (form) => {
         window.location.href='/register'
     };
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(email);
+        console.log(username);
     };
 
     return (
@@ -17,8 +17,8 @@ export const Login = ({ onClose }) => {
             <form onSubmit={handleSubmit} className="form-container">
                 <h2>Login</h2>
                 <div>
-                    <label htmlFor="email">Email:</label>
-                    <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" id="email" placeholder="user@email.com" name="email" />
+                    <label htmlFor="username">Username:</label>
+                    <input value={username} onChange={(e) => setUsername(e.target.value)} type="username" id="username" placeholder="username" name="username" />
                 </div>
                 <div>
                     <label htmlFor="password">Password:</label>
