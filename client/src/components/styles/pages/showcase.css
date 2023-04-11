@@ -168,13 +168,14 @@
 
 .modalArtworkDetailDiv {
     color: rgb(216, 198, 159);
+    font-size: 20px;
 }
 
 .modalCloseBtn {
     width: 16rem;
     font-size: 2rem;
     margin-bottom: 4rem;
-    background-color: #526970;
+    background-color: #4c849a;
     border-radius: 10px;
     border: 4px inset white;
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.499);
@@ -187,4 +188,9 @@
 
 span {
     color: black;
+}
+
+.art-caption {
+    font-size: 27px;
+    color: rgb(216, 198, 159);
 }
