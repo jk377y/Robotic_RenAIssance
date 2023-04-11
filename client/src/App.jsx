@@ -1,16 +1,19 @@
+//importing styled components
 import { GlobalStyles } from './components/styles/Global.styled';
 import { ThemeProvider } from 'styled-components';
-import React, { useState } from 'react';
 
-import { ArtistProfile } from './components/pages/ArtistProfile';
+//importing login/register
+// import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+//importing components
 import { Login } from './components/pages/Login';
 import { Register } from './components/pages/Register';
-import { SingleArtworkView } from './components/pages/SingleArtworkView';
 import { Homepage } from './components/pages/Homepage';
 import Showcase from './components/pages/Showcase';
 import { NavBar } from './components/helpercomponent/NavBar';
 
-//by sosa 
+//importing gql functionality
 import {
   ApolloClient,
   InMemoryCache,
@@ -18,13 +21,10 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
-
 
 const authLink = setContext((_, { headers }) => {
   
@@ -43,8 +43,6 @@ const client = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
 });
-
-
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
@@ -109,14 +107,6 @@ function App() {
               <Route 
                 path="/showcase" 
                 element={<Showcase />}
-              />
-              <Route 
-                path="/gallery/:galleryId" 
-                element={<SingleArtworkView />}
-              />
-              <Route 
-                path="/profile" 
-                element={<ArtistProfile />}
               />
             </Routes>
       </ThemeProvider>
