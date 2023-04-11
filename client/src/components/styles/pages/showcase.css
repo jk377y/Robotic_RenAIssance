@@ -154,7 +154,7 @@
 
 .modalArtistDiv {
     color: rgb(216, 198, 159);
-    text-align: right;
+    text-align: center;
     font-size: 20px;
     background-color: rgba(54, 53, 53, 0.515);
     border-radius: 10px;
@@ -172,6 +172,9 @@
 .modalArtworkDetailDiv {
     color: rgb(216, 198, 159);
     font-size: 20px;
+    background-color: rgba(54, 53, 53, 0.515);
+    padding-left: 6px;
+    border-radius: 10px;
 }
 
 .modalCloseBtn {
