@@ -3,7 +3,7 @@ import { GlobalStyles } from './components/styles/Global.styled';
 import { ThemeProvider } from 'styled-components';
 
 //importing login/register
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 //importing components
