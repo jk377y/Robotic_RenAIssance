@@ -107,7 +107,7 @@ const GalleryList = () => {
 				</div>
 				<div className="modalBody">
 					<div className="modalArtistDiv">
-						<p>Artist: {selectedArtwork.artist.name}</p>
+						<p><span className="art-caption">Artist:</span> {selectedArtwork.artist.name}</p>
 						<p>Age: {selectedArtwork.artist.age}</p>
 						<p>Date-of-Build: {selectedArtwork.artist.story}</p>
 					</div>
@@ -120,8 +120,8 @@ const GalleryList = () => {
 						<p><span className="art-caption">Title:</span> {selectedArtwork.title}</p>
 						<p><span className="art-caption">Created:</span> {selectedArtwork.created}</p>
 						<p><span className="art-caption">Categories:</span> {selectedArtwork.categories}</p>
-						<p><span className="art-caption">Price:</span>{selectedArtwork.price}</p>
-						<p>Lore: {selectedArtwork.lore}</p>
+						<p><span className="art-caption">Price: </span>{selectedArtwork.price}</p>
+						<p><span className="art-caption">Lore:</span>  {selectedArtwork.lore}</p>
 				  	</div>
 				</div>
 				<button className="modalCloseBtn" onClick={() => setSelectedArtwork(null)}>
