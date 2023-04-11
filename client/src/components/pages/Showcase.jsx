@@ -118,7 +118,7 @@ const GalleryList = () => {
 				  	</div>
 					<div className="modalArtworkDetailDiv">
 						<p><span className="art-caption">Title:</span> {selectedArtwork.title}</p>
-						<p>Created: {selectedArtwork.created}</p>
+						<p><span className="art-caption">Created:</span> {selectedArtwork.created}</p>
 						<p>Categories: {selectedArtwork.categories}</p>
 						<p>Price: {selectedArtwork.price}</p>
 						<p>Lore: {selectedArtwork.lore}</p>
