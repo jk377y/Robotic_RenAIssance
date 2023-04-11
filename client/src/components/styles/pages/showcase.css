@@ -175,6 +175,8 @@
     font-size: 2rem;
     margin-bottom: 4rem;
     background-color: #526970;
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.499);
 }
 
 .modalCloseBtn:hover {
