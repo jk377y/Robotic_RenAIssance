@@ -16,6 +16,20 @@ const client = new ApolloClient({
 	cache: new InMemoryCache(),
 });
 
+const styles = {
+	notLoggedInAlert: {
+		fontSize: '5rem',
+		color: 'red',
+		fontFamily: 'sans-serif',
+		fontWeight: 'bolder',
+		display: 'flex',
+		justifyContent: 'center',
+		width: '25%',
+		marginLeft: '37.5%',
+		marginTop: '6rem'
+	}
+}
+
 const ARTWORKS_QUERY = gql`
 	query {
 		users {
@@ -207,7 +221,11 @@ const Showcase = () => {
 		</ApolloProvider>
 	);
 	} else {
-		console.log('you are not logged in')
+		return (
+		<div>
+		<h2 style={styles.notLoggedInAlert}> YOU NEED TO LOGIN TO VIEW THIS CONTENT</h2>
+		</div>
+		)
 	}
 };
 
