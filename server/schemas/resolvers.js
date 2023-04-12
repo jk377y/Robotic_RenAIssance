@@ -37,21 +37,21 @@ const resolvers = {
 
 			return { token, user };
 		},
-		createArtwork: async (parent, { input }) => {
-			const artwork = new Artwork(input);
-			await artwork.save();
-			return artwork;
-		},
-		updateArtwork: async (parent, { id, input }) => {
-			const artwork = await Artwork.findByIdAndUpdate(id, input, {
-				new: true,
-			});
-			return artwork;
-		},
-		deleteArtwork: async (parent, { id }) => {
-			const artwork = await Artwork.findByIdAndDelete(id);
-			return artwork;
-		},
+		// createArtwork: async (parent, { input }) => {
+		// 	const artwork = new Artwork(input);
+		// 	await artwork.save();
+		// 	return artwork;
+		// },
+		// updateArtwork: async (parent, { id, input }) => {
+		// 	const artwork = await Artwork.findByIdAndUpdate(id, input, {
+		// 		new: true,
+		// 	});
+		// 	return artwork;
+		// },
+		// deleteArtwork: async (parent, { id }) => {
+		// 	const artwork = await Artwork.findByIdAndDelete(id);
+		// 	return artwork;
+		// },
 	},
 };
 
