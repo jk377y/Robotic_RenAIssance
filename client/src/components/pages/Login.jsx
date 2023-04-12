@@ -5,6 +5,64 @@ import { LOGIN_USER } from '../../utils/mutations';
 
 import Auth from '../../utils/auth';
 
+const styles = {
+  formBody: {
+    margin: '0 auto',
+    // border: "2px solid red",
+    display: 'flex',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    width: '40%',
+    minWidth: '200px'
+  },
+  mainBody: {
+    margin: '0 auto',
+    // border: '2px solid black',
+    display: 'flex',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 100, 0.563)',
+    paddingTop: '2rem',
+    paddingBottom: '3rem',
+    maxWidth: '40%',
+    minWidth: '250px',
+    borderRadius: '3px'
+    
+  },
+  formInput: {
+    marginTop: '1rem',
+    borderStyle: 'none',
+    height: '2rem'
+  },
+
+  buttonSubmit: {
+    marginTop: '1rem',
+    borderStyle: 'none',
+    height: '2rem',
+    backgroundColor: 'lightblue',
+    color: 'black',
+    fontSize: '1.5rem',
+    fontFamily: 'sans-serif',
+    maxWidth: '30%',
+    minWidth: '100px'
+  },
+
+  reroute: {
+    display: 'flex',
+    fontFamily: 'sans-serif',
+    justifyContent: 'center',
+    marginTop: '2rem',
+    color: 'whitesmoke',
+    
+  },
+
+  linkSpan: {
+    textDecoration: 'none',
+    color: 'red'
+  }
+}
+
 export const Login = (props) => {
   const [formState, setFormState] = useState({ email: '', password: '' });
   const [login, { error, data }] = useMutation(LOGIN_USER);
@@ -45,18 +103,17 @@ export const Login = (props) => {
   return (
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
-        <div className="card">
-          <h4 className="card-header bg-dark text-light p-2">Login</h4>
-          <div className="card-body">
+        <div style={styles.mainBody}>
+          <h4 className="galleryTitle">Login</h4>
             {data ? (
               <p>
                 Success! You may now head{' '}
                 <Link to="/showcase">back to the homepage.</Link>
               </p>
             ) : (
-              <form onSubmit={handleFormSubmit}>
+              <form style={styles.formBody} onSubmit={handleFormSubmit}>
                 <input
-                  className="form-input"
+                  style={styles.formInput}
                   placeholder="Your email"
                   name="email"
                   type="email"
@@ -64,7 +121,7 @@ export const Login = (props) => {
                   onChange={handleChange}
                 />
                 <input
-                  className="form-input"
+                  style={styles.formInput}
                   placeholder="******"
                   name="password"
                   type="password"
@@ -72,13 +129,19 @@ export const Login = (props) => {
                   onChange={handleChange}
                 />
                 <button
-                  className="btn btn-block btn-primary"
-                  style={{ cursor: 'pointer' }}
+                  // style={styles.formInput}
+                  id="loginSubmitButton"
+                  style={styles.buttonSubmit}
+                  // style={{ cursor: 'pointer' }}
                   type="submit"
                 >
-                  Submit
+                  submit
                 </button>
+                <div style={styles.reroute}>
+                  <p>Need to sign up? Go <Link to="/register" style={styles.linkSpan}>here</Link></p>
+                </div>
               </form>
+              
             )}
 
             {error && (
@@ -87,8 +150,9 @@ export const Login = (props) => {
               </div>
             )}
           </div>
+          
         </div>
-      </div>
+        
     </main>
   );
 };
