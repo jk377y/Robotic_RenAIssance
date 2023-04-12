@@ -46,6 +46,20 @@ const styles = {
     fontFamily: 'sans-serif',
     maxWidth: '30%',
     minWidth: '100px'
+  },
+
+  reroute: {
+    display: 'flex',
+    fontFamily: 'sans-serif',
+    justifyContent: 'center',
+    marginTop: '2rem',
+    color: 'whitesmoke',
+    
+  },
+
+  linkSpan: {
+    textDecoration: 'none',
+    color: 'red'
   }
 }
 
@@ -123,7 +137,11 @@ export const Login = (props) => {
                 >
                   submit
                 </button>
+                <div style={styles.reroute}>
+                  <p>Need to sign up? Go <Link to="/register" style={styles.linkSpan}>here</Link></p>
+                </div>
               </form>
+              
             )}
 
             {error && (
@@ -132,7 +150,9 @@ export const Login = (props) => {
               </div>
             )}
           </div>
+          
         </div>
+        
     </main>
   );
 };
