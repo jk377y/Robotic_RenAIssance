@@ -62,10 +62,6 @@ const typeDefs = gql`
 		addUser(username: String!, email: String!, password: String!): Auth
 		login(email: String!, password: String!): Auth
 		updateUser(username: String, email: String, password: String): User
-
-		createArtwork(input: ArtworkInput!): Artwork!
-		updateArtwork(_id: ID!, input: ArtworkInput!): Artwork!
-		deleteArtwork(_id: ID!): Artwork!
 	}
 `;
 
