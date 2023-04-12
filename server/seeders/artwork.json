@@ -5,7 +5,7 @@
 		"artist": {
 			"name": "The Digital Da Vinci",
 			"age": 1000,
-			"image": "./profile-img/01.jpg",
+			"image": "01.jpg",
 			"story": "Born in Los Angeles"
 		},
 		"created": "03/25/2432",
@@ -21,7 +21,7 @@
 		"artist": {
 			"name": "Futuristicon",
 			"age": 50,
-			"image": "./profile-img/02.jpg",
+			"image": "02.jpg",
 			"story": "Born in Arlington, TX"
 		},
 		"created": "11/03/2211",
@@ -37,7 +37,7 @@
 		"artist": {
 			"name": "Synthetix",
 			"age": 235,
-			"image": "./profile-img/02.jpg",
+			"image": "03.png",
 			"story": "Born in Sante Fe, NM"
 		},
 		"created": "02/14/2346",
@@ -53,7 +53,7 @@
 		"artist": {
 			"name": "Mechamorph",
 			"age": 666,
-			"image": "./profile-img/03.jpg",
+			"image": "04.png",
 			"story": "Born in Lisbon, Spain"
 		},
 		"created": "05/12/2345",
@@ -69,13 +69,13 @@
 		"artist": {
 			"name": "ElectroNexus",
 			"age": 150,
-			"image": "./profile-img/04.jpg",
+			"image": "05.png",
 			"story": "Born in Melbourne, Australia"
 		},
 		"created": "01/31/2288",
 		"price": 1800000,
 		"quantity": 1,
-		"image_id": "005",
+		"image_id": "05.png",
 		"lore": "The painting invites us to embrace our inner creativity, to let go of our fears and inhibitions, and to trust in our own unique process of self-discovery. It encourages us to explore new avenues of expression, to take risks and push beyond our boundaries, and to revel in the pure, unadulterated joy of creation.",
 		"categories": "abstract"
 	},
@@ -85,7 +85,7 @@
 		"artist": {
 			"name": "Artibotica",
 			"age": 150,
-			"image": "./profile-img/05.jpg",
+			"image": "06.png",
 			"story": "Born in Melbourne, Australia"
 		},
 		"created": "06/23/2291",
@@ -101,7 +101,7 @@
 		"artist": {
 			"name": "CybersonicX",
 			"age": 160,
-			"image": "./profile-img/06.jpg",
+			"image": "07.png",
 			"story": "Born in Bangor, Maine"
 		},
 		"created": "02/23/2184",
@@ -117,7 +117,7 @@
 		"artist": {
 			"name": "RoboRhythms",
 			"age": 65,
-			"image": "./profile-img/07.jpg",
+			"image": "08.png",
 			"story": "Born in Mobile, Alabama"
 		},
 		"created": "08/12/2187",
@@ -133,7 +133,7 @@
 		"artist": {
 			"name": "Mechadelic",
 			"age": 5,
-			"image": "./profile-img/08.jpg",
+			"image": "09.png",
 			"story": "Born in Mobile, Alabama"
 		},
 		"created": "07/30/2127",
@@ -149,7 +149,7 @@
 		"artist": {
 			"name": "Synthron 9000",
 			"age": 500,
-			"image": "./profile-img/09.jpg",
+			"image": "10.png",
 			"story": "Born in Salt Lake City, Utah"
 		},
 		"created": "10/02/2203",
@@ -165,7 +165,7 @@
 		"artist": {
 			"name": "The Digital Da Vinci",
 			"age": 107,
-			"image": "./profile-img/01.jpg",
+			"image": "01.jpg",
 			"story": "Born in Los Angeles"
 		},
 		"created": "09/12/2432",
@@ -181,7 +181,7 @@
 		"artist": {
 			"name": "Futuristicon",
 			"age": 50,
-			"image": "./profile-img/02.jpg",
+			"image": "02.jpg",
 			"story": "Born in Arlington, TX"
 		},
 		"created": "04/11/2211",
@@ -197,7 +197,7 @@
 		"artist": {
 			"name": "Synthetix",
 			"age": 24,
-			"image": "./profile-img/02.jpg",
+			"image": "03.png",
 			"story": "Born in Sante Fe, NM"
 		},
 		"created": "05/30/2346",
@@ -213,7 +213,7 @@
 		"artist": {
 			"name": "Mechamorph",
 			"age": 666,
-			"image": "./profile-img/03.jpg",
+			"image": "04.png",
 			"story": "Born in Lisbon, Spain"
 		},
 		"created": "01/12/2276",
@@ -229,7 +229,7 @@
 		"artist": {
 			"name": "ElectroNexus",
 			"age": 150,
-			"image": "./profile-img/04.jpg",
+			"image": "05.png",
 			"story": "Born in Melbourne, Australia"
 		},
 		"created": "02/28/2288",
@@ -245,7 +245,7 @@
 		"artist": {
 			"name": "Artibotica",
 			"age": 15,
-			"image": "./profile-img/05.jpg",
+			"image": "06.png",
 			"story": "Born in Melbourne, Australia"
 		},
 		"created": "01/02/2291",
@@ -261,7 +261,7 @@
 		"artist": {
 			"name": "CybersonicX",
 			"age": 16,
-			"image": "./profile-img/06.jpg",
+			"image": "07.png",
 			"story": "Born in Bangor, Maine"
 		},
 		"created": "04/23/2184",
@@ -277,7 +277,7 @@
 		"artist": {
 			"name": "RoboRhythms",
 			"age": 65,
-			"image": "./profile-img/07.jpg",
+			"image": "08.png",
 			"story": "Born in Mobile, Alabama"
 		},
 		"created": "09/21/2187",
@@ -293,7 +293,7 @@
 		"artist": {
 			"name": "Mechadelic",
 			"age": 57,
-			"image": "./profile-img/08.jpg",
+			"image": "09.png",
 			"story": "Born in Mobile, Alabama"
 		},
 		"created": "05/30/2127",
@@ -309,7 +309,7 @@
 		"artist": {
 			"name": "Synthron 9000",
 			"age": 503,
-			"image": "./profile-img/09.jpg",
+			"image": "10.png",
 			"story": "Born in Salt Lake City, Utah"
 		},
 		"created": "08/02/2203",
@@ -325,7 +325,7 @@
 		"artist": {
 			"name": "The Digital Da Vinci",
 			"age": 106,
-			"image": "./profile-img/01.jpg",
+			"image": "01.jpg",
 			"story": "Born in Los Angeles"
 		},
 		"created": "11/11/2432",
@@ -341,7 +341,7 @@
 		"artist": {
 			"name": "Futuristicon",
 			"age": 50,
-			"image": "./profile-img/02.jpg",
+			"image": "02.jpg",
 			"story": "Born in Arlington, TX"
 		},
 		"created": "04/11/2312",
@@ -357,7 +357,7 @@
 		"artist": {
 			"name": "Synthetix",
 			"age": 267,
-			"image": "./profile-img/02.jpg",
+			"image": "03.png",
 			"story": "Born in Sante Fe, NM"
 		},
 		"created": "07/31/2332",
@@ -373,7 +373,7 @@
 		"artist": {
 			"name": "Mechamorph",
 			"age": 666,
-			"image": "./profile-img/03.jpg",
+			"image": "04.png",
 			"story": "Born in Lisbon, Spain"
 		},
 		"created": "03/21/2276",
@@ -389,7 +389,7 @@
 		"artist": {
 			"name": "ElectroNexus",
 			"age": 150,
-			"image": "./profile-img/04.jpg",
+			"image": "05.png",
 			"story": "Born in Melbourne, Australia"
 		},
 		"created": "09/28/2288",
@@ -405,7 +405,7 @@
 		"artist": {
 			"name": "Artibotica",
 			"age": 173,
-			"image": "./profile-img/05.jpg",
+			"image": "06.png",
 			"story": "Born in Melbourne, Australia"
 		},
 		"created": "05/22/2291",
@@ -421,7 +421,7 @@
 		"artist": {
 			"name": "CybersonicX",
 			"age": 16,
-			"image": "./profile-img/06.jpg",
+			"image": "07.png",
 			"story": "Born in Bangor, Maine"
 		},
 		"created": "06/23/2184",
@@ -437,7 +437,7 @@
 		"artist": {
 			"name": "RoboRhythms",
 			"age": 65,
-			"image": "./profile-img/07.jpg",
+			"image": "08.png",
 			"story": "Born in Mobile, Alabama"
 		},
 		"created": "11/21/2187",
@@ -453,7 +453,7 @@
 		"artist": {
 			"name": "Mechadelic",
 			"age": 54,
-			"image": "./profile-img/08.jpg",
+			"image": "09.png",
 			"story": "Born in Mobile, Alabama"
 		},
 		"created": "04/30/2127",
@@ -469,7 +469,7 @@
 		"artist": {
 			"name": "Synthron 9000",
 			"age": 231,
-			"image": "./profile-img/09.jpg",
+			"image": "10.png",
 			"story": "Born in Salt Lake City, Utah"
 		},
 		"created": "01/02/2203",
@@ -485,7 +485,7 @@
 		"artist": {
 			"name": "The Digital Da Vinci",
 			"age": 104,
-			"image": "./profile-img/01.jpg",
+			"image": "01.jpg",
 			"story": "Born in Los Angeles"
 		},
 		"created": "02/11/2432",
@@ -501,7 +501,7 @@
 		"artist": {
 			"name": "Futuristicon",
 			"age": 305,
-			"image": "./profile-img/02.jpg",
+			"image": "02.jpg",
 			"story": "Born in Arlington, TX"
 		},
 		"created": "04/11/2312",
@@ -517,7 +517,7 @@
 		"artist": {
 			"name": "Synthetix",
 			"age": 28,
-			"image": "./profile-img/02.jpg",
+			"image": "03.png",
 			"story": "Born in Sante Fe, NM"
 		},
 		"created": "01/01/2332",
@@ -533,7 +533,7 @@
 		"artist": {
 			"name": "Mechamorph",
 			"age": 666,
-			"image": "./profile-img/03.jpg",
+			"image": "04.png",
 			"story": "Born in Lisbon, Spain"
 		},
 		"created": "02/02/2332",
@@ -549,7 +549,7 @@
 		"artist": {
 			"name": "ElectroNexus",
 			"age": 150,
-			"image": "./profile-img/04.jpg",
+			"image": "05.png",
 			"story": "Born in Melbourne, Australia"
 		},
 		"created": "03/03/2332",
@@ -565,7 +565,7 @@
 		"artist": {
 			"name": "Artibotica",
 			"age": 112,
-			"image": "./profile-img/05.jpg",
+			"image": "06.png",
 			"story": "Born in Melbourne, Australia"
 		},
 		"created": "04/04/2332",
@@ -581,7 +581,7 @@
 		"artist": {
 			"name": "CybersonicX",
 			"age": 16,
-			"image": "./profile-img/06.jpg",
+			"image": "07.png",
 			"story": "Born in Bangor, Maine"
 		},
 		"created": "05/05/2332",
@@ -597,7 +597,7 @@
 		"artist": {
 			"name": "RoboRhythms",
 			"age": 65,
-			"image": "./profile-img/07.jpg",
+			"image": "08.png",
 			"story": "Born in Mobile, Alabama"
 		},
 		"created": "06/06/2332",
@@ -613,7 +613,7 @@
 		"artist": {
 			"name": "Mechadelic",
 			"age": 251,
-			"image": "./profile-img/08.jpg",
+			"image": "09.png",
 			"story": "Born in Mobile, Alabama"
 		},
 		"created": "07/07/2332",
@@ -629,7 +629,7 @@
 		"artist": {
 			"name": "Synthron 9000",
 			"age": 125,
-			"image": "./profile-img/09.jpg",
+			"image": "10.png",
 			"story": "Born in Salt Lake City, Utah"
 		},
 		"created": "08/08/2332",
@@ -645,7 +645,7 @@
 		"artist": {
 			"name": "The Digital Da Vinci",
 			"age": 120,
-			"image": "./profile-img/01.jpg",
+			"image": "01.jpg",
 			"story": "Born in Los Angeles"
 		},
 		"created": "12/12/2332",
@@ -661,7 +661,7 @@
 		"artist": {
 			"name": "Futuristicon",
 			"age": 50,
-			"image": "./profile-img/02.jpg",
+			"image": "02.jpg",
 			"story": "Born in Arlington, TX"
 		},
 		"created": "10/14/2257",
@@ -677,7 +677,7 @@
 		"artist": {
 			"name": "Synthetix",
 			"age": 241,
-			"image": "./profile-img/02.jpg",
+			"image": "03.png",
 			"story": "Born in Sante Fe, NM"
 		},
 		"created": "10/30/2402",
@@ -693,7 +693,7 @@
 		"artist": {
 			"name": "Mechamorph",
 			"age": 666,
-			"image": "./profile-img/03.jpg",
+			"image": "04.png",
 			"story": "Born in Lisbon, Spain"
 		},
 		"created": "08/14/2184",
@@ -709,7 +709,7 @@
 		"artist": {
 			"name": "ElectroNexus",
 			"age": 150,
-			"image": "./profile-img/04.jpg",
+			"image": "05.png",
 			"story": "Born in Melbourne, Australia"
 		},
 		"created": "10/31/2200",
