@@ -54,12 +54,7 @@ const Eachartwork = ({ artwork, handleClick }) => {
 	return (
 		<div onClick={() => handleClick(artwork)}>
 			{image && (
-				<img
-					className="galleryImages"
-					src={image}
-					alt={artwork.title}
-					title={artwork.title}
-				/>
+				<img className="galleryImages" src={image} alt={artwork.title} title={artwork.title} />
 			)}
 		</div>
 	);
@@ -69,18 +64,29 @@ const GalleryList = () => {
 	const { loading, error, data } = useQuery(ARTWORKS_QUERY);
 	const [selectedArtwork, setSelectedArtwork] = useState(null);
 	const [showModal, setShowModal] = useState(false);
-	const [selectedImage, setSelectedImage] = useState(null); // new state variable to hold the image
+	const [selectedImage, setSelectedImage] = useState(null);
+	const [selectedArtistImage, setSelectedArtistImage] = useState(null);
 
 	const handleClose = () => setShowModal(false);
 	const handleShow = () => setShowModal(true);
 	const handleClick = (artwork) => {
 		setSelectedArtwork(artwork);
 		handleShow();
+
+		// sets artwork image
 		const loadImage = async () => {
 			const module = await import(`../../images/${artwork.image_id}.JPG`);
-			setSelectedImage(module.default); // set the selected image as state
+			setSelectedImage(module.default);
 		};
 		loadImage();
+
+		// sets artist image
+		const loadArtistImage = async () => {
+			const module2 = await import(`../../images/profile-img/${artwork.artist.image}`);
+			setSelectedArtistImage(module2.default);
+		};
+		loadArtistImage();
+		console.log(artwork.artist.image)
 	};
 
 	if (loading) {
@@ -96,18 +102,11 @@ const GalleryList = () => {
 			</h1>
 			<div className="galleryWrapper">
 				{data.artworks.map((artwork) => (
-					<Eachartwork
-						artwork={artwork}
-						key={artwork._id}
-						handleClick={handleClick}
-					/>
+					<Eachartwork artwork={artwork} key={artwork._id} handleClick={handleClick} />
 				))}
 			</div>
 			{selectedArtwork && (
-				<div
-					className={`modalOverlay ${showModal ? "show" : ""}`}
-					onClick={handleClose}
-				>
+				<div className={`modalOverlay ${showModal ? "show" : ""}`} onClick={handleClose}>
 					<div className="modalContainer">
 						<div className="modalContent">
 							<div className="modalHeader">
@@ -117,74 +116,25 @@ const GalleryList = () => {
 							</div>
 							<div className="modalBody">
 								<div className="modalArtistDiv">
-									<p>
-										<span className="art-caption">
-											Artist:
-										</span>{" "}
-										{selectedArtwork.artist.name}
-									</p>
-									<p>
-										<span className="art-caption">
-											Age:
-										</span>{" "}
-										{selectedArtwork.artist.age}
-									</p>
-									<p>
-										<span className="art-caption">
-											Origin:
-										</span>{" "}
-										{selectedArtwork.artist.story}
-									</p>
+									<img src={selectedArtistImage} alt={selectedArtwork.artist.name}/>
+									<p><span className="art-caption">Artist:</span>{" "}{selectedArtwork.artist.name}</p>
+									<p><span className="art-caption">Age:</span>{" "}{selectedArtwork.artist.age}</p>
+									<p><span className="art-caption">Origin:</span>{" "}{selectedArtwork.artist.story}</p>
 								</div>
 								<div className="modalImageDiv">
 									{selectedImage && ( // conditionally render the image only when it's available
-										<img
-											className="modalImage"
-											src={selectedImage}
-											alt={selectedArtwork.title}
-											title={selectedArtwork.title}
-										/>
+										<img className="modalImage" src={selectedImage} alt={selectedArtwork.title} title={selectedArtwork.title} />
 									)}
 								</div>
 								<div className="modalArtworkDetailDiv">
-									<p>
-										<span className="art-caption">
-											Title:
-										</span>{" "}
-										{selectedArtwork.title}
-									</p>
-									<p>
-										<span className="art-caption">
-											Created:
-										</span>{" "}
-										{selectedArtwork.created}
-									</p>
-									<p>
-										<span className="art-caption">
-											Categories:
-										</span>{" "}
-										{selectedArtwork.categories}
-									</p>
-									<p>
-										<span className="art-caption">
-											Price:{" "}
-										</span>
-										{selectedArtwork.price}
-									</p>
-									<p>
-										<span className="art-caption">
-											Lore:
-										</span>{" "}
-										{selectedArtwork.lore}
-									</p>
+									<p><span className="art-caption">Title:</span>{" "}{selectedArtwork.title}</p>
+									<p><span className="art-caption">Created:</span>{" "}{selectedArtwork.created}</p>
+									<p><span className="art-caption">Categories:</span>{" "}{selectedArtwork.categories}</p>
+									<p><span className="art-caption">Price:{" "}</span>{selectedArtwork.price}</p>
+									<p><span className="art-caption">Lore:</span>{" "}{selectedArtwork.lore}</p>
 								</div>
 							</div>
-							<button
-								className="modalCloseBtn"
-								onClick={() => setSelectedArtwork(null)}
-							>
-								Back
-							</button>
+							<button className="modalCloseBtn" onClick={() => setSelectedArtwork(null)}>Back</button>
 						</div>
 					</div>
 				</div>
