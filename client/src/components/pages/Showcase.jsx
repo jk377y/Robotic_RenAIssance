@@ -1,5 +1,5 @@
 import "../styles/pages/showcase.css";
-
+import { ButtonLogout } from '../helpercomponent/ButtonLogout'
 import {
 	ApolloClient,
 	InMemoryCache,
@@ -8,6 +8,8 @@ import {
 	gql,
 } from "@apollo/client";
 import { React, useState, useEffect } from "react";
+
+import Auth from '../../utils/auth'
 
 const client = new ApolloClient({
 	uri: "/graphql",
@@ -86,11 +88,15 @@ const GalleryList = () => {
 	if (loading) {
 		return <div>Loading...</div>;
 	}
+
+	
 	if (error) {
 		return <div>Error: {error.message}</div>;
 	}
+
 	return (
 		<div id="gallery" className="galleryMain">
+			< ButtonLogout  />
 			<h1 className="galleryTitle">
 				Ren<span>AI</span>ssance Gallery
 			</h1>
@@ -194,11 +200,15 @@ const GalleryList = () => {
 };
 
 const Showcase = () => {
+	if (Auth.loggedIn()){
 	return (
 		<ApolloProvider client={client}>
 			<GalleryList />
 		</ApolloProvider>
 	);
+	} else {
+		console.log('you are not logged in')
+	}
 };
 
 export default Showcase;
