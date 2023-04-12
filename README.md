@@ -15,15 +15,15 @@ git push heroku master
 
 deployed link
 
-https://robotic-renaissance.herokuapp.com/
 
-# MVC-Tech-Blog
+
+# Robotic RenAIssance
 
 ## Description
-The MVC-Tech Blog allows users to share ideas on all things tech.  As technology changes, users can edit and/or delete their posts.  Users can also add comments to others posts to share additional information or show appreciation for anothers work.
+
 
 ## Deployed Application
-https://tech-talk-blog-mvc.herokuapp.com/
+https://robotic-renaissance.herokuapp.com/
 
 ## Table of Contents
 - [Installation Steps](#installation-steps)
