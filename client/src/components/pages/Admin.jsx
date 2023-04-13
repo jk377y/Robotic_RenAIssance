@@ -146,7 +146,7 @@ const AdminData = () => {
             {data.users.map((user) => (
               <li className='adminUserListUniques' key={user._id}>
                 <span>{user.username} :</span>
-                <span><button onClick={() => handleUserDataButtonClick(user._id)}>Make Selected</button></span>
+                <span><button onClick={() => handleUserDataButtonClick(user._id)}>Select User</button></span>
               </li>
             ))}
           </ul>
