@@ -6,12 +6,42 @@
 	},
 	{
 		"username": "James",
-		"email": "jk377y@gmail.com",
-		"password": "jk377y"
+		"email": "james@gmail.com",
+		"password": "james"
+	},
+	{
+		"username": "Tracy",
+		"email": "tracy@gmail.com",
+		"password": "tracy"
+	},
+	{
+		"username": "Sofia",
+		"email": "sofia@gmail.com",
+		"password": "sofia"
+	},
+	{
+		"username": "Riley",
+		"email": "riley@gmail.com",
+		"password": "riley"
 	},
 	{
 		"username": "Fabien",
 		"email": "fabien@gmail.com",
-		"password": "fabienDoesntLikeColors"
+		"password": "fabien"
+	},
+	{
+		"username": "Jason",
+		"email": "jason@gmail.com",
+		"password": "jason"
+	},
+	{
+		"username": "JohnnyFive",
+		"email": "johnnyFive@gmail.com",
+		"password": "johnnyFive"
+	},
+	{
+		"username": "TestUser",
+		"email": "testuser@gmail.com",
+		"password": "testuser"
 	}
 ]

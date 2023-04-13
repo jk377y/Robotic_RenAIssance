@@ -137,8 +137,8 @@ const AdminData = () => {
   };
 
   return (
-    <section className="section boxShadow">
-      <h1 className='adminTitle'>Admin Data</h1>
+    <section className="adminSection boxShadow">
+      <h1 className='adminTitle'>Admin Panel</h1>
       <div className='adminContainer'>
         <div className='adminUserList'>
           <h2 className='adminUserListTitle'>Active Users:</h2>
@@ -153,27 +153,28 @@ const AdminData = () => {
         </div>
         {userData && (
           <div className='adminSelectedContainer'>
-            <div>
-              <h2>Selected User Data:</h2>
-              <p>ID: {userData.user._id}</p>
-              <p>Username: {userData.user.username}</p>
-              <p>Email: {userData.user.email}</p>
-              <p>Password: {userData.user.password}</p>
+            <div className='adminSelectedUserDataContainer'>
+              <h2 className='adminSelectedUserTitle'>Selected User Data:</h2>
+              <div className='adminSelectedUserData'>
+                <p><span>ID:</span> <span>{userData.user._id}</span></p>
+                <p><span>Username:</span> <span>{userData.user.username}</span></p>
+                <p><span>Email:</span> <span>{userData.user.email}</span></p>
+                <p><span>Password:</span></p>
+                <h5 className='adminSelectedUserPassword' >{userData.user.password}</h5>
+              </div>
             </div>
-            <div>
-              <h2>Update Selected User's Email:</h2>
-              <form onSubmit={handleEmailSubmit}>
-                <label htmlFor="newEmail">New Email:</label>
-                <input
-                  type="email"
-                  id="newEmail"
-                  value={newEmail}
-                  onChange={handleEmailChange}
-                />
-                <button type="submit">Update Email</button>
-              </form>
-              <h2>Delete Selected User:</h2>
-              <button onClick={handleModalOpen}>Delete User</button>
+            <div className='adminMutateContainer'>
+              <div className='adminUpdateContainer'>
+                <h2 className='adminUpdateTitle'>Update Email:</h2>
+                <form className='adminUpdateFormContainer' onSubmit={handleEmailSubmit}>
+                  <input className='adminNewEmailInput' type="email" id="newEmail" value={newEmail} onChange={handleEmailChange} placeholder="Enter New Email" />
+                  <button type="submit">Update Email</button>
+                </form>
+              </div>
+              <div className='adminDeleteContainer'>
+                <h2 className='adminDeleteTitle'>Delete Selected User:</h2>
+                <button onClick={handleModalOpen}>Delete User</button>
+              </div>
             </div>
             {showModal && (
               <div className="modal">
