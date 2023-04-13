@@ -45,6 +45,16 @@ const AdminData = () => {
       setSelectedUserId(id);
     };
   
+    const handleEmailChange = (event) => {
+      setNewEmail(event.target.value);
+    };
+  
+    const handleEmailSubmit = async (event) => {
+      event.preventDefault();
+  
+      
+    };
+
     return (
       <>
         <h1>Admin Data</h1>
@@ -67,11 +77,13 @@ const AdminData = () => {
             </div>
             <div>
               <h2>Update Email:</h2>
-            <form>
+            <form onSubmit={handleEmailSubmit}>
               <label htmlFor="newEmail">New Email:</label>
               <input
                 type="email"
                 id="newEmail"
+                value={newEmail}
+                onChange={handleEmailChange}
               />
               <button type="submit">Update Email</button>
             </form>
