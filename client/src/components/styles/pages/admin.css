@@ -1,12 +1,14 @@
 :root {
     --adminBgColor: rgba(0, 0, 100, 0.563);
+    --adminBgColorOpaque: rgba(0, 0, 100);
     --adminTitles: rgba(67, 202, 255, 0.963);
     --inputBgColor: rgb(232, 240, 254);
     --windowColor: rgba(0, 0, 0, 0.356);
     --deleteColor: red;
+    --goodColor: rgb(28, 255, 28);
 }
 
-.boxShadow {
+.shadow {
     box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.75);
 }
 
@@ -14,7 +16,6 @@
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
-    position: relative;
     width: 70vw;
     height: 80vh;
     display: flex;
@@ -193,9 +194,9 @@
 }
 
 .adminUpdateFormContainer button:hover {
-    background-color: var(--inputBgColor);
-    color: var(--adminTitles);
-    border: 2px solid var(--adminTitles);
+    background-color: var(--goodColor);
+    color: black;
+    border: 2px solid var(--goodColor);
 }
 
 .adminDeleteContainer {
@@ -225,5 +226,77 @@
 .adminDeleteContainer button:hover {
     background-color: var(--deleteColor);
     color: var(--inputBgColor);
-    border: 2px solid var(--inputBgColor);
+    border: 2px solid var(--deleteColor);
+}
+
+.modalContainer {
+    background-color: rgba(32, 32, 32, 0.479);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modalCard {
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid var(--deleteColor);
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalTitle {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--adminTitles);
+}
+
+.modalCard p {
+    line-height: 1.75;
+    display: flex;
+    flex-direction: row;
+    padding: 0 30px;
+    color: var(--inputBgColor);
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.modalBtnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.modalBtnContainer button {
+    background-color: var(--adminTitles);
+    color: var(--inputBgColor);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.75rem;
+    cursor: pointer;
+    width: 100px;
+}
+
+.modalBtnContainer :nth-child(1):hover {
+    background-color: var(--deleteColor);
+    color: var(--inputBgColor);
+    border: 2px solid var(--deleteColor);
+}
+
+.modalBtnContainer :nth-child(2):hover {
+    background-color: var(--goodColor);
+    color: black;
+    border: 2px solid var(--goodColor);
 }

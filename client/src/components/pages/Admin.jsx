@@ -137,10 +137,10 @@ const AdminData = () => {
   };
 
   return (
-    <section className="adminSection boxShadow">
+    <section className="adminSection shadow">
       <h1 className='adminTitle'>Admin Panel</h1>
       <div className='adminContainer'>
-        <div className='adminUserList'>
+        <div className='adminUserList shadow'>
           <h2 className='adminUserListTitle'>Active Users:</h2>
           <ul className='adminUserListContainer'>
             {data.users.map((user) => (
@@ -152,7 +152,7 @@ const AdminData = () => {
           </ul>
         </div>
         {userData && (
-          <div className='adminSelectedContainer'>
+          <div className='adminSelectedContainer shadow'>
             <div className='adminSelectedUserDataContainer'>
               <h2 className='adminSelectedUserTitle'>Selected User Data:</h2>
               <div className='adminSelectedUserData'>
@@ -177,11 +177,11 @@ const AdminData = () => {
               </div>
             </div>
             {showModal && (
-              <div className="modal">
-                <div className="modal-content">
-                  <h2>Confirm Delete User</h2>
+              <div className="modalContainer">
+                <div className="modalCard shadow">
+                  <h2 className='modalTitle'>Confirm User Delete</h2>
                   <p>This action is irreversible and the user will be permanently removed from the system. Do you wish to continue?</p>
-                  <div className="modal-buttons">
+                  <div className="modalBtnContainer">
                     <button onClick={handleDeleteUser}>Yes</button>
                     <button onClick={handleModalClose}>No</button>
                   </div>
