@@ -12,7 +12,7 @@ const resolvers = {
 			return await Artwork.find();
 		},
 		user: async (parent, args) => {
-			return User.findOne(args.id);
+			return User.findOne({ _id: args._id });
 		},
 		users: async () => {
 			return User.find().populate("");

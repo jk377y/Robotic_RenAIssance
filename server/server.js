@@ -26,18 +26,18 @@ if (process.env.NODE_ENV === "production") {
 // app.use(express.static('public'));
 
 //! REMOVE probably removing this before final deployment
-// app.get("/", (req, res) => {
-// 	res.sendFile(path.join(__dirname, "../client/build/index.html"));
-// });
+app.get("/", (req, res) => {
+	res.sendFile(path.join(__dirname, "../client/build/index.html"));
+});
 
 // sets up a get route for any (*) url requested
-app.get("*", (req, res) => {
-	let url = path.join(__dirname, "../client/build", "index.html");
-	if (!url.startsWith("/app/"))
-		// since we're on local windows
-		url = url.substring(1);
-	res.sendFile(url);
-});
+// app.get("*", (req, res) => {
+// 	let url = path.join(__dirname, "../client/build", "index.html");
+// 	if (!url.startsWith("/app/"))
+// 		// since we're on local windows
+// 		url = url.substring(1);
+// 	res.sendFile(url);
+// });
 
 // Create a new instance of an Apollo server with the GraphQL schema
 const startApolloServer = async (typeDefs, resolvers) => {

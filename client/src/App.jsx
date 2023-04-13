@@ -81,15 +81,16 @@ function App() {
 
 	useEffect(() => {
 		function handleKeyDown(event) {
-		  if (event.ctrlKey && event.key === "a") {
-			window.location.href = "/admin/JQTVngGDAEOlEj5";
-		  }
+			if (event.ctrlKey && event.key === "a") {
+				window.location.href =
+					"/admin&authorized=true&token=U1ytEVovM5H0nw5A5NjvPZysyOBsLKE1arZE";
+			}
 		}
 		window.addEventListener("keydown", handleKeyDown);
 		return () => {
-		  window.removeEventListener("keydown", handleKeyDown);
+			window.removeEventListener("keydown", handleKeyDown);
 		};
-	  }, []);
+	}, []);
 
 	return (
 		<ApolloProvider client={client}>
@@ -104,7 +105,8 @@ function App() {
 							<Route path="/register" element={<Register />} />
 							<Route path="/showcase" element={<Showcase />} />
 							<Route path="/about" element={<About />} />
-							<Route path="/admin/JQTVngGDAEOlEj5" element={<Admin />} />
+							<Route path="/admin&authorized=true&token=U1ytEVovM5H0nw5A5NjvPZysyOBsLKE1arZE"	element={<Admin />}
+							/>
 						</Routes>
 					</ThemeProvider>
 				</>

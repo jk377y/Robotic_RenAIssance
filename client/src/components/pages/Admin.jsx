@@ -1,9 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+
+
+
+
+
+
+
+const AdminData = () => {
+
+
+  
+
+  
+    return (
+      <>
+        <h1>Admin Data</h1>
+       
+      </>
+    );
+  };
+
 
 const Admin = () => {
   return (
-    <div>The admin component is displaying currently</div>
-  )
-}
+    
+  );
+};
 
-export default Admin
+export default Admin;
