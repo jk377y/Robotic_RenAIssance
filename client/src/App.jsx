@@ -91,6 +91,7 @@ function App() {
 							<Route path="/login" element={<Login />} />
 							<Route path="/register" element={<Register />} />
 							<Route path="/showcase" element={<Showcase />} />
+							<Route path="/about" element={<About />} />
 						</Routes>
 					</ThemeProvider>
 				</>
