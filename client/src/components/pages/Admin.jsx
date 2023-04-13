@@ -78,7 +78,9 @@ const AdminData = () => {
 
 const Admin = () => {
   return (
-    
+    <ApolloProvider client={client}>
+      <AdminData />
+    </ApolloProvider>
   );
 };
 
