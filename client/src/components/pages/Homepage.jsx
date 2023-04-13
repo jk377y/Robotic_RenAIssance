@@ -11,9 +11,9 @@ const SemiTransparentBox = styled.div`
   background-color: rgba(255, 255, 255, 0.5);
 `;
 
-const styles = {
-  width: "17%"
-}
+// const styles = {
+//   width: "17%"
+// }
 
 export const Homepage = () => {
   return (
@@ -23,7 +23,7 @@ export const Homepage = () => {
       </HomepageSection>
       <div className="container"></div> 
       <SemiTransparentBox>
-        <img src={museum} style={styles} alt="museum building" />
+        <img src={museum} alt="museum building" />
       </SemiTransparentBox>
     </>
   )
