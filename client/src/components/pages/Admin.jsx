@@ -31,7 +31,12 @@ const GET_USER = gql`
 
 
 const AdminData = () => {
+    const [selectedUserId, setSelectedUserId] = useState("");
+    const { loading, error, data } = useQuery(GET_USERS);
 
+  
+    if (loading) return <p>Loading Data For Users...</p>;
+    if (error) return <p>Error collecting data for Users :</p>;
 
   
 
