@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ApolloClient, InMemoryCache, ApolloProvider, gql, useQuery } from "@apollo/client";
+import { ApolloClient, InMemoryCache, ApolloProvider, gql, useQuery, useMutation } from "@apollo/client";
 
 const client = new ApolloClient({
   uri: "/graphql",
@@ -48,14 +48,14 @@ const AdminData = () => {
       skip: !selectedUserId,
     });
   
+    const [updateUser] = useMutation(UPDATE_USER, {
+      refetchQueries: [{ query: GET_USER, variables: { id: selectedUserId } }],
+    });
+
     if (loading) return <p>Loading Data For Users...</p>;
     if (error) return <p>Error collecting data for Users :</p>;
     if (loadingUserData) return <p>Loading Data For User...</p>;
     if (errorUserData) return <p>Error collecting User data</p>;
-  
-    const [updateUser] = useMutation(UPDATE_USER, {
-      refetchQueries: [{ query: GET_USER, variables: { id: selectedUserId } }],
-    });
   
     const handleUserDataButtonClick = async (id) => {
       setSelectedUserId(id);
@@ -69,17 +69,17 @@ const AdminData = () => {
       event.preventDefault();
   
       if (!newEmail) {
-        alert("Please enter a new email address");
+        alert('Please enter a new email address');
         return;
       }
   
       try {
         await updateUser({ variables: { _id: selectedUserId, email: newEmail } });
-        alert("Email updated successfully");
-        setNewEmail("");
+        alert('Email updated successfully');
+        setNewEmail('');
       } catch (error) {
         console.error(error);
-        alert("Error updating email");
+        alert('Error updating email');
       }
     };
 
