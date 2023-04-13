@@ -17,7 +17,16 @@ const GET_USERS = gql`
   }
 `;
 
-
+const GET_USER = gql`
+  query ($id: ID!) {
+    user(_id: $id) {
+      _id
+      username
+      email
+      password
+    }
+  }
+`;
 
 
 
