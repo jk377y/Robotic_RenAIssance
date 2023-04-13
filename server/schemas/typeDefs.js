@@ -26,28 +26,11 @@ const typeDefs = gql`
 		username: String!
 		email: String!
 		password: String!
-	}
+  }
 
 	type Auth {
 		token: ID!
 		user: User
-	}
-
-	input ArtistInput {
-		name: String!
-		age: Int!
-		image: String!
-		story: String!
-	}
-
-	input ArtworkInput {
-		title: String!
-		artist: [ArtistInput!]!
-		price: Float!
-		quantity: Int!
-		image_id: String!
-		lore: String!
-		categories: String!
 	}
 
 	type Query {

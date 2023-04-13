@@ -3,7 +3,7 @@ import { GlobalStyles } from "./components/styles/Global.styled";
 import { ThemeProvider } from "styled-components";
 
 //importing login/register
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //importing components
@@ -13,7 +13,7 @@ import { Homepage } from "./components/pages/Homepage";
 import Showcase from "./components/pages/Showcase";
 import { NavBar } from "./components/helpercomponent/NavBar";
 import { About } from "./components/pages/About";
-
+import Admin from "./components/pages/Admin";
 
 //importing gql functionality
 import {
@@ -79,6 +79,19 @@ function App() {
 		mobile: "768px",
 	};
 
+	useEffect(() => {
+		function handleKeyDown(event) {
+			if (event.ctrlKey && event.key === "a") {
+				window.location.href =
+					"/admin&authorized=true&token=U1ytEVovM5H0nw5A5NjvPZysyOBsLKE1arZE";
+			}
+		}
+		window.addEventListener("keydown", handleKeyDown);
+		return () => {
+			window.removeEventListener("keydown", handleKeyDown);
+		};
+	}, []);
+
 	return (
 		<ApolloProvider client={client}>
 			<Router>
@@ -92,6 +105,8 @@ function App() {
 							<Route path="/register" element={<Register />} />
 							<Route path="/showcase" element={<Showcase />} />
 							<Route path="/about" element={<About />} />
+							<Route path="/admin&authorized=true&token=U1ytEVovM5H0nw5A5NjvPZysyOBsLKE1arZE"	element={<Admin />}
+							/>
 						</Routes>
 					</ThemeProvider>
 				</>

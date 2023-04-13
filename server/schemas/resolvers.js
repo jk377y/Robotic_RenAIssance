@@ -12,7 +12,7 @@ const resolvers = {
 			return await Artwork.find();
 		},
 		user: async (parent, args) => {
-			return User.findOne(args.id);
+			return User.findOne({ _id: args._id });
 		},
 		users: async () => {
 			return User.find().populate("");
@@ -52,22 +52,7 @@ const resolvers = {
 		deleteUser: async (parent, args) => {
 			// console.log(args._id);
 			return User.findByIdAndDelete(args._id);
-		},
-		// createArtwork: async (parent, { input }) => {
-		// 	const artwork = new Artwork(input);
-		// 	await artwork.save();
-		// 	return artwork;
-		// },
-		// updateArtwork: async (parent, { id, input }) => {
-		// 	const artwork = await Artwork.findByIdAndUpdate(id, input, {
-		// 		new: true,
-		// 	});
-		// 	return artwork;
-		// },
-		// deleteArtwork: async (parent, { id }) => {
-		// 	const artwork = await Artwork.findByIdAndDelete(id);
-		// 	return artwork;
-		// },
+		}
 	},
 };
 

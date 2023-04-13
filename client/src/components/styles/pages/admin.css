@@ -1,0 +1,74 @@
+:root {
+    --adminBgColor: rgba(0, 0, 100, 0.563);
+    --adminTitles: rgba(67, 202, 255, 0.963);
+    --inputBgColor: rgb(232, 240, 254);
+    --windowColor: rgba(0, 0, 0, 0.356);
+}
+
+.boxShadow {
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.75);
+}
+
+.section {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    width: 70vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--adminBgColor);
+    border-radius: 30px;
+}
+
+.adminTitle {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--adminTitles);
+}
+
+.adminContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 30px 30px;
+}
+
+.adminUserList {
+    background-color: var(--windowColor);
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid var(--adminTitles);
+    width: 25%;
+}
+
+.adminUserListTitle {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--adminTitles);
+}
+
+.adminUserListContainer {
+    list-style: none;
+}
+
+.adminUserListUniques {
+    line-height: 1.75;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.adminSelectedContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
