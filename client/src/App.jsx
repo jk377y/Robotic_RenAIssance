@@ -12,6 +12,8 @@ import { Register } from "./components/pages/Register";
 import { Homepage } from "./components/pages/Homepage";
 import Showcase from "./components/pages/Showcase";
 import { NavBar } from "./components/helpercomponent/NavBar";
+import { About } from "./components/pages/About";
+
 
 //importing gql functionality
 import {
@@ -89,6 +91,7 @@ function App() {
 							<Route path="/login" element={<Login />} />
 							<Route path="/register" element={<Register />} />
 							<Route path="/showcase" element={<Showcase />} />
+							<Route path="/about" element={<About />} />
 						</Routes>
 					</ThemeProvider>
 				</>
