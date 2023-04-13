@@ -61,7 +61,9 @@ const AdminData = () => {
   const [updateUser] = useMutation(UPDATE_USER, {
     refetchQueries: [{ query: GET_USER, variables: { id: selectedUserId } }],
   });
-  
+  const [deleteUser] = useMutation(DELETE_USER, {
+    refetchQueries: [{ query: GET_USERS }],
+  });
 
   const [showModal, setShowModal] = useState(false);
 
@@ -105,7 +107,15 @@ const AdminData = () => {
   };
 
   const handleDeleteUser = async () => {
-    
+    try {
+      await deleteUser({ variables: { _id: selectedUserId } });
+      setSelectedUserId("");
+      handleModalClose();
+      alert("User deleted successfully");
+    } catch (error) {
+      console.error(error);
+      alert("Error deleting user");
+    }
   };
 
   return (
