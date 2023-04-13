@@ -43,7 +43,13 @@ const AdminData = () => {
     if (loadingUserData) return <p>Loading Data For User...</p>;
     if (errorUserData) return <p>Error collecting User data</p>;
   
-
+    // const handleUserClick = (id) => {
+    //   setSelectedUserId(id);
+    // };
+  
+    const handleUserDataButtonClick = async (id) => {
+      setSelectedUserId(id);
+    };
   
     return (
       <>
