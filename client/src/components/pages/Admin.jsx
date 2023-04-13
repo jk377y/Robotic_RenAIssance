@@ -57,13 +57,26 @@ const AdminData = () => {
           ))}
         </ul>
         {userData && (
-          <div>
-            <h2>Selected User Data:</h2>
-            <p>ID: {userData.user._id}</p>
-            <p>Username: {userData.user.username}</p>
-            <p>Email: {userData.user.email}</p>
-            <p>Password: {userData.user.password}</p>
-          </div>
+            <div>
+            <div>
+              <h2>Selected User Data:</h2>
+              <p>ID: {userData.user._id}</p>
+              <p>Username: {userData.user.username}</p>
+              <p>Email: {userData.user.email}</p>
+              <p>Password: {userData.user.password}</p>
+            </div>
+            <div>
+              <h2>Update Email:</h2>
+            <form>
+              <label htmlFor="newEmail">New Email:</label>
+              <input
+                type="email"
+                id="newEmail"
+              />
+              <button type="submit">Update Email</button>
+            </form>
+            </div>
+            </div>
         )}
       </>
     );
