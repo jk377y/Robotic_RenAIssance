@@ -6,7 +6,16 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-
+const GET_USERS = gql`
+  query {
+    users {
+      _id
+      username
+      email
+      password
+    }
+  }
+`;
 
 
 
