@@ -11,19 +11,21 @@ const resolvers = {
 		artworks: async () => {
 			return await Artwork.find();
 		},
-		user: async (parent, { username }) => {
-			return User.findOne({ username }).populate("");
+		user: async (parent, args) => {
+			return User.findOne(args.id);
 		},
 		users: async () => {
 			return User.find().populate("");
 		},
 	},
 	Mutation: {
+		// Create a user
 		addUser: async (parent, { username, email, password }) => {
 			const user = await User.create({ username, email, password });
 			const token = signToken(user);
 			return { token, user };
 		},
+		// Check username and password to allow user to login
 		login: async (parent, { email, password }) => {
 			const user = await User.findOne({ email });
 			if (!user) {
@@ -37,21 +39,35 @@ const resolvers = {
 
 			return { token, user };
 		},
-		createArtwork: async (parent, { input }) => {
-			const artwork = new Artwork(input);
-			await artwork.save();
-			return artwork;
+		// Update a user
+		updateUser: async (parent, args) => {
+			// console.log(args._id);
+			if (args._id) {
+				return await User.findByIdAndUpdate(args._id, args, { new: true });
+			
+			}
+			throw new AuthenticationError('You do not have the privileges to update a User');
 		},
-		updateArtwork: async (parent, { id, input }) => {
-			const artwork = await Artwork.findByIdAndUpdate(id, input, {
-				new: true,
-			});
-			return artwork;
+		// Delete one user
+		deleteUser: async (parent, args) => {
+			// console.log(args._id);
+			return User.findByIdAndDelete(args._id);
 		},
-		deleteArtwork: async (parent, { id }) => {
-			const artwork = await Artwork.findByIdAndDelete(id);
-			return artwork;
-		},
+		// createArtwork: async (parent, { input }) => {
+		// 	const artwork = new Artwork(input);
+		// 	await artwork.save();
+		// 	return artwork;
+		// },
+		// updateArtwork: async (parent, { id, input }) => {
+		// 	const artwork = await Artwork.findByIdAndUpdate(id, input, {
+		// 		new: true,
+		// 	});
+		// 	return artwork;
+		// },
+		// deleteArtwork: async (parent, { id }) => {
+		// 	const artwork = await Artwork.findByIdAndDelete(id);
+		// 	return artwork;
+		// },
 	},
 };
 
