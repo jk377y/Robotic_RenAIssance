@@ -45,14 +45,12 @@ export const About = () => {
 						accusantium facere?
 					</p>
 					<div style={{ display: "flex", justifyContent: "center" }}>
-						
-            <Container>
-							<a href="https://jk377y.dev" target="_blank" rel="noreferrer">
-								<img src={james} alt="jamesAvatar" title="James Kelly" style={{ width: "100%", height: "100%" }} />
-							</a>
+
+						<Container><a href="https://jk377y.dev" target="_blank" rel="noreferrer" >
+								<img src={james} alt="jamesAvatar" title="James Kelly" style={{ width: "100%", height: "100%" }} /></a>
 						</Container>
 
-
+						<Container />
 						<Container />
 						<Container />
 						<Container />

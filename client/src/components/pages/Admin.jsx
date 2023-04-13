@@ -28,8 +28,6 @@ const GET_USER = gql`
   }
 `;
 
-
-
 const AdminData = () => {
     const [selectedUserId, setSelectedUserId] = useState("");
     const { loading, error, data } = useQuery(GET_USERS);
@@ -42,10 +40,6 @@ const AdminData = () => {
     if (error) return <p>Error collecting data for Users :</p>;
     if (loadingUserData) return <p>Loading Data For User...</p>;
     if (errorUserData) return <p>Error collecting User data</p>;
-  
-    // const handleUserClick = (id) => {
-    //   setSelectedUserId(id);
-    // };
   
     const handleUserDataButtonClick = async (id) => {
       setSelectedUserId(id);
@@ -74,7 +68,6 @@ const AdminData = () => {
       </>
     );
   };
-
 
 const Admin = () => {
   return (
