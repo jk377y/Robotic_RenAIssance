@@ -54,7 +54,23 @@ const AdminData = () => {
     return (
       <>
         <h1>Admin Data</h1>
-       
+        <h2>Users:</h2>
+        <ul>
+          {data.users.map((user) => (
+            <li key={user._id}>
+              {user.username} :  <button onClick={() => handleUserDataButtonClick(user._id)}>Get Data for {user.username}</button>
+            </li>
+          ))}
+        </ul>
+        {userData && (
+          <div>
+            <h2>Selected User Data:</h2>
+            <p>ID: {userData.user._id}</p>
+            <p>Username: {userData.user.username}</p>
+            <p>Email: {userData.user.email}</p>
+            <p>Password: {userData.user.password}</p>
+          </div>
+        )}
       </>
     );
   };
