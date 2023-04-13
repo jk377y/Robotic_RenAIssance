@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { ApolloClient, InMemoryCache, ApolloProvider, gql, useQuery, useMutation } from "@apollo/client";
-
+import '../styles/pages/admin.css'
 const client = new ApolloClient({
   uri: "/graphql",
   cache: new InMemoryCache(),
@@ -137,58 +137,65 @@ const AdminData = () => {
   };
 
   return (
-    <>
-      <h1>Admin Data</h1>
-      <h2>Users:</h2>
-      <ul>
-        {data.users.map((user) => (
-          <li key={user._id}>
-            {user.username} :  <button onClick={() => handleUserDataButtonClick(user._id)}>Get Data for {user.username}</button>
-          </li>
-        ))}
-      </ul>
-      {userData && (
-        <div>
-          <div>
-            <h2>Selected User Data:</h2>
-            <p>ID: {userData.user._id}</p>
-            <p>Username: {userData.user.username}</p>
-            <p>Email: {userData.user.email}</p>
-            <p>Password: {userData.user.password}</p>
-          </div>
-          <div>
-            <h2>Update Email:</h2>
-            <form onSubmit={handleEmailSubmit}>
-              <label htmlFor="newEmail">New Email:</label>
-              <input
-                type="email"
-                id="newEmail"
-                value={newEmail}
-                onChange={handleEmailChange}
-              />
-              <button type="submit">Update Email</button>
-            </form>
-            <button onClick={handleModalOpen}>Delete User</button>
-          </div>
-          {showModal && (
-            <div className="modal">
-              <div className="modal-content">
-                <h2>Confirm Delete User</h2>
-                <p>This action is irreversible and the user will be permanently removed from the system. Do you wish to continue?</p>
-                <div className="modal-buttons">
-                  <button onClick={handleDeleteUser}>Yes</button>
-                  <button onClick={handleModalClose}>No</button>
+    <section className="section boxShadow">
+      <h1 className='adminTitle'>Admin Data</h1>
+      <div className='adminContainer'>
+        <div className='adminUserList'>
+          <h2 className='adminUserListTitle'>Active Users:</h2>
+          <ul className='adminUserListContainer'>
+            {data.users.map((user) => (
+              <li className='adminUserListUniques' key={user._id}>
+                <span>{user.username} :</span>
+                <span><button onClick={() => handleUserDataButtonClick(user._id)}>Make Selected</button></span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        {userData && (
+          <div className='adminSelectedContainer'>
+            <div>
+              <h2>Selected User Data:</h2>
+              <p>ID: {userData.user._id}</p>
+              <p>Username: {userData.user.username}</p>
+              <p>Email: {userData.user.email}</p>
+              <p>Password: {userData.user.password}</p>
+            </div>
+            <div>
+              <h2>Update Selected User's Email:</h2>
+              <form onSubmit={handleEmailSubmit}>
+                <label htmlFor="newEmail">New Email:</label>
+                <input
+                  type="email"
+                  id="newEmail"
+                  value={newEmail}
+                  onChange={handleEmailChange}
+                />
+                <button type="submit">Update Email</button>
+              </form>
+              <h2>Delete Selected User:</h2>
+              <button onClick={handleModalOpen}>Delete User</button>
+            </div>
+            {showModal && (
+              <div className="modal">
+                <div className="modal-content">
+                  <h2>Confirm Delete User</h2>
+                  <p>This action is irreversible and the user will be permanently removed from the system. Do you wish to continue?</p>
+                  <div className="modal-buttons">
+                    <button onClick={handleDeleteUser}>Yes</button>
+                    <button onClick={handleModalClose}>No</button>
+                  </div>
                 </div>
               </div>
-            </div>
-          )}
-        </div>
-      )}
+            )}
+          </div>
+        )
+      }
       {loading && <p>Loading Data For Users...</p>}
       {error && <p>Error collecting data for Users :</p>}
       {loadingUserData && <p>Loading Data For User...</p>}
       {errorUserData && <p>Error collecting User data</p>}
-    </>
+      </div>
+    </section>
   );
 };
 
