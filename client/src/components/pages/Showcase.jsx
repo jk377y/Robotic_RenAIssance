@@ -116,7 +116,6 @@ const GalleryList = () => {
 
 	return (
 		<div id="gallery" className="galleryMain">
-			< ButtonLogout  />
 			<h1 className="galleryTitle">
 				Ren<span>AI</span>ssance Gallery
 			</h1>
