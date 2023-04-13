@@ -171,7 +171,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* height: 30%; */
 }
 
 .adminNewEmailInput {
@@ -229,7 +228,7 @@
     border: 2px solid var(--deleteColor);
 }
 
-.modalContainer {
+.adminModalContainer {
     background-color: rgba(32, 32, 32, 0.479);
     position: absolute;
     top: 0;
@@ -238,12 +237,12 @@
     height: 100vh;
 }
 
-.modalCard {
+.adminModalCard {
     background-color: black;
     border-radius: 20px;
     border: 2px solid var(--deleteColor);
-    width: 30vw;
-    height: 30vh;
+    width: 40vw;
+    height: 40vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -254,13 +253,13 @@
     align-items: center;
 }
 
-.modalTitle {
+.adminModalTitle {
     font-size: 2rem;
     text-align: center;
     color: var(--adminTitles);
 }
 
-.modalCard p {
+.adminModalCard p {
     line-height: 1.75;
     display: flex;
     flex-direction: row;
@@ -271,7 +270,7 @@
     margin: 10px 0;
 }
 
-.modalBtnContainer {
+.adminModalBtnContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -279,7 +278,7 @@
     padding: 0 10px;
 }
 
-.modalBtnContainer button {
+.adminModalBtnContainer button {
     background-color: var(--adminTitles);
     color: var(--inputBgColor);
     border-radius: 10px;
@@ -289,14 +288,107 @@
     width: 100px;
 }
 
-.modalBtnContainer :nth-child(1):hover {
+.adminModalBtnContainer :nth-child(1):hover {
     background-color: var(--deleteColor);
     color: var(--inputBgColor);
     border: 2px solid var(--deleteColor);
 }
 
-.modalBtnContainer :nth-child(2):hover {
+.adminModalBtnContainer :nth-child(2):hover {
     background-color: var(--goodColor);
     color: black;
     border: 2px solid var(--goodColor);
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        height: 100%;
+        overflow: scroll;
+    }
+    .adminContainer {
+        flex-direction: column;
+    }
+    .adminUserList {
+        width: 100%;
+        margin: 10px 0 10px 0;
+
+    }
+    .adminSelectedContainer {
+        width: 100%;
+        margin: 0;
+        margin: 10px 0 10px 0;
+    }
+    .adminSection {
+        width: 70vw;
+        height: 100%;
+    }
+    .adminUpdateFormContainer {
+        flex-direction: column;
+    }
+    .adminNewEmailInput {
+        margin: 10px 0 10px 0;
+    }
+    .adminUpdateFormContainer button {
+        margin: 10px 0 10px 0;
+        width: 200px;
+        align-self: flex-end;
+    }
+    .adminModalContainer {
+        position: fixed;
+    }
+    .adminModalCard {
+        width: 60vw;
+        height: 50vh;
+    }
+    .adminModalBtnContainer {
+        width: 200px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        height: 100%;
+        overflow: scroll;
+    }
+    .adminContainer {
+        flex-direction: column;
+    }
+    .adminUserList {
+        width: 100%;
+        margin: 10px 0 10px 0;
+
+    }
+    .adminSelectedContainer {
+        width: 100%;
+        margin: 0;
+        margin: 10px 0 10px 0;
+    }
+    .adminSection {
+        width: 70vw;
+        height: 100%;
+    }
+    .adminUpdateFormContainer {
+        flex-direction: column;
+    }
+    .adminNewEmailInput {
+        margin: 10px 0 10px 0;
+    }
+    .adminUpdateFormContainer button {
+        margin: 10px 0 10px 0;
+    }
+    .adminModalContainer {
+        position: fixed;
+    }
+    .adminModalCard {
+        width: 80vw;
+        height: 50vh;
+    }
+    .adminModalBtnContainer button {
+        width: 100px;
+    }
+    .adminUpdateFormContainer button {
+        width: 150px;
+        align-self: flex-end;
+    }
 }

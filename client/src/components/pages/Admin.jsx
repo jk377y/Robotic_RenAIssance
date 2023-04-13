@@ -177,11 +177,11 @@ const AdminData = () => {
               </div>
             </div>
             {showModal && (
-              <div className="modalContainer">
-                <div className="modalCard shadow">
-                  <h2 className='modalTitle'>Confirm User Delete</h2>
+              <div className="adminModalContainer">
+                <div className="adminModalCard shadow">
+                  <h2 className='adminModalTitle'>Confirm User Delete</h2>
                   <p>This action is irreversible and the user will be permanently removed from the system. Do you wish to continue?</p>
-                  <div className="modalBtnContainer">
+                  <div className="adminModalBtnContainer">
                     <button onClick={handleDeleteUser}>Yes</button>
                     <button onClick={handleModalClose}>No</button>
                   </div>
