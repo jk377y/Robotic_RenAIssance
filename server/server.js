@@ -30,6 +30,7 @@ if (process.env.NODE_ENV === "production") {
 // 	res.sendFile(path.join(__dirname, "../client/build/index.html"));
 // });
 
+// sets up a get route for any (*) url requested
 app.get("*", (req, res) => {
 	let url = path.join(__dirname, "../client/build", "index.html");
 	if (!url.startsWith("/app/"))
