@@ -39,6 +39,17 @@ const UPDATE_USER = gql`
   }
 `;
 
+const DELETE_USER = gql`
+  mutation DeleteUser($_id: ID!) {
+    deleteUser(_id: $_id) {
+      _id
+      username
+      email
+      password
+    }
+  }
+`;
+
 const AdminData = () => {
     const [selectedUserId, setSelectedUserId] = useState("");
     const [newEmail, setNewEmail] = useState("");
