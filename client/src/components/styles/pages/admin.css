@@ -1,19 +1,21 @@
 :root {
     --adminBgColor: rgba(0, 0, 100, 0.563);
+    --adminBgColorOpaque: rgba(0, 0, 100);
     --adminTitles: rgba(67, 202, 255, 0.963);
     --inputBgColor: rgb(232, 240, 254);
     --windowColor: rgba(0, 0, 0, 0.356);
+    --deleteColor: red;
+    --goodColor: rgb(28, 255, 28);
 }
 
-.boxShadow {
+.shadow {
     box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.75);
 }
 
-.section {
+.adminSection {
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
-    position: relative;
     width: 70vw;
     height: 80vh;
     display: flex;
@@ -26,15 +28,17 @@
     font-size: 3rem;
     text-align: center;
     color: var(--adminTitles);
+    margin-top: 20px;
 }
 
 .adminContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
-    height: 100%;
-    padding: 30px 30px;
+    height: 80%;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .adminUserList {
@@ -42,7 +46,8 @@
     padding: 5px;
     border-radius: 20px;
     border: 2px solid var(--adminTitles);
-    width: 25%;
+    width: 40%;
+    margin-right: 20px;
 }
 
 .adminUserListTitle {
@@ -60,15 +65,330 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 10px;
+}
+
+.adminUserListUniques span {
+    color: var(--inputBgColor);
+    font-size: 1.25rem;
+}
+
+.adminUserListUniques button {
+    background-color: var(--adminTitles);
+    color: var(--inputBgColor);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.adminUserListUniques button:hover {
+    background-color: var(--inputBgColor);
+    color: var(--adminTitles);
+    border: 2px solid var(--adminTitles);
 }
 
 
 
 .adminSelectedContainer {
-    width: 50%;
+    background-color: var(--windowColor);
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid var(--adminTitles);
+    width: 40%;
+    margin-left: 20px;
+}
+
+.adminSelectedUserDataContainer {
     display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 40%;
+}
+
+.adminSelectedUserTitle {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--adminTitles);
+}
+
+.adminSelectedUserData p {
+    line-height: 1.75;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+}
+
+.adminSelectedUserData p span {
+    width: 100%;
+    color: var(--inputBgColor);
+    word-wrap: break-word;
+}
+
+.adminSelectedUserData p :nth-child(1) {
+    text-align: left;
+    color: var(--adminTitles)
+}
+
+.adminSelectedUserData p :nth-child(2) {
+    text-align: right;
+}
+
+.adminSelectedUserPassword {
+    color: var(--inputBgColor);
+    word-wrap: break-word;
+    padding: 0 10px;
+}
+
+.adminUserListUniques span {
+    color: var(--inputBgColor);
+    font-size: 1.25rem;
+}
+
+.adminMutateContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    height: 50%;
+}
+
+.adminUpdateContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    height: 50%;
+}
+
+.adminUpdateTitle {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--adminTitles);
+}
+
+.adminUpdateFormContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.adminNewEmailInput {
+    border-radius: 10px;
+    border: 2px inset var(--adminTitles);
+    background-color: var(--inputBgColor);
+    color: black;
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+}
+
+.adminUpdateFormContainer button {
+    background-color: var(--adminTitles);
+    color: var(--inputBgColor);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.adminUpdateFormContainer button:hover {
+    background-color: var(--goodColor);
+    color: black;
+    border: 2px solid var(--goodColor);
+}
+
+.adminDeleteContainer {
+    padding: 10px;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
 }
 
+.adminDeleteTitle {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--adminTitles);
+}
+
+.adminDeleteContainer button {
+    background-color: var(--adminTitles);
+    color: var(--inputBgColor);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.adminDeleteContainer button:hover {
+    background-color: var(--deleteColor);
+    color: var(--inputBgColor);
+    border: 2px solid var(--deleteColor);
+}
+
+.adminModalContainer {
+    background-color: rgba(32, 32, 32, 0.479);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.adminModalCard {
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid var(--deleteColor);
+    width: 40vw;
+    height: 40vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.adminModalTitle {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--adminTitles);
+}
+
+.adminModalCard p {
+    line-height: 1.75;
+    display: flex;
+    flex-direction: row;
+    padding: 0 30px;
+    color: var(--inputBgColor);
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.adminModalBtnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.adminModalBtnContainer button {
+    background-color: var(--adminTitles);
+    color: var(--inputBgColor);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.75rem;
+    cursor: pointer;
+    width: 100px;
+}
+
+.adminModalBtnContainer :nth-child(1):hover {
+    background-color: var(--deleteColor);
+    color: var(--inputBgColor);
+    border: 2px solid var(--deleteColor);
+}
+
+.adminModalBtnContainer :nth-child(2):hover {
+    background-color: var(--goodColor);
+    color: black;
+    border: 2px solid var(--goodColor);
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        height: 100%;
+        overflow: scroll;
+    }
+    .adminContainer {
+        flex-direction: column;
+    }
+    .adminUserList {
+        width: 100%;
+        margin: 10px 0 10px 0;
+
+    }
+    .adminSelectedContainer {
+        width: 100%;
+        margin: 0;
+        margin: 10px 0 10px 0;
+    }
+    .adminSection {
+        width: 70vw;
+        height: 100%;
+    }
+    .adminUpdateFormContainer {
+        flex-direction: column;
+    }
+    .adminNewEmailInput {
+        margin: 10px 0 10px 0;
+    }
+    .adminUpdateFormContainer button {
+        margin: 10px 0 10px 0;
+        width: 200px;
+        align-self: flex-end;
+    }
+    .adminModalContainer {
+        position: fixed;
+    }
+    .adminModalCard {
+        width: 60vw;
+        height: 50vh;
+    }
+    .adminModalBtnContainer {
+        width: 200px;
+    }
+}
 
 
+@media screen and (max-width: 768px) {
+    body {
+        height: 100%;
+        overflow: scroll;
+    }
+    .adminContainer {
+        flex-direction: column;
+    }
+    .adminUserList {
+        width: 100%;
+        margin: 10px 0 10px 0;
+
+    }
+    .adminSelectedContainer {
+        width: 100%;
+        margin: 0;
+        margin: 10px 0 10px 0;
+    }
+    .adminSection {
+        width: 70vw;
+        height: 100%;
+    }
+    .adminUpdateFormContainer {
+        flex-direction: column;
+    }
+    .adminNewEmailInput {
+        margin: 10px 0 10px 0;
+    }
+    .adminUpdateFormContainer button {
+        margin: 10px 0 10px 0;
+    }
+    .adminModalContainer {
+        position: fixed;
+    }
+    .adminModalCard {
+        width: 80vw;
+        height: 50vh;
+    }
+    .adminModalBtnContainer button {
+        width: 100px;
+    }
+    .adminUpdateFormContainer button {
+        width: 150px;
+        align-self: flex-end;
+    }
+}
