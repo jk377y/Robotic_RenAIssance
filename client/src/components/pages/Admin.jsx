@@ -30,6 +30,7 @@ const GET_USER = gql`
 
 const AdminData = () => {
     const [selectedUserId, setSelectedUserId] = useState("");
+    const [newEmail, setNewEmail] = useState("");
     const { loading, error, data } = useQuery(GET_USERS);
     const { loading:loadingUserData, error:errorUserData, data:userData } = useQuery(GET_USER, {
       variables: { id: selectedUserId },
@@ -41,6 +42,10 @@ const AdminData = () => {
     if (loadingUserData) return <p>Loading Data For User...</p>;
     if (errorUserData) return <p>Error collecting User data</p>;
   
+    const [updateUser] = useMutation(UPDATE_USER, {
+      refetchQueries: [{ query: GET_USER, variables: { id: selectedUserId } }],
+    });
+    
     const handleUserDataButtonClick = async (id) => {
       setSelectedUserId(id);
     };
@@ -52,7 +57,19 @@ const AdminData = () => {
     const handleEmailSubmit = async (event) => {
       event.preventDefault();
   
-      
+      if (!newEmail) {
+        alert("Please enter a new email address");
+        return;
+      }
+  
+      try {
+        await updateUser({ variables: { _id: selectedUserId, email: newEmail } });
+        alert("Email updated successfully");
+        setNewEmail("");
+      } catch (error) {
+        console.error(error);
+        alert("Error updating email");
+      }
     };
 
     return (
