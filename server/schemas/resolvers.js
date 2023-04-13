@@ -11,19 +11,21 @@ const resolvers = {
 		artworks: async () => {
 			return await Artwork.find();
 		},
-		user: async (parent, { username }) => {
-			return User.findOne({ username }).populate("");
+		user: async (parent, args) => {
+			return User.findOne(args.id);
 		},
 		users: async () => {
 			return User.find().populate("");
 		},
 	},
 	Mutation: {
+		// Create a user
 		addUser: async (parent, { username, email, password }) => {
 			const user = await User.create({ username, email, password });
 			const token = signToken(user);
 			return { token, user };
 		},
+		// Check username and password to allow user to login
 		login: async (parent, { email, password }) => {
 			const user = await User.findOne({ email });
 			if (!user) {
@@ -36,6 +38,20 @@ const resolvers = {
 			const token = signToken(user);
 
 			return { token, user };
+		},
+		// Update a user
+		updateUser: async (parent, args) => {
+			// console.log(args._id);
+			if (args._id) {
+				return await User.findByIdAndUpdate(args._id, args, { new: true });
+			
+			}
+			throw new AuthenticationError('You do not have the privileges to update a User');
+		},
+		// Delete one user
+		deleteUser: async (parent, args) => {
+			// console.log(args._id);
+			return User.findByIdAndDelete(args._id);
 		},
 		// createArtwork: async (parent, { input }) => {
 		// 	const artwork = new Artwork(input);
