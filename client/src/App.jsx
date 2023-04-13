@@ -12,6 +12,8 @@ import { Register } from "./components/pages/Register";
 import { Homepage } from "./components/pages/Homepage";
 import Showcase from "./components/pages/Showcase";
 import { NavBar } from "./components/helpercomponent/NavBar";
+import { About } from "./components/pages/About";
+
 
 //importing gql functionality
 import {
