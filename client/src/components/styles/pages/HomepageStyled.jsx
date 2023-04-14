@@ -30,23 +30,26 @@ export const HomepageHeading = styled.div`
 
 export const HeadingContentContainer = styled.div`
     width: 100%;
-    background-color: aliceblue;
-    /* height: 100%; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-content: center;
+    
 
 
     img {
-        width: 32%;
-        height: 25%;
+        width: 40vw;
+    height: 70vh;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.75);
+
     }
 
     p {
         width: 40%;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-align: justify;
+        margin: auto 0;
     }
 `
 
