@@ -17,15 +17,20 @@ const client = new ApolloClient({
 
 const styles = {
 	notLoggedInAlert: {
-		fontSize: '5rem',
-		color: 'red',
-		fontFamily: 'sans-serif',
+		margin: '0 auto',
+		fontSize: '2rem',
+		color: 'white',
 		fontWeight: 'bolder',
 		display: 'flex',
-		justifyContent: 'center',
+		justifyContent: 'space-evenly',
+		backgroundColor: 'red',
+		// textAlign: 'justify',
 		width: '25%',
-		marginLeft: '37.5%',
-		marginTop: '6rem'
+		marginTop: '10rem',
+		padding: '2rem',
+		fontFamily: 'Orbitron, sans-serif',
+		minWidth: '300px',
+		boxShadow: '3px 3px 5px lightgray'
 	}
 }
 
@@ -172,7 +177,7 @@ const Showcase = () => {
 	} else {
 		return (
 		<div>
-		<h2 style={styles.notLoggedInAlert}> YOU NEED TO LOGIN TO VIEW THIS CONTENT</h2>
+		<h2 style={styles.notLoggedInAlert}> YOU MUST LOGIN TO VIEW THIS CONTENT</h2>
 		</div>
 		)
 	}
