@@ -136,7 +136,7 @@ const GalleryList = () => {
 							</div>
 							<div className="modalBody">
 								<div className="modalArtistDiv">
-									<img src={selectedArtistImage} alt={selectedArtwork.artist.name}/>
+									<img className="artist-photo" src={selectedArtistImage} alt={selectedArtwork.artist.name}/>
 									<p><span className="art-caption">Artist:</span>{" "}{selectedArtwork.artist.name}</p>
 									<p><span className="art-caption">Age:</span>{" "}{selectedArtwork.artist.age}</p>
 									<p><span className="art-caption">Origin:</span>{" "}{selectedArtwork.artist.story}</p>
