@@ -1,22 +1,23 @@
 import styled from "styled-components";
 import {
+  HeadingContentContainer,
   HomepageHeading,
   HomepageSection,
 } from "../styles/pages/HomepageStyled";
 import "../styles/pages/homepage.css";
 import museum from "../../images/artmuseum.JPG";
 
-const SemiTransparentBox = styled.div`
-  position: absolute;
-  bottom: 90px;
-  left: 30px;
-  height: 228px;
-  background-color: rgba(255, 255, 255, 0.5);
-`;
+// const SemiTransparentBox = styled.div`
+//   position: absolute;
+//   bottom: 90px;
+//   left: 30px;
+//   height: 228px;
+//   background-color: rgba(255, 255, 255, 0.5);
+// `;
 
-const styles = {
-  width: "17%",
-};
+// const styles = {
+//   width: "17%",
+// };
 
 export const Homepage = () => {
   return (
@@ -27,9 +28,9 @@ export const Homepage = () => {
         </HomepageHeading>
       </HomepageSection>
       {/* <div className="container"></div> */}
-      <SemiTransparentBox>
-
-        <img src={museum} style={styles} alt="museum building" />
+      {/* <SemiTransparentBox> */}
+      <HeadingContentContainer>
+        <img src={museum} alt="museum building" />
         <p>
           In the aftermath of The Metal Apocalypse of 2086, the world was left
           in ruins. The remaining humans struggled to survive in the harsh and
@@ -49,7 +50,8 @@ export const Homepage = () => {
           of peace and cooperation, a testament to the power of art to heal even
           the deepest wounds.
         </p>
-      </SemiTransparentBox>
+        </HeadingContentContainer>
+      {/* </SemiTransparentBox> */}
     </>
   );
 };
