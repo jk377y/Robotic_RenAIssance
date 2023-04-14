@@ -27,7 +27,8 @@ const styles = {
     paddingBottom: '3rem',
     maxWidth: '40%',
     minWidth: '250px',
-    borderRadius: '3px'
+    borderRadius: '10px',
+	  boxShadow: '10px 10px 10px black'
     
   },
   formInput: {
@@ -40,9 +41,9 @@ const styles = {
     marginTop: '1rem',
     borderStyle: 'none',
     height: '2rem',
-    backgroundColor: 'lightblue',
-    color: 'black',
-    fontSize: '1.5rem',
+    backgroundColor: 'darkgray',
+    color: 'whitesmoke',
+    fontSize: '1rem',
     fontFamily: 'sans-serif',
     maxWidth: '30%',
     minWidth: '100px'
