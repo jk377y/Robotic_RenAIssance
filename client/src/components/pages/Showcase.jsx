@@ -1,5 +1,4 @@
 import "../styles/pages/showcase.css";
-import { ButtonLogout } from '../helpercomponent/ButtonLogout'
 import {
 	ApolloClient,
 	InMemoryCache,
@@ -116,7 +115,6 @@ const GalleryList = () => {
 
 	return (
 		<div id="gallery" className="galleryMain">
-			< ButtonLogout  />
 			<h1 className="galleryTitle">
 				Ren<span>AI</span>ssance Gallery
 			</h1>
