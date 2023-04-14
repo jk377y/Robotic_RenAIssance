@@ -115,6 +115,7 @@ const GalleryList = () => {
 	}
 
 	return (
+		
 		<div id="gallery" className="galleryMain">
 			< ButtonLogout  />
 			<h1 className="galleryTitle">

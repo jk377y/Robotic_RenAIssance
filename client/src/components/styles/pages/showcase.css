@@ -31,7 +31,7 @@
     cursor: hand;
   }
 
-  body {
+ #gallery {
     width: 100vw;
     z-index: -100;
 	position: relative;
@@ -284,6 +284,16 @@ span {
 
     .modalArtworkDetailDiv {
         font-size: 10px;
+    }
+
+    .modalCloseBtn {
+        width: 8rem;
+        font-size: 1rem;
+        margin-bottom: 4rem;
+        background-color: #4c849a;
+        border-radius: 10px;
+        border: 4px inset white;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.499);
     }
 
 
