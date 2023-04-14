@@ -1,12 +1,10 @@
-import { NavBarWrapper, NavIcon, NavItems } from "../styles/helpers/Navbar.styled";
+import { NavBarWrapper, NavItems } from "../styles/helpers/Navbar.styled";
 import { VscGear } from "react-icons/vsc";
 import ToolTip from '@mui/material/Tooltip';
 import { Link } from "react-router-dom";
 
 import { ButtonLogout } from "./ButtonLogout";
 import Auth from '../../utils/auth'
-
-
 
 export const NavBar = () => {
     if (!Auth.loggedIn()) {

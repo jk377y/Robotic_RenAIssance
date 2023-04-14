@@ -4,12 +4,10 @@ export const NavBarWrapper = styled.nav`
   height: 80px;
   width: 100%;
   padding: 0 20px;
-  /* background-color: rgba(0, 0, 0, 0.5); */
   display: flex;
   align-items: center;
   justify-content: flex-end;
   position: sticky;
-  /* z-index: 98; */
   top: 0;
   transition: all 1s ease-in-out;
 `;
@@ -28,7 +26,6 @@ export const NavItems = styled.div`
      
 
     svg:hover {
-      /* transform: rotate(180deg); */
       animation: spin 1s infinite linear;
       filter: invert(0.5) sepia(3) hue-rotate(180deg);
 
