@@ -1,5 +1,4 @@
 import "../styles/pages/showcase.css";
-import { ButtonLogout } from '../helpercomponent/ButtonLogout'
 import {
 	ApolloClient,
 	InMemoryCache,
