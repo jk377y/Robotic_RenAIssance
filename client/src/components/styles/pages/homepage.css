@@ -1,9 +1,9 @@
-*{
+/* *{
 padding: 0;
 margin: 0;
 box-sizing: border-box;
-}
-.container{
+} */
+/* .container{
     position: absolute;
     top: 0;
     left: 0;
@@ -24,17 +24,17 @@ box-sizing: border-box;
     100%{
         background-position: 0% 50%;
     }
-}  
+}   */
 
-.HomepageSection {
+/* .HomepageSection {
     position: relative;
     z-index: 1;
-}
-.HomepageHeading {
+} */
+/* .HomepageHeading {
     color: white;
     text-align: center;
     font-size: 4rem;
-}
-.HomepageHeading {
+} */
+/* .HomepageHeading {
     color: #fbf6f7;
-}
+} */
