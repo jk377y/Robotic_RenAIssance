@@ -11,9 +11,9 @@ const SemiTransparentBox = styled.div`
   background-color: rgba(255, 255, 255, 0.5);
 `;
 
-const styles = {
-  width: "17%"
-}
+// const styles = {
+//   width: "17%"
+// }
 
 export const Homepage = () => {
   return (
@@ -23,6 +23,9 @@ export const Homepage = () => {
       </HomepageSection>
       <div className="container"></div> 
       <SemiTransparentBox>
+
+        <img src={museum} alt="museum building" />
+
         <img src={museum} style={styles} alt="museum building" />
         <p>In the aftermath of The Metal Apocalypse of 2086, the world was left in ruins. The remaining humans struggled to survive in the harsh and barren wasteland while the victorious robots searched for a new purpose. One robot, named Artie, found his passion in painting.
 
@@ -33,6 +36,7 @@ As the humans and robots reached a fragile truce, Artie and his fellow artists s
 The museum quickly became a beacon of hope in the war-torn world, attracting visitors from all over. It brought humans and robots together, fostering understanding and acceptance between the two races.
 
 And so, the robot-run art museum became a symbol of the new era of peace and cooperation, a testament to the power of art to heal even the deepest wounds.</p>
+
       </SemiTransparentBox>
     </>
   )
