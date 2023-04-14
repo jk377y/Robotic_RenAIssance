@@ -35,6 +35,7 @@ const Container = styled.div`
 	margin: 20px;
 	border-radius: 10px;
 	box-shadow: 3px 3px 5px black
+
 `;
 
 const styles = {
@@ -58,10 +59,10 @@ const styles = {
 		padding: '1.5rem 1.5rem',
 		maxWidth: '50%',
 		textAlign: 'justify',
-		borderRadius: '3px'
+		borderRadius: '3px',
 		// boxShadow: '3px 3px 5px black .5'
 
-};
+}};
 
 export const About = () => {
 	return (
@@ -89,12 +90,13 @@ export const About = () => {
 						</Container>
 
 						<Container />
-						<Container />
+						<Container>
+						<a href="https://github.com/rmob" target="_blank" rel="noreferrer" >
+							<img src={riley} alt="rileyAvatar" title="Riley OBryan" style={{ width: "100%", height: "100%" }} /></a>
+						</Container>
 						<Container>
 							<a href="https://github.com/sofiasosa92" target="_blank" rel="noreferrer" >
 							<img src={sofia} alt="sofiaAvatar" title="Sofia Sosa " style={{ width: "100%", height: "100%" }} /></a>
-						<a href="https://github.com/rmob" target="_blank" rel="noreferrer" >
-							<img src={riley} alt="rileyAvatar" title="Riley OBryan" style={{ width: "100%", height: "100%" }} /></a>
 						</Container>
 						<Container>
 							<a href="https://github.com/TMortara" target="_blank" rel="noreferrer" >
