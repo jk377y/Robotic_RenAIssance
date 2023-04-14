@@ -5,6 +5,7 @@ import {
 } from "../styles/pages/HomepageStyled";
 import "../styles/pages/homepage.css";
 import james from "../../images/avatars/james.JPG";
+import tracy from "../../images/avatars/tracy.png";
 
 
 const SemiTransparentBox = styled.div`
@@ -56,7 +57,7 @@ export const About = () => {
 						<Container />
 						<Container>
 							<a href="https://github.com/TMortara" target="_blank" rel="noreferrer" >
-							<img src="#" alt="tracyAvatar" title="Tracy Mortara" style={{ width: "100%", height: "100%" }} /></a>
+							<img src={tracy} alt="tracyAvatar" title="Tracy Mortara" style={{ width: "100%", height: "100%" }} /></a>
 						</Container>
 					</div>
 				</SemiTransparentBox>
