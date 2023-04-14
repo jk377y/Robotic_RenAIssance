@@ -228,6 +228,7 @@ span {
         height: 100vh;
         width: 100vw;
         background-repeat: no-repeat;
+        background-image: url('../../../images/resized.jpg');
     }
 
     .galleryImages {
