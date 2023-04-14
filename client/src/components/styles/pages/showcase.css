@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-    height: 5rem;
+    height: 1.5rem;
   }
   
   /* track */
@@ -10,20 +10,19 @@
 
 ::-webkit-scrollbar-thumb {
   background-color: #888; 
- border-radius: 20px;
+  border-radius: 20px;
 }
   
   /* handle */
   ::-webkit-scrollbar-thumb {
-    background-image: url('../../../images/roboicon.png');
     background-size: 100%;
     background-repeat: no-repeat;
     mix-blend-mode: lighten;
     background-blend-mode: screen;
     background-color: transparent;
     border-radius: 50%;
-    /* background: rgba(67, 202, 255, 0.991); */
-    /* border-radius: 10px; */
+    background: rgba(67, 202, 255, 0.991); 
+    border-radius: 10px;
   }
   
  
@@ -31,13 +30,12 @@
     cursor: hand;
   }
 
- #gallery {
+ body {
     width: 100vw;
     z-index: -100;
 	position: relative;
 	overflow: hidden;
 	line-height: 1.5;
-    background-image: url('../../../images/roboticbackground.jpg');
     object-fit: cover;
 }
 
@@ -223,13 +221,235 @@ span {
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 841px){ 
-    body {
-        height: 100vh;
-        width: 100vw;
-        background-repeat: no-repeat;
-        background-image: url('../../../images/resized.jpg');
+
+
+
+
+@media only screen and (max-width: 1645px) {
+    .galleryImages {
+        width: 250px;
+        height: 250px;
+        margin: 1rem;
+        border: 5px inset rgba(67, 202, 255, 0.963);
+        border-radius: 10px;
     }
+    .galleryWrapper {
+        width: 900px;   
+    }
+    .galleryTitle {
+        font-size: 40px;
+    }
+    .modalContainer {
+       width: 100%; 
+    }
+    .modalArtistDiv, .modalImageDiv, .modalArtworkDetailDiv {
+        width: 33%;
+    }
+    .modalArtistDiv {
+        font-size: 12px;
+    }
+    .artist-photo {
+        width: 100px;
+        height: auto;
+        margin: 1rem;
+        border: 5px inset rgba(67, 202, 255, 0.963);
+        border-radius: 10px;
+    }
+    .modalImage {
+        width: 325px;
+        height: 325px;
+        margin: 1rem;
+        border: 5px inset white;
+        border-radius: 12px;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.499);
+    }
+    .modalCloseBtn {
+        width: 16rem;
+        font-size: 2rem;
+        margin-bottom: 4rem;
+        background-color: #4c849a;
+        border-radius: 10px;
+        border: 4px inset white;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.499);
+    }
+    .modalCloseBtn:hover {
+        background-color: #7c97a0;
+        color: white;
+    }
+    .modalTitle {
+        font-size: 2rem;
+    }
+    .modalArtistDiv {
+        font-size: 20px;
+    }
+    .modalArtworkDetailDiv {
+        font-size: 20px;
+    }
+    .modalTitle {
+        color: white;
+        text-align: center;
+    }
+    .modalArtistDiv, .modalImageDiv, .modalArtworkDetailDiv {
+        width: 33%;
+    }
+    .modalArtistDiv {
+        color: rgb(216, 198, 159);  
+    }
+   
+}
+
+
+
+@media only screen and (max-width: 1241px) {
+    .galleryImages {
+        width: 200px;
+        height: 200px;
+        margin: 1rem;
+        border: 5px inset rgba(67, 202, 255, 0.963);
+        border-radius: 10px;
+    }
+    .galleryWrapper {
+        width: 700px;   
+    }
+    .galleryTitle {
+        font-size: 40px;
+    }
+    .modalContainer {
+       width: 100%; 
+    }
+    .modalArtistDiv, .modalImageDiv, .modalArtworkDetailDiv {
+        width: 33%;
+    }
+    .modalArtistDiv {
+        font-size: 12px;
+    }
+    .artist-photo {
+        width: 100px;
+        height: auto;
+        margin: 1rem;
+        border: 5px inset rgba(67, 202, 255, 0.963);
+        border-radius: 10px;
+    }
+    .modalImage {
+        width: 275px;
+        height: 275px;
+        margin: 1rem;
+        border: 5px inset white;
+        border-radius: 12px;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.499);
+    }
+    .modalCloseBtn {
+        width: 16rem;
+        font-size: 2rem;
+        margin-bottom: 4rem;
+        background-color: #4c849a;
+        border-radius: 10px;
+        border: 4px inset white;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.499);
+    }
+    .modalCloseBtn:hover {
+        background-color: #7c97a0;
+        color: white;
+    }
+    .modalTitle {
+        font-size: 2rem;
+    }
+    .art-caption {
+        font-size: 14px;
+    }
+    .modalArtistDiv {
+        font-size: 12px;
+    }
+    .modalArtworkDetailDiv {
+        font-size: 12px;
+    }
+    .modalTitle {
+        color: white;
+        text-align: center;
+    }
+    .modalArtistDiv, .modalImageDiv, .modalArtworkDetailDiv {
+        width: 33%;
+    }
+    .modalArtistDiv {
+        color: rgb(216, 198, 159);
+    }
+
+}
+
+
+@media only screen and (max-width: 1144px) {
+    .galleryImages {
+        width: 200px;
+        height: 200px;
+        margin: 1rem;
+        border: 5px inset rgba(67, 202, 255, 0.963);
+        border-radius: 10px;
+    }
+    .galleryWrapper {
+        width: 700px;   
+    }
+    .galleryTitle {
+        font-size: 40px;
+    }
+    .modalContainer {
+       width: 100%; 
+    }
+    .modalArtistDiv, .modalImageDiv, .modalArtworkDetailDiv {
+        width: 33%;
+    }
+    .modalArtistDiv {
+        font-size: 12px;
+    }
+    .artist-photo {
+        width: 100px;
+        height: auto;
+        margin: 1rem;
+        border: 5px inset rgba(67, 202, 255, 0.963);
+        border-radius: 10px;
+    }
+    .modalImage {
+        width: 220px;
+        height: 220px;
+        margin: 1rem;
+        border: 5px inset white;
+        border-radius: 12px;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.499);
+    }
+    .modalCloseBtn {
+        width: 16rem;
+        font-size: 2rem;
+        margin-bottom: 4rem;
+        background-color: #4c849a;
+        border-radius: 10px;
+        border: 4px inset white;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.499);
+    }
+    .modalCloseBtn:hover {
+        background-color: #7c97a0;
+        color: white;
+    }
+    .modalTitle {
+        font-size: 2rem;
+    }
+    .art-caption {
+        font-size: 14px;
+    }
+    .modalArtistDiv {
+        font-size: 12px;
+    }
+    .modalArtworkDetailDiv {
+        font-size: 12px;
+    }
+    .modalTitle {
+        color: white;
+        text-align: center;
+    }
+    .modalArtistDiv, .modalImageDiv, .modalArtworkDetailDiv {
+        width: 33%;
+    }
+}
+
+@media only screen and (max-width: 841px){ 
     .galleryImages {
         width: 150px;
         height: 150px;
@@ -243,20 +463,15 @@ span {
     .galleryTitle {
         font-size: 30px;
     }
-
-
     .modalContainer {
        width: 100%; 
     }
-
     .modalArtistDiv, .modalImageDiv, .modalArtworkDetailDiv {
         width: 33%;
     }
-
     .modalArtistDiv {
-        font-size: 12px;
+        font-size: 10px;
     }
-
     .artist-photo {
         width: 100px;
         height: auto;
@@ -264,11 +479,9 @@ span {
         border: 5px inset rgba(67, 202, 255, 0.963);
         border-radius: 10px;
     }
-
     .art-caption {
         font-size: 10px;
     }
-
     .modalImage {
         width: 175px;
         height: 175px;
@@ -277,15 +490,12 @@ span {
         border-radius: 12px;
         box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.499);
     }
-
     .modalTitle {
         font-size: 1rem;
     }
-
     .modalArtworkDetailDiv {
         font-size: 10px;
     }
-
     .modalCloseBtn {
         width: 8rem;
         font-size: 1rem;
@@ -295,9 +505,131 @@ span {
         border: 4px inset white;
         box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.499);
     }
+    .modalContent {
+        height: 60%;
+    }
 
+}
 
+@media only screen and (max-width: 775px) {
+    .galleryImages {
+        width: 150px;
+        height: 150px;
+        margin: 1rem;
+        border: 5px inset rgba(67, 202, 255, 0.963);
+        border-radius: 10px;
+    }
+    .galleryWrapper {
+        width: 600px;   
+    }
+    .galleryTitle {
+        font-size: 30px;
+    }
+    .modalContainer {
+       width: 100%; 
+    }
+    .modalArtistDiv, .modalImageDiv, .modalArtworkDetailDiv {
+        width: 33%;
+    }
+    .modalArtistDiv {
+        font-size: 10px;
+    }
+    .artist-photo {
+        width: 75px;
+        height: auto;
+        margin: 1rem;
+        border: 5px inset rgba(67, 202, 255, 0.963);
+        border-radius: 10px;
+    }
+    .art-caption {
+        font-size: 10px;
+    }
+    .modalImage {
+        width: 140px;
+        height: 140px;
+        margin: 1rem;
+        border: 5px inset white;
+        border-radius: 12px;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.499);
+    }
+    .modalTitle {
+        font-size: 1rem;
+    }
+    .modalArtworkDetailDiv {
+        font-size: 10px;
+    }
+    .modalCloseBtn {
+        width: 8rem;
+        font-size: 1rem;
+        margin-bottom: 4rem;
+        background-color: #4c849a;
+        border-radius: 10px;
+        border: 4px inset white;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.499);
+    }
+    .modalContent {
+        height: 50%;
+    }
+}
 
-
+@media only screen and (max-width: 647px) {
+    .galleryImages {
+        width: 150px;
+        height: 150px;
+        margin: 1rem;
+        border: 5px inset rgba(67, 202, 255, 0.963);
+        border-radius: 10px;
+    }
+    .galleryWrapper {
+        width: 600px;   
+    }
+    .galleryTitle {
+        font-size: 30px;
+    }
+    .modalContainer {
+       width: 100%; 
+    }
+    .modalArtistDiv, .modalImageDiv, .modalArtworkDetailDiv {
+        width: 33%;
+    }
+    .modalArtistDiv {
+        font-size: 8px;
+    }
+    .artist-photo {
+        width: 40px;
+        height: auto;
+        margin: 1rem;
+        border: 5px inset rgba(67, 202, 255, 0.963);
+        border-radius: 10px;
+    }
+    .art-caption {
+        font-size: 8px;
+    }
+    .modalImage {
+        width: 100px;
+        height: 100px;
+        margin: 1rem;
+        border: 5px inset white;
+        border-radius: 12px;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.499);
+    }
+    .modalTitle {
+        font-size: 1rem;
+    }
+    .modalArtworkDetailDiv {
+        font-size: 8px;
+    }
+    .modalCloseBtn {
+        width: 3rem;
+        font-size: 1rem;
+        margin-bottom: 4rem;
+        background-color: #4c849a;
+        border-radius: 10px;
+        border: 4px inset white;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.499);
+    }
+    .modalContent {
+        height: 48%;
+    }
 
 }

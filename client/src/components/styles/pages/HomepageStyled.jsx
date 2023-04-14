@@ -35,14 +35,11 @@ export const HeadingContentContainer = styled.div`
     justify-content: space-evenly;
     align-content: center;
     
-
-
     img {
         width: 40vw;
-    height: 70vh;
-    border-radius: 30px;
-    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.75);
-
+        height: 70vh;
+        border-radius: 30px;
+        box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.75);
     }
 
     p {
