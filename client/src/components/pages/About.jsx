@@ -58,12 +58,6 @@ const styles = {
 		textAlign: 'justify',
 		borderRadius: '3px'
 		// boxShadow: '3px 3px 5px black .5'
-	},
-
-	// backImg: {
-	// 	backgroundImage: ''
-	// }
-
 
 };
 
