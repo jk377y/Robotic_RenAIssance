@@ -242,4 +242,8 @@ span {
         width: 600px;
         
     }
+
+    .galleryTitle {
+        font-size: 30px;
+    }
 }
