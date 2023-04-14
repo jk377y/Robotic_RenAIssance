@@ -6,7 +6,9 @@ import {
 import "../styles/pages/homepage.css";
 import james from "../../images/avatars/james.JPG";
 import tracy from "../../images/avatars/tracy.png";
+import sofia from "../../images/avatars/sofia.png";
 import riley from "../../images/avatars/rileyrobot.png";
+
 
 
 const SemiTransparentBox = styled.div`
@@ -89,6 +91,8 @@ export const About = () => {
 						<Container />
 						<Container />
 						<Container>
+							<a href="https://github.com/sofiasosa92" target="_blank" rel="noreferrer" >
+							<img src={sofia} alt="sofiaAvatar" title="Sofia Sosa " style={{ width: "100%", height: "100%" }} /></a>
 						<a href="https://github.com/rmob" target="_blank" rel="noreferrer" >
 							<img src={riley} alt="rileyAvatar" title="Riley OBryan" style={{ width: "100%", height: "100%" }} /></a>
 						</Container>
