@@ -230,7 +230,6 @@ span {
         background-repeat: no-repeat;
         background-image: url('../../../images/resized.jpg');
     }
-
     .galleryImages {
         width: 150px;
         height: 150px;
@@ -238,13 +237,49 @@ span {
         border: 5px inset rgba(67, 202, 255, 0.963);
         border-radius: 10px;
     }
-
     .galleryWrapper {
-        width: 600px;
-        
+        width: 600px;   
     }
-
     .galleryTitle {
         font-size: 30px;
     }
+
+
+    .modalContainer {
+       width: 800px; 
+    }
+
+    .modalArtistDiv, .modalImageDiv, .modalArtworkDetailDiv {
+        width: 33%;
+    }
+
+    .modalArtistDiv {
+        font-size: 12px;
+    }
+
+    .artist-photo {
+        width: 100px;
+        height: auto;
+        margin: 1rem;
+        border: 5px inset rgba(67, 202, 255, 0.963);
+        border-radius: 10px;
+    }
+
+    .art-caption {
+        font-size: 12px;
+    }
+
+    .modalImage {
+        width: 200px;
+        height: 200px;
+        margin: 1rem;
+        border: 5px inset white;
+        border-radius: 12px;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.499);
+    }
+
+
+
+
+
 }
