@@ -6,6 +6,7 @@ import {
 import "../styles/pages/homepage.css";
 import james from "../../images/avatars/james.JPG";
 import tracy from "../../images/avatars/tracy.png";
+import sofia from "../../images/avatars/sofia.png";
 
 
 const SemiTransparentBox = styled.div`
@@ -54,7 +55,10 @@ export const About = () => {
 
 						<Container />
 						<Container />
-						<Container />
+						<Container>
+							<a href="https://github.com/sofiasosa92" target="_blank" rel="noreferrer" >
+							<img src={sofia} alt="sofiaAvatar" title="Sofia Sosa " style={{ width: "100%", height: "100%" }} /></a>
+						</Container>
 						<Container>
 							<a href="https://github.com/TMortara" target="_blank" rel="noreferrer" >
 							<img src={tracy} alt="tracyAvatar" title="Tracy Mortara" style={{ width: "100%", height: "100%" }} /></a>
