@@ -77,7 +77,9 @@ function App() {
 			teal: "#43ffff75",
 			darkTeal: "#72f8f750",
 		},
-		mobile: "768px",
+		mobile: "480px",
+		mobileTablet: "768px",
+		mobileSmall: "1024px",
 	};
 
 	useEffect(() => {
@@ -99,7 +101,7 @@ function App() {
 				<>
 					<ThemeProvider theme={theme}>
 						<GlobalStyles />
-						<GradientContainer />
+						{/* <GradientContainer /> */}
 						<NavBar />
 						<Routes>
 							<Route path="/" element={<Homepage />} />
