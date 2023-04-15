@@ -1,4 +1,6 @@
 import Auth from '../../utils/auth'
+import { VscGear } from "react-icons/vsc";
+import { NavBarWrapper, NavItems } from "../styles/helpers/Navbar.styled";
 
 export const ButtonLogout = () => {
    
@@ -6,7 +8,9 @@ export const ButtonLogout = () => {
     <button id='logout-btn'
     onClick={() => {
         Auth.logout()
-        window.location='/'}}>Logout</button> 
+        window.location='/'}}></button> 
     </>
+
+
 
 }
