@@ -13,7 +13,7 @@
 //             <>
 //                 <NavBarWrapper>
 //                     <div style={{ display: "flex", alignItems: "center", marginRight: "auto" }}>
-                    
+
 //                         <Link to="/" style={{ marginRight: "20px", fontFamily: 'Orbitron' }}>Home</Link>
 //                     </div>
 //                     <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end" }}>
@@ -41,9 +41,9 @@
 //                         {Auth.loggedIn() && <ButtonLogout />}
 //                     </div>
 //                     <NavItems>
-//                         <ToolTip title={<h2 style={{ fontFamily: 'Orbitron' }}>Click to Login or Register</h2>} placement="left" arrow>
-//                             <Link to="/login"><VscGear /></Link>
-//                         </ToolTip>
+// <ToolTip title={<h2 style={{ fontFamily: 'Orbitron' }}>Click to Login or Register</h2>} placement="left" arrow>
+//     <Link to="/login"><VscGear /></Link>
+// </ToolTip>
 //                     </NavItems>
 //                 </NavBarWrapper>
 //             </>
@@ -62,63 +62,63 @@ import { ButtonLogout } from "./ButtonLogout";
 import Auth from '../../utils/auth'
 
 const linkStyle = {
-  fontFamily: 'Orbitron',
-  marginRight: "20px",
-  borderRadius: "50px",
-  padding: "10px 15px",
-  backgroundColor: "#fff",
-  boxShadow: "0 0 10px #fff",
-  transition: "all 0.3s ease",
-  color: "#000",
-  textDecoration: "none"
+    fontFamily: 'Orbitron',
+    marginRight: "20px",
+    borderRadius: "50px",
+    padding: "10px 15px",
+    backgroundColor: "#fff",
+    boxShadow: "0 0 10px #fff",
+    transition: "all 0.3s ease",
+    color: "#000",
+    textDecoration: "none"
 }
 
 const linkHoverStyle = {
-  backgroundColor: "#000",
-  color: "#fff",
-  boxShadow: "0 0 20px #fff",
+    backgroundColor: "#000",
+    color: "#fff",
+    boxShadow: "0 0 20px #fff",
 }
 
 export const NavBar = () => {
-  if (!Auth.loggedIn()) {
-    return (
-      <>
-        <NavBarWrapper>
-          <div style={{ display: "flex", alignItems: "center", marginRight: "auto" }}>
-            <Link to="/" style={{ ...linkStyle, marginRight: "20px" }}>Home</Link>
-          </div>
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end" }}>
-            <Link to="/showcase" style={linkStyle}>Showcase</Link>
-            <Link to="/about" style={linkStyle}>About us</Link>
-          </div>
-          <NavItems>
-            <ToolTip title={<h2 style={{ fontFamily: 'Orbitron' }}>Click to Login or Register</h2>} placement="left" arrow>
-              <Link to="/login" style={{ ...linkStyle, padding: "7px 13px" }}><VscGear /></Link> 
-            </ToolTip>
-          </NavItems>
-        </NavBarWrapper>
-      </>
-    )
-  } else {
-    return (
-      <>
-        <NavBarWrapper>
-          <div style={{ display: "flex", alignItems: "center", marginRight: "auto" }}>
-            <Link to="/" style={{ ...linkStyle, marginRight: "20px" }}>Home</Link>
-          </div>
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end" }}>
-            <Link to="/showcase" style={linkStyle}>Showcase</Link>
-            <Link to="/about" style={linkStyle}>About us</Link>
-            {Auth.loggedIn() && <ButtonLogout />}
-          </div>
-          <NavItems>
-            <ToolTip title={<h2 style={{ fontFamily: 'Orbitron' }}>Click to Login or Register</h2>} placement="left" arrow>
-              <Link to="/login" style={{ ...linkStyle, padding: "7px 13px" }}><VscGear /></Link> 
-            </ToolTip>
-          </NavItems>
-        </NavBarWrapper>
-      </>
-    )
-  }
+    if (!Auth.loggedIn()) {
+        return (
+            <>
+                <NavBarWrapper>
+                    <div style={{ display: "flex", alignItems: "center", marginRight: "auto" }}>
+                        <Link to="/" style={{ ...linkStyle, marginRight: "20px" }}>Home</Link>
+                    </div>
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end" }}>
+                        <Link to="/showcase" style={linkStyle}>Showcase</Link>
+                        <Link to="/about" style={linkStyle}>About us</Link>
+                    </div>
+                    <NavItems>
+                        <ToolTip title={<h2 style={{ fontFamily: 'Orbitron' }}>Click to Login or Register</h2>} placement="left" arrow>
+                            <Link to="/login"><VscGear /></Link>
+                        </ToolTip>
+                    </NavItems>
+                </NavBarWrapper>
+            </>
+        )
+    } else {
+        return (
+            <>
+                <NavBarWrapper>
+                    <div style={{ display: "flex", alignItems: "center", marginRight: "auto" }}>
+                        <Link to="/" style={{ ...linkStyle, marginRight: "20px" }}>Home</Link>
+                    </div>
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end" }}>
+                        <Link to="/showcase" style={linkStyle}>Showcase</Link>
+                        <Link to="/about" style={linkStyle}>About us</Link>
+                        {Auth.loggedIn() && <ButtonLogout />}
+                    </div>
+                    <NavItems>
+                        <ToolTip title={<h2 style={{ fontFamily: 'Orbitron' }}>Click to Login or Register</h2>} placement="left" arrow>
+                            <Link to="/login"><VscGear /></Link>
+                        </ToolTip>
+                    </NavItems>
+                </NavBarWrapper>
+            </>
+        )
+    }
 }
 
