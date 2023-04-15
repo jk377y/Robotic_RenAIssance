@@ -78,8 +78,9 @@ function App() {
 			darkTeal: "#72f8f750",
 		},
 		mobile: "480px",
+		mobileTabletMin: "481px",
 		mobileTablet: "768px",
-		mobileSmall: "1024px",
+		mobileSmall: "1026px",
 	};
 
 	useEffect(() => {
