@@ -37,11 +37,11 @@ export const NavBar = () => {
           <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end" }}>
             <Link to="/showcase" style={{ fontFamily: 'Orbitron', marginRight: "20px" }}>Showcase</Link>
             <Link to="/about" style={{ fontFamily: 'Orbitron', marginRight: "20px" }}>About us</Link>
-            {Auth.loggedIn() && <ButtonLogout />}
+            {/* {Auth.loggedIn() && <ButtonLogout />} */}
           </div>
           <NavItems>
             <ToolTip title={<h2 style={{ fontFamily: 'Orbitron' }}>Click to Login or Register</h2>} placement="left" arrow>
-              <Link to="/login"><VscGear /></Link> 
+              <Link to="/"><VscGear onClick={() => Auth.logout()}/></Link> 
             </ToolTip>
           </NavItems>
         </NavBarWrapper>
