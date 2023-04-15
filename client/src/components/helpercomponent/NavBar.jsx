@@ -40,7 +40,7 @@ export const NavBar = () => {
             {/* {Auth.loggedIn() && <ButtonLogout />} */}
           </div>
           <NavItems>
-            <ToolTip title={<h2 style={{ fontFamily: 'Orbitron' }}>Click to Login or Register</h2>} placement="left" arrow>
+            <ToolTip title={<h2 style={{ fontFamily: 'Orbitron' }}>Click to Logout</h2>} placement="left" arrow>
               <Link to="/"><VscGear onClick={() => Auth.logout()}/></Link> 
             </ToolTip>
           </NavItems>
