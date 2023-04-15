@@ -64,6 +64,7 @@
 // }
 
 //new code for proper logout/login button functionality
+
 import { NavBarWrapper, NavItems } from "../styles/helpers/Navbar.styled";
 import { VscGear } from "react-icons/vsc";
 import ToolTip from '@mui/material/Tooltip';
@@ -97,7 +98,13 @@ export const NavBar = () => {
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end" }}>
                     <Link to="/showcase" style={linkStyle}>Showcase</Link>
                     <Link to="/about" style={linkStyle}>About us</Link>
-                    {isLoggedIn && <ButtonLogout />}
+                    {/* {Auth.loggedIn() && <ButtonLogout style={linkStyle} />} */}
+                    <NavItems>
+                        {Auth.loggedIn() && <ButtonLogout style={linkStyle} />}
+                    </NavItems>
+
+
+
                 </div>
                 {!isLoggedIn && (
                     <NavItems>
