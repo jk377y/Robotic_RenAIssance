@@ -63,15 +63,16 @@ import Auth from '../../utils/auth'
 
 const linkStyle = {
     fontFamily: 'Orbitron',
-    marginRight: "20px",
-    borderRadius: "50px",
-    padding: "10px 15px",
-    backgroundColor: "#fff",
-    boxShadow: "0 0 10px #fff",
-    transition: "all 0.3s ease",
-    color: "#000",
-    textDecoration: "none"
-}
+    marginRight: '20px',
+    borderRadius: '50px',
+    padding: '10px 20px',
+    backgroundColor: '#fff',
+    color: '#000',
+    textDecoration: 'none',
+    transition: 'background-color 0.3s ease-in-out',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)'
+  }
+  
 
 const linkHoverStyle = {
     backgroundColor: "#000",
@@ -108,7 +109,7 @@ export const NavBar = () => {
                     </div>
                     <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end" }}>
                         <Link to="/showcase" style={linkStyle}>Showcase</Link>
-                        <Link to="/about" style={linkStyle}>About us</Link>
+                        <Link to="/about" style={linkHoverStyle}>About us</Link>
                         {Auth.loggedIn() && <ButtonLogout />}
                     </div>
                     <NavItems>
