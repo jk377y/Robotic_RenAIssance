@@ -22,4 +22,8 @@ export const GradientContainer = styled.div`
         background-position: 0% 50%;
     }
 } 
+@media (max-width: ${({theme}) => theme.mobile}) {
+        height: 100vh;
+        width: 100%;
+    }
 `

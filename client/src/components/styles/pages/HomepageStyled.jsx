@@ -24,7 +24,7 @@ export const HomepageHeading = styled.div`
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 `
 
@@ -40,13 +40,34 @@ export const HeadingContentContainer = styled.div`
         height: 70vh;
         border-radius: 30px;
         box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.75);
-    }
 
+        @media (max-width: ${({theme}) => theme.mobile}) {
+            width: 70vw;
+            height: 50vh;
+            margin-bottom: 2rem;
+        }
+    }
     p {
         width: 40%;
         font-size: 1.4rem;
+        font-family: 'Roboto', sans-serif;
         text-align: justify;
         margin: auto 0;
+
+        @media (max-width: ${({theme}) => theme.mobile}) {
+            font-size: 1rem;
+            width: fit-content;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+        }
+    }
+
+    @media (max-width: ${({theme}) => theme.mobile}) {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        align-items: center;
+        
     }
 `
 
