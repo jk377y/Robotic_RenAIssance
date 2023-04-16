@@ -19,11 +19,6 @@ const linkStyle = {
     cursor: 'pointer',
 };
 
-const pinkLinkStyle = {
-    color: 'pink',
-    textDecoration: 'none',
-}
-
 export const NavBar = () => {
     const isLoggedIn = Auth.loggedIn();
 
@@ -70,12 +65,12 @@ export const NavBar = () => {
                         onMouseOver={(e) => (e.target.style.boxShadow = "0 0 10px rgba(0, 191, 255, 0.5)")}
                         onMouseOut={(e) => (e.target.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.5)")}
                     >
-                        About Us
+                        About
                     </Link>
 
                     {isLoggedIn && (
                         <NavItems>
-                            <ToolTip title={<h2 style={{ fontFamily: 'Orbitron' }}>Logout</h2>} placement="left" arrow>
+                            <ToolTip title={<h2 style={{ fontFamily: 'Orbitron' }}>Logout</h2>} placement="bottom" arrow>
                                 <Link to="/"><VscGear onClick={() => Auth.logout()} /></Link>
                             </ToolTip>
                         </NavItems>
@@ -83,7 +78,7 @@ export const NavBar = () => {
                 </div>
                 {!isLoggedIn && (
                     <NavItems>
-                        <ToolTip title={<h2 style={{ fontFamily: 'Orbitron' }}>Click to Login or Register</h2>} placement="left" arrow>
+                        <ToolTip title={<h2 style={{ fontFamily: 'Orbitron' }}>Click to Login or Register</h2>} placement="bottom" arrow>
                             <Link to="/login"><VscGear /></Link>
                         </ToolTip>
                     </NavItems>
