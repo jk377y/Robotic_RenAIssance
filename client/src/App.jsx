@@ -79,7 +79,7 @@ function App() {
 		mobile: "480px",
 		mobileTabletMin: "481px",
 		mobileTablet: "768px",
-		mobileSmall: "1026px",
+		mobileSmall: "1445px",
 	};
 
 	useEffect(() => {
