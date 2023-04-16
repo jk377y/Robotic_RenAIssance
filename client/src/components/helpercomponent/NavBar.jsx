@@ -65,6 +65,10 @@
 
 //new code for proper logout/login button functionality
 
+
+
+
+
 import { NavBarWrapper, NavItems } from "../styles/helpers/Navbar.styled";
 import { VscGear } from "react-icons/vsc";
 import ToolTip from '@mui/material/Tooltip';
@@ -103,12 +107,16 @@ export const NavBar = () => {
                     </NavItems> */}
                     
                     {isLoggedIn && (
-                    <ButtonLogout>
+                    // <ButtonLogout>
+                    //     <ToolTip title={<h2 style={{ fontFamily: 'Orbitron' }}>Logout</h2>} placement="left" arrow>
+                    //     <Link to="/"><VscGear /></Link>
+                    //     </ToolTip> 
+                    // </ButtonLogout>
+                    <NavItems>
                         <ToolTip title={<h2 style={{ fontFamily: 'Orbitron' }}>Logout</h2>} placement="left" arrow>
-                        <Link to="/"><VscGear /></Link>
-                        </ToolTip> 
-                    </ButtonLogout>
-                    
+                        <Link to="/"><VscGear onClick={() => Auth.logout()}/></Link> 
+                        </ToolTip>                     
+                        </NavItems>
                 )}
                 </div>
                 {!isLoggedIn && (
