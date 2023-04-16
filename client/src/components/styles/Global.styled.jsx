@@ -41,7 +41,4 @@ export const GlobalStyles = createGlobalStyle`
         color: ${({ theme }) => theme.colors.white};
         font-weight: 300;
     }
-    
-    
-
 `;

@@ -1,19 +1,9 @@
-import styled from "styled-components";
 import {
   HeadingContentContainer,
   HomepageHeading,
   HomepageSection,
 } from "../styles/pages/HomepageStyled";
-import "../styles/pages/homepage.css";
 import museum from "../../images/artmuseum.JPG";
-
-const SemiTransparentBox = styled.div`
-  /* position: absolute;
-  bottom: 90px;
-  left: 30px; */
-  /* height: 228px; */
-  /* background-color: rgba(255, 255, 255, 0.5); */
-`;
 
 export const Homepage = () => {
   return (
@@ -23,8 +13,6 @@ export const Homepage = () => {
           Robotic Ren<span>AI</span>ssance
         </HomepageHeading>
       </HomepageSection>
-      {/* <div className="container"></div> */}
-      {/* <SemiTransparentBox> */}
       <HeadingContentContainer>
         <img src={museum} alt="museum building" />
         <p>
@@ -47,7 +35,6 @@ export const Homepage = () => {
           the deepest wounds.
         </p>
         </HeadingContentContainer>
-      {/* </SemiTransparentBox> */}
     </>
   );
 };

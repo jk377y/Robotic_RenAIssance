@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const HomepageSection = styled.div`
-  /* height: 100vh; */
   width: 100%;
   padding-bottom: 2.5rem;
 `;
@@ -130,7 +129,6 @@ export const HeadingContentContainer = styled.div`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     align-items: center;
   }
