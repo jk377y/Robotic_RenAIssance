@@ -281,3 +281,43 @@ span {
         height: 300px;
     }
 }
+
+@media only screen and (max-width: 1024px) {
+	.galleryTitle {
+		font-size: 2.5rem;
+	}
+	.galleryWrapper {
+		width: 700px;
+	}
+	.modalContent {
+		width: 750px;
+	}
+	.modalBody {
+		width: 700px;
+	}
+	.modalArtistDiv,
+	.modalImageDiv,
+	.modalArtworkDetailDiv {
+		width: 200px;
+		height: 300px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.modalImageDiv {
+		display: flex;
+		justify-content: center;
+	}
+	.modalImage {
+		width: 225px;
+		height: 225px;
+	}
+	.art-caption {
+		font-size: 1.25rem;
+	}
+	.modalCloseBtn {
+		width: 8rem;
+		font-size: 1.5rem;
+		margin-bottom: 4rem;
+	}
+}
