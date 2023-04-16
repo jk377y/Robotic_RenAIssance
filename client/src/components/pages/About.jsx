@@ -91,8 +91,9 @@ export const About = () => {
 					</p>
 					<div style={styles.imgRow}>
 
-						<Container><a href="https://jk377y.dev" target="_blank" rel="noreferrer" >
-								<img src={james} alt="jamesAvatar" title="James Kelly" style={{ width: "100%", height: "100%" }} /></a>
+						<Container>
+							<a href="https://jk377y.dev" target="_blank" rel="noreferrer" >
+								<img src={james} alt="jamesAvatar" title="James Kelly" style={{ width: "100%", height: "100%", borderRadius:"10px" }} /></a>
 								<p style={styles.firstName}>James</p>
 						</Container>
 
@@ -108,15 +109,23 @@ export const About = () => {
 							<p style={styles.firstName}>Riley</p>
 						</Container>
 						<Container>
-							<a href="https://github.com/sofiasosa92" target="_blank" rel="noreferrer" >
-							<img src={sofia} alt="sofiaAvatar" title="Sofia Sosa " style={{ width: "100%", height: "100%" }} /></a>
-							<p style={styles.firstName}>Sofia</p>
-						</Container>
+  <a href="https://github.com/sofiasosa92" target="_blank" rel="noreferrer" >
+    <img 
+      src={sofia} 
+      alt="sofiaAvatar" 
+      title="Sofia Sosa" 
+      style={{ width: "100%", height: "100%", marginBottom: "10px" }} 
+    />
+  </a>
+  <p style={styles.firstName}>Sofia</p>rr
+</Container>
+
 						<Container>
 							<a href="https://github.com/TMortara" target="_blank" rel="noreferrer" >
 							<img src={tracy} alt="tracyAvatar" title="Tracy Mortara" style={{ width: "100%", height: "100%" }} /></a>
 							<p style={styles.firstName}>Tracy</p>
 						</Container>
+
 					</div>
 				</SemiTransparentBox>
 			</HomepageSection>
