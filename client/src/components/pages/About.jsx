@@ -9,8 +9,6 @@ import tracy from "../../images/avatars/tracy.png";
 import sofia from "../../images/avatars/sofia.png";
 import riley from "../../images/avatars/rileyrobot.png";
 
-
-
 const SemiTransparentBox = styled.div`
 	margin: 0 3rem;
 	display: flex;

@@ -98,20 +98,27 @@ export const NavBar = () => {
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end" }}>
                     <Link to="/showcase" style={linkStyle}>Showcase</Link>
                     <Link to="/about" style={linkStyle}>About us</Link>
-                    {/* {Auth.loggedIn() && <ButtonLogout style={linkStyle} />} */}
-                    <NavItems>
-                        {Auth.loggedIn() && <ButtonLogout style={linkStyle} />}
-                    </NavItems>
-
-
-
+                    
+                    {/* <NavItems>
+                        {isLoggedIn && <ButtonLogout style={linkStyle} />}
+                    </NavItems> */}
+                    
+                    {isLoggedIn && (
+                    <ButtonLogout>
+                        <ToolTip title={<h2 style={{ fontFamily: 'Orbitron' }}>Logout</h2>} placement="left" arrow>
+                        <Link to="/"><VscGear /></Link>
+                        </ToolTip> 
+                    </ButtonLogout>
+                    
+                )}
                 </div>
                 {!isLoggedIn && (
                     <NavItems>
+
                         <ToolTip title={<h2 style={{ fontFamily: 'Orbitron' }}>Click to Login or Register</h2>} placement="left" arrow>
                             <Link to="/login"><VscGear /></Link>
-                        </ToolTip>
-                    </NavItems>
+                        </ToolTip>                     
+                        </NavItems>
                 )}
             </NavBarWrapper>
         </>
