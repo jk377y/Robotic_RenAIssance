@@ -85,7 +85,6 @@ const linkStyle = {
     boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)'
 }
 
-
 export const NavBar = () => {
     const isLoggedIn = Auth.loggedIn();
 
