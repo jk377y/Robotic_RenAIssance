@@ -100,7 +100,15 @@ export const HeadingContentContainer = styled.div`
         #000 50%,
         rgba(0, 0, 0, 0.6) 70%
       );
+      mask-image: linear-gradient(
+        -75deg,
+        rgba(0, 0, 0, 0.6) 30%,
+        #000 50%,
+        rgba(0, 0, 0, 0.6) 70%
+      );
+      
       -webkit-mask-size: 200%;
+      mask-size: 200%;
       animation: shine 2s linear infinite;
 
       @keyframes shine {
