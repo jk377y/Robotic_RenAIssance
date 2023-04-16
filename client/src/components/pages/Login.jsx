@@ -8,7 +8,6 @@ import Auth from '../../utils/auth';
 const styles = {
   formBody: {
     margin: '0 auto',
-    // border: "2px solid red",
     display: 'flex',
     justifyContent: 'center',
     flexDirection: 'column',
@@ -16,8 +15,7 @@ const styles = {
     minWidth: '200px'
   },
   mainBody: {
-    margin: '0 auto',
-    // border: '2px solid black',
+    margin: '10rem auto',
     display: 'flex',
     justifyContent: 'center',
     flexDirection: 'column',
@@ -103,8 +101,6 @@ export const Login = (props) => {
   };
 
   return (
-    <main className="flex-row justify-center mb-4">
-      <div className="col-12 col-lg-10">
         <div style={styles.mainBody}>
           <h4 className="galleryTitle">Login</h4>
             {data ? (
@@ -152,9 +148,5 @@ export const Login = (props) => {
               </div>
             )}
           </div>
-          
-        </div>
-        
-    </main>
   );
 };
