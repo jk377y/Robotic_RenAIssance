@@ -85,7 +85,7 @@ export const About = () => {
 			
 					The staff robots at Robotic Rennaissance are equipped with advanced AI technology that allows them to
 					interact with visitors, answer questions, and provide recommendations on art pieces.
-					With their precision and efficiency, our we can ensure that every visitor's
+					With their precision and efficiency, we can ensure that every visitor's
 					needs are met and their experience is unforgettable.
 
 					</p>
