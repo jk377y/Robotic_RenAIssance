@@ -49,7 +49,7 @@ const client = new ApolloClient({
 function App() {
 	const theme = {
 		colors: {
-			mayaBlue: "rgba(67, 202, 255)",
+			mayaBlue: "rgb(67, 202, 255)",
 			white: "rgb(255,255,255)",
 			black: "rgb(0,0,0)",
 			blackOpacity: "rgba(0, 0, 0, 0.562)",
