@@ -12,6 +12,7 @@ export const HomepageHeading = styled.div`
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-top: 1rem;
 
   span {
     color: ${({ theme }) => theme.colors.black};
