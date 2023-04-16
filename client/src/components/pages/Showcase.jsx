@@ -73,27 +73,37 @@ const Eachartwork = ({ artwork, handleClick }) => {
 	return (
 		<div onClick={() => handleClick(artwork)}>
 			{image && (
-				<img className="galleryImages" src={image} alt={artwork.title} title={artwork.title} />
+				<div className="galleryImageContainer">
+					<img className="galleryImages" src={image} alt={artwork.title} title={artwork.title} />
+				</div>
 			)}
 		</div>
 	);
 };
 
 const GalleryList = () => {
+	// querying the database for all artworks
 	const { loading, error, data } = useQuery(ARTWORKS_QUERY);
+	// setting state for the selcected artwork
 	const [selectedArtwork, setSelectedArtwork] = useState(null);
+	// setting state for the modal
 	const [showModal, setShowModal] = useState(false);
+	// setting state for the selected image
 	const [selectedImage, setSelectedImage] = useState(null);
+	// setting state for the selected artist image
 	const [selectedArtistImage, setSelectedArtistImage] = useState(null);
 
+	// function to close the modal and show the gallery
 	const handleClose = () => {
 		setShowModal(false);
 		document.querySelector('.galleryWrapper').classList.remove('hide');
 	};
+	// function to show the modal and hide the gallery
 	const handleShow = () => {
 		setShowModal(true);
 		document.querySelector('.galleryWrapper').classList.add('hide');
 	};
+	// when an artwork is clicked, the modal will show and the selected artwork will be set
 	const handleClick = (artwork) => {
 		setSelectedArtwork(artwork);
 		handleShow();
@@ -169,7 +179,8 @@ const GalleryList = () => {
 		</div>
 	);
 };
-
+// the Showcase component will only render the GalleryList component if the user is logged in
+// if the user is not logged in, they will be alerted that they must login to view the content
 const Showcase = () => {
 	if (Auth.loggedIn()){
 	return (
