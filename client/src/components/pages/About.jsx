@@ -8,6 +8,7 @@ import james from "../../images/avatars/james.JPG";
 import tracy from "../../images/avatars/tracy.png";
 import sofia from "../../images/avatars/sofia.png";
 import riley from "../../images/avatars/rileyrobot.png";
+import fabien from "../../images/avatars/fabiensrobot.png";
 
 
 
@@ -96,7 +97,12 @@ export const About = () => {
 								<p style={styles.firstName}>James</p>
 						</Container>
 
-						<Container />
+						<Container>
+								<a href="https://github.com/fabien1313" target="_blank" rel="noreferrer" >
+								<img src={fabien} alt="fabienAvatar" title="Fabien Moreno" style={{ width: "100%", height: "100%" }} /></a>
+								<p style={styles.firstName}>Fabien</p>
+						</Container>
+
 						<Container>
 						<a href="https://github.com/rmob" target="_blank" rel="noreferrer" >
 							<img src={riley} alt="rileyAvatar" title="Riley OBryan" style={{ width: "100%", height: "100%" }} /></a>
