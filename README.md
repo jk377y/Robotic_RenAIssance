@@ -38,7 +38,14 @@ https://robotic-renaissance.herokuapp.com/
 ## Installation Steps
 Before accessing the application locally, you must [install Node.js](https://nodejs.org/en/).
 
-After installing Node.js, open the integrated terminal in VS Code and run `npm install`.  This will install all of the dependencies listed in the package.json file.  You may need to run an `npm install` on the client and server side to ensure you install the correct packages. 
+After installing Node.js, open the integrated terminal in VS Code 
+
+Run `npm install`  
+
+This will install all of the dependencies listed in the package.json file.  
+
+You may need to run an `npm install` on the client and server side to ensure you install the correct packages. 
+
 
 <u>Installation Resources</u>:
 - [Install Apollo Client](https://www.apollographql.com/docs/react/get-started)
@@ -49,13 +56,15 @@ After installing Node.js, open the integrated terminal in VS Code and run `npm i
 - [Install Styled Components](https://styled-components.com/docs/basics#installation)
 - [Install Jest](https://jestjs.io/docs/getting-started)
 
-## Development Usage
+## Usage
+The application can be run locally or through the deployed link.  
 
-The application can be run locally or through the deployed link.  If you run the application locally, you will need to run steps 1-7 before accessing the application.
+If you run the application locally, you will need to run steps 1-7 before accessing the application.
 
 1. Before beginning make sure you have completed the [Installation Steps](#installation-steps)
 2. Open integrated terminal in VS Code.
-3. 
+
+Run `npm run develop`
 
 
 ## File Structure
@@ -76,7 +85,36 @@ The directory for this application is as follows:
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Screenshots
+sample of gif screenshot
+
+![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
+
 
 ## Credits
+
+<div style="text-align:center; display: inline-block;"><h3>James</h3>
+  <a href="https://github.com/" target="_blank">
+    <img src="https://user-images.githubusercontent.com/115671262/232342245-50faeef6-eeb8-4d08-b3b2-c097a0dd9474.jpeg" alt="james" width="120" style="margin-bottom:10px;"></a></div>
+    
+<div style="text-align:center; display: inline-block;"><h3>Fabien</h3>
+  <a href="https://github.com/" target="_blank">
+    <img src="https://user-images.githubusercontent.com/115671262/232342243-3a19b50a-5050-41a5-9c72-157259198dec.png" alt="fabien" width="120" style="margin-bottom:10px;"></a></div>
+    
+<div style="text-align:center; display: inline-block;"><h3>Riley</h3>
+  <a href="https://github.com/" target="_blank">
+    <img src="https://user-images.githubusercontent.com/115671262/232342249-122bfaf0-3442-4f9d-b8cc-f52bef4bdeb6.png" alt="riley" width="120" style="margin-bottom:10px;"></a></div>
+    
+<div style="text-align:center; display: inline-block;"><h3>Sofia</h3>
+  <a href="https://github.com/sofiasosa92" target="_blank">
+    <img src="https://user-images.githubusercontent.com/115671262/232341473-1112322a-c252-418c-ba2c-4fc301636f54.png" alt="sofia" width="120" style="margin-bottom:10px;"></a></div>
+    
+<div style="text-align:center; display: inline-block;"><h3>Tracy</h3>
+  <a href="https://github.com/" target="_blank">
+    <img src="https://user-images.githubusercontent.com/115671262/232342236-fa8ac094-65e6-44d7-9e4c-52484f4b8fd6.png" alt="tracy" width="120" style="margin-bottom:10px;"></a></div>
+    
+
+
+
+
 
 
