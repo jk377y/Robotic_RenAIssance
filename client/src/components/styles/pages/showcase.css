@@ -321,3 +321,64 @@ span {
 		margin-bottom: 4rem;
 	}
 }
+
+@media only screen and (max-width: 768px) {
+	.galleryTitle {
+		font-size: 2rem;
+	}
+	.galleryWrapper {
+		width: 350px;
+		height: 475px;
+		flex-direction: column;
+		align-items: center;
+	}
+	::-webkit-scrollbar-thumb {
+		/* background-color: rgba(67, 202, 255, 0.991);  */
+		border-radius: 20px;
+		height: 2rem;
+	}
+	.modalBody {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		width: 360px;
+		height: 360px;
+		overflow-y: scroll;
+		padding: 20px 0px;
+	}
+	.modalArtistDiv {
+		width: 300px;
+		height: 300px;
+		color: rgb(216, 198, 159);
+		text-align: center;
+	}
+
+	.modalImageDiv {
+		display: flex;
+		justify-content: center;
+	}
+
+	.modalImage {
+		margin-top: 60px;
+		width: 300px;
+		height: 300px;
+	}
+	.modalArtworkDetailDiv {
+		margin-top: 60px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 300px;
+		height: 300px;
+	}
+	.modalCloseBtn {
+		width: 8rem;
+		font-size: 1.5rem;
+		margin-bottom: 4rem;
+	}
+	.modalTitle {
+		font-size: 1.75rem;
+	}
+}
+
