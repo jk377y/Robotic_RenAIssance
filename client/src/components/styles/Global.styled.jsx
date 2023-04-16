@@ -16,7 +16,7 @@ export const GlobalStyles = createGlobalStyle`
     z-index: -1;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(100deg, #6a6583, #898989, #807f7f,#6a6583, #585858);
+    background: linear-gradient(140deg, #000,#477a9e, #477a9e, #000);
     background-size: 300% 300%;
     animation: color 12s ease-in-out infinite;    
 

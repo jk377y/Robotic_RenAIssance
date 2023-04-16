@@ -28,7 +28,7 @@ export const Homepage = () => {
       <HeadingContentContainer>
         <img src={museum} alt="museum building" />
         <p>
-          In the aftermath of The Metal Apocalypse of 2086, the world was left
+          In the aftermath of <span>The Metal Apocalypse</span> of 2086, the world was left
           in ruins. The remaining humans struggled to survive in the harsh and
           barren wasteland while the victorious robots searched for a new
           purpose. One robot, named Artie, found his passion in painting. As the
