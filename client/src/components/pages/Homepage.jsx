@@ -1,19 +1,9 @@
-import styled from "styled-components";
 import {
   HeadingContentContainer,
   HomepageHeading,
   HomepageSection,
 } from "../styles/pages/HomepageStyled";
-import "../styles/pages/homepage.css";
 import museum from "../../images/artmuseum.JPG";
-
-const SemiTransparentBox = styled.div`
-  /* position: absolute;
-  bottom: 90px;
-  left: 30px; */
-  /* height: 228px; */
-  /* background-color: rgba(255, 255, 255, 0.5); */
-`;
 
 export const Homepage = () => {
   return (
@@ -23,12 +13,10 @@ export const Homepage = () => {
           Robotic Ren<span>AI</span>ssance
         </HomepageHeading>
       </HomepageSection>
-      {/* <div className="container"></div> */}
-      {/* <SemiTransparentBox> */}
       <HeadingContentContainer>
         <img src={museum} alt="museum building" />
         <p>
-          In the aftermath of The Metal Apocalypse of 2086, the world was left
+          In the aftermath of <span>The Metal Apocalypse</span> of 2086, the world was left
           in ruins. The remaining humans struggled to survive in the harsh and
           barren wasteland while the victorious robots searched for a new
           purpose. One robot, named Artie, found his passion in painting. As the
@@ -47,7 +35,6 @@ export const Homepage = () => {
           the deepest wounds.
         </p>
         </HeadingContentContainer>
-      {/* </SemiTransparentBox> */}
     </>
   );
 };
