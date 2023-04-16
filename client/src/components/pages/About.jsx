@@ -3,7 +3,6 @@ import {
 	HomepageHeading,
 	HomepageSection,
 } from "../styles/pages/HomepageStyled";
-import "../styles/pages/homepage.css";
 import james from "../../images/avatars/james.JPG";
 import tracy from "../../images/avatars/tracy.png";
 import sofia from "../../images/avatars/sofia.png";
