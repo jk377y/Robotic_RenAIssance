@@ -82,12 +82,12 @@ export const HeadingContentContainer = styled.div`
     }
 
     @media (min-width: ${({ theme }) => theme.mobileTabletMin}) and (max-width: ${({ theme }) => theme.mobileTablet}) {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       width: 85%;
     }
 
     @media (max-width: ${({ theme }) => theme.mobileSmall}) {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
     span {
       color: #C0C0C0;
