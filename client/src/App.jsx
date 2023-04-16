@@ -23,7 +23,6 @@ import {
 	createHttpLink,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
-import { GradientContainer } from "./components/styles/helpers/GradientBackground.styled";
 
 const httpLink = createHttpLink({
 	uri: "/graphql",
@@ -102,7 +101,6 @@ function App() {
 				<>
 					<ThemeProvider theme={theme}>
 						<GlobalStyles />
-						{/* <GradientContainer /> */}
 						<NavBar />
 						<Routes>
 							<Route path="/" element={<Homepage />} />
