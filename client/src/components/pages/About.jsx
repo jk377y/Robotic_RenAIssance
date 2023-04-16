@@ -9,20 +9,20 @@ import sofia from "../../images/avatars/sofia.png";
 import riley from "../../images/avatars/rileyrobot.png";
 import fabien from "../../images/avatars/fabiensrobot.png";
 
-
-
 const SemiTransparentBox = styled.div`
-	margin: 0 3rem;
+	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin-top: 10%;
-	background-color: rgba(0, 0, 100, 0.563);
+	margin-top: 100px;
+	background-color: #22222250;
 	padding: 30px;
 	border-radius: 30px;
 	min-width: 275px;
-	box-shadow: 3px 3px 5px black
+	width: 70%;
+	box-shadow: 3px 3px 5px black;
+	border: 5px inset rgba(67, 202, 255, 0.963);
 `;
 const Container = styled.div`
 	display: flex;
