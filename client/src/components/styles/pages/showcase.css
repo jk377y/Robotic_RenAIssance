@@ -260,3 +260,24 @@ span {
 	}
 }
 
+@media only screen and (max-width: 1200px) {
+	.galleryWrapper {
+		width: 900px;
+	}
+	.modalContent {
+		width: 1000px;
+	}
+	.modalBody {
+		width: 1000px;
+		height: 60%;
+	}
+	.modalArtistDiv,
+	.modalImageDiv,
+	.modalArtworkDetailDiv {
+		width: 280px;
+	}
+    .modalImage {
+        width: 300px;
+        height: 300px;
+    }
+}
