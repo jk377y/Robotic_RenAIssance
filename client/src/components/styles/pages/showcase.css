@@ -127,37 +127,36 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 3rem;
-	width: 75%;
-	height: 75%;
+	width: 1400px;
+	height: 80%;
 	background-color: #4c849a;
 	z-index: 1;
-	margin: auto auto;
 	border-radius: 12px;
 	box-shadow: 11px 11px 11px 11px rgba(0, 0, 0, 0.698);
 }
 
 .modalHeader {
 	width: 100%;
-	height: 10%;
-}
-
-.modalTitle {
-	font-size: 2rem;
+	height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modalBody {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
-	width: 100%;
-	height: 90%;
+	width: 1200px;
+	height: 70%;
 }
 
 .modalTitle {
-	color: white;
+	color: rgb(216, 198, 159);
 	text-align: center;
+	margin-top: 5px;
+	font-size: 2.5rem;
 }
 
 .modalArtistDiv,
@@ -167,11 +166,25 @@ body {
 }
 
 .modalArtistDiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 300px;
+	height: 300px;
 	color: rgb(216, 198, 159);
 	text-align: center;
-	font-size: 20px;
+	font-size: 1rem;
 	background-color: rgba(54, 53, 53, 0.515);
 	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.666);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.modalImageDiv {
+    display: flex;
+	justify-content: center;
 }
 
 .modalImage {
@@ -180,15 +193,22 @@ body {
 	margin: 1rem;
 	border: 5px inset white;
 	border-radius: 12px;
-	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.499);
+	box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.666);
 }
 
 .modalArtworkDetailDiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 300px;
+	height: 300px;
 	color: rgb(216, 198, 159);
-	font-size: 20px;
+	font-size: 1rem;
 	background-color: rgba(54, 53, 53, 0.515);
-	padding-left: 6px;
+	padding: 10px;
 	border-radius: 10px;
+	box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.666);
+    border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .modalCloseBtn {
