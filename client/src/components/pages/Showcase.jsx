@@ -22,9 +22,8 @@ const styles = {
 		color: 'white',
 		fontWeight: 'bolder',
 		display: 'flex',
-		justifyContent: 'space-evenly',
 		backgroundColor: 'red',
-		// textAlign: 'justify',
+		textAlign: 'center',
 		width: '25%',
 		marginTop: '10rem',
 		padding: '2rem',
@@ -87,8 +86,14 @@ const GalleryList = () => {
 	const [selectedImage, setSelectedImage] = useState(null);
 	const [selectedArtistImage, setSelectedArtistImage] = useState(null);
 
-	const handleClose = () => setShowModal(false);
-	const handleShow = () => setShowModal(true);
+	const handleClose = () => {
+		setShowModal(false);
+		document.querySelector('.galleryWrapper').classList.remove('hide');
+	};
+	const handleShow = () => {
+		setShowModal(true);
+		document.querySelector('.galleryWrapper').classList.add('hide');
+	};
 	const handleClick = (artwork) => {
 		setSelectedArtwork(artwork);
 		handleShow();
@@ -121,10 +126,9 @@ const GalleryList = () => {
 	return (
 		
 		<div id="gallery" className="galleryMain">
-			<h1 className="galleryTitle">
-				Ren<span>AI</span>ssance Gallery
-			</h1>
-			<div className="galleryWrapper">
+			<h1 className="galleryTitle startHeading">Robotic Ren<span>AI</span>ssance</h1>
+			<h1 className="galleryTitle endHeading">Gallery</h1>
+			<div className={`galleryWrapper ${showModal ? 'hide' : ''}`}>
 				{data.artworks.map((artwork) => (
 					<Eachartwork artwork={artwork} key={artwork._id} handleClick={handleClick} />
 				))}
@@ -135,7 +139,7 @@ const GalleryList = () => {
 						<div className="modalContent">
 							<div className="modalHeader">
 								<h5 className="modalTitle">
-									{selectedArtwork.title}
+									"{selectedArtwork.title}"
 								</h5>
 							</div>
 							<div className="modalBody">
@@ -151,7 +155,6 @@ const GalleryList = () => {
 									)}
 								</div>
 								<div className="modalArtworkDetailDiv">
-									<p><span className="art-caption">Title:</span>{" "}{selectedArtwork.title}</p>
 									<p><span className="art-caption">Created:</span>{" "}{selectedArtwork.created}</p>
 									<p><span className="art-caption">Categories:</span>{" "}{selectedArtwork.categories}</p>
 									<p><span className="art-caption">Price:{" "}</span>{selectedArtwork.price}</p>
