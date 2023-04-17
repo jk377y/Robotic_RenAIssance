@@ -73,22 +73,23 @@ The application uses Jest for component render testing.  The tests are located i
 ## Screenshots
 
 ### Homepage
+<img width="700" height="400" alt="Screen Shot 2023-02-25 at 8 13 07 PM" src="https://user-images.githubusercontent.com/115671262/232625313-04ab15d4-48a9-4881-a0b2-bff054c739e2.png">
 
 ### Register 
+<img width="700" height="400" alt="Screen Shot 2023-02-25 at 8 13 07 PM" src="https://user-images.githubusercontent.com/115671262/232625812-cfa2952e-88ff-4b50-b958-ca1bc65dea7f.png">
 
 ### Login
+<img width="700" height="400" alt="Screen Shot 2023-02-25 at 8 13 07 PM" src="https://user-images.githubusercontent.com/115671262/232625997-4c08a129-bb42-40f7-8bb8-0526a24d8457.png">
 
 ### Showcase
+<img width="700" height="400" alt="Screen Shot 2023-02-25 at 8 13 07 PM" src="https://user-images.githubusercontent.com/115671262/232626388-75148973-c540-4ce2-87c0-66eee6036380.png">
+
+<img width="700" height="400" alt="Screen Shot 2023-02-25 at 8 13 07 PM" src="https://user-images.githubusercontent.com/115671262/232626559-cb9d7bec-5197-49f6-8d23-ffeb1bfb20ca.png">
 
 ### About Page
-
-### Logout
-
-
-
+<img width="700" height="400" alt="Screen Shot 2023-02-25 at 8 13 07 PM" src="https://user-images.githubusercontent.com/115671262/232626982-f02f03d7-df71-44b5-824d-0782faea85f4.png">
 
 ## Credits
-
 
 <a href="https://github.com/jk377y" target="_blank">
   <img src="https://user-images.githubusercontent.com/115671262/232370751-de894251-cecf-4b64-9763-7f1ae57f10d9.png" alt="james" width="120" style="margin-bottom:10px;">
