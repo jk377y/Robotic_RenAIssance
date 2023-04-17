@@ -1,22 +1,3 @@
-# Robotic_RenAIssance
-Apocalyptic Robo Master Pieces
-
-
-
-
-heroku commands:
-heroku create robotics-renaissance
-heroku git:remote -a robotic-renaissance
-
-git add -A
-git commit -m "whatever you want"
-git push heroku master
-
-
-deployed link
-
-
-
 # Robotic RenAIssance
 
 ## Description
@@ -34,24 +15,15 @@ https://robotic-renaissance.herokuapp.com/
 ## Table of Contents
 - [Installation Steps](#installation-steps)
 - [Usage](#usage)
-- [File Structure](#file-structure)
 - [Built With](#built-with)
-- [Resources Used to Complete Project](#resources-used-to-complete-project)
 - [License](#license)
 - [Screenshots](#screenshots)
 - [Credits](#credits)
 
 ## Installation Steps
-Before accessing the application locally, you must [install Node.js](https://nodejs.org/en/).
-
-After installing Node.js, open the integrated terminal in VS Code 
-
-Run `npm install`  
-
-This will install all of the dependencies listed in the package.json file.  
+Before accessing the application locally, you must [install Node.js](https://nodejs.org/en/).  After installing Node.js, open the integrated terminal in VS Code run `npm install`.  This will install all of the dependencies listed in the package.json file.  
 
 You may need to run an `npm install` on the client and server side to ensure you install the correct packages. 
-
 
 <u>Installation Resources</u>:
 - [Install Apollo Client](https://www.apollographql.com/docs/react/get-started)
@@ -65,17 +37,16 @@ You may need to run an `npm install` on the client and server side to ensure you
 ## Usage
 The application can be run locally or through the deployed link.  
 
-If you run the application locally, you will need to run steps 1-7 before accessing the application.
-
-1. Before beginning make sure you have completed the [Installation Steps](#installation-steps)
+1. Before trying to run the application locally, make sure you have completed the [Installation Steps](#installation-steps)
 2. Open integrated terminal in VS Code.
-
-Run `npm run develop`
-
-
-## File Structure
-The directory for this application is as follows:
-
+3. Run `npm run seed`
+4. Run `npm run develop`
+5. To access the Showcase you will need to Login or Register.
+6. Once in the Showcase you can navigate through the Robots artwork using the scroll bar
+7. Click on an individual piece of artwork to view the lore, price, and artist information
+8. To view the admin panel to update, or delete users use `Ctrl + a`
+9. Once on the admin panel select the user and click `Select User`
+10. After selecting a user, you will be able to view the user data, update the user email, or delete a user from the gallery
 
 ## Built With:
 [![Built and Tested With](https://skillicons.dev/icons?i=vscode,js,css,nodejs,react,styledcomponents,heroku,graphql,jest&theme=dark)](https://skillicons.dev)
@@ -83,9 +54,8 @@ The directory for this application is as follows:
 ### Additional Technologies Used
  - bcrypt
  - MUI Core
-
-## Resources Used to Complete Project
- - []()
+ - MidJourneyAi
+ - ReactIcons
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -95,9 +65,7 @@ sample of gif screenshot
 
 ![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
 
-
 ## Credits
-
 
 <a href="https://github.com/jk377y" target="_blank">
   <img src="https://user-images.githubusercontent.com/115671262/232342245-50faeef6-eeb8-4d08-b3b2-c097a0dd9474.jpeg" alt="james" width="120" style="margin-bottom:10px;">
