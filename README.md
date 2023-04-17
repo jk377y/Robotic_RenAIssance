@@ -62,9 +62,21 @@ The application can be run locally or through the deployed link.
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Screenshots
-sample of gif screenshot
 
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
+### Homepage
+
+### Register 
+
+### Login
+
+### Showcase
+
+### About Page
+
+### Logout
+
+
+
 
 ## Credits
 
