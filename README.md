@@ -1,4 +1,6 @@
-# Robotic RenAIssance
+
+<img width="962" alt="Screen Shot 2023-04-16 at 10 23 25 PM" src="https://user-images.githubusercontent.com/115671262/232370453-e8e3f4e3-e531-4ca7-b8cc-6d98a6be2a61.png">
+
 
 ## Description
 
