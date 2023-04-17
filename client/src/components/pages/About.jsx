@@ -117,7 +117,7 @@ export const About = () => {
       style={{ width: "100%", height: "100%", marginBottom: "10px" }} 
     />
   </a>
-  <p style={styles.firstName}>Sofia</p>rr
+  <p style={styles.firstName}>Sofia</p>
 </Container>
 
 						<Container>
