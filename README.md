@@ -20,7 +20,13 @@ deployed link
 # Robotic RenAIssance
 
 ## Description
+Robotic Renaissance is a MERN-stack is an application that showcases a gallery of paintings created by robots. The website provides a platform for robot artists and for art enthusiasts who want to explore this unique genre of art.
 
+The front end of the website is built using React and provides a polished UI that is responsive and interactive. The back end uses MongoDB and the Mongoose ODM to store and manage data, while a GraphQL API handles queries and mutations for retrieving, adding, updating, and deleting data.
+
+To ensure the security of sensitive API key information, the website includes authentication using JWT. The project is deployed on Heroku and has a clean repository that meets quality coding standards. 
+
+Robotic Renaissance is a user-focused platform that provides a valuable way for robot artists and humans to connect through art. 
 
 ## Deployed Application
 https://robotic-renaissance.herokuapp.com/
@@ -104,26 +110,3 @@ sample of gif screenshot
 </a><a href="https://github.com/TMortara" target="_blank">
   <img src="https://user-images.githubusercontent.com/115671262/232342236-fa8ac094-65e6-44d7-9e4c-52484f4b8fd6.png" alt="tracy" width="120" style="margin-bottom:10px;">
 </a>
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
