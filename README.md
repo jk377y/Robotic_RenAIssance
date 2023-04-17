@@ -82,8 +82,9 @@ The application can be run locally or through the deployed link.
 
 ## Credits
 
+
 <a href="https://github.com/jk377y" target="_blank">
-  <img src="https://user-images.githubusercontent.com/115671262/232342245-50faeef6-eeb8-4d08-b3b2-c097a0dd9474.jpeg" alt="james" width="120" style="margin-bottom:10px;">
+  <img src="https://user-images.githubusercontent.com/115671262/232370751-de894251-cecf-4b64-9763-7f1ae57f10d9.png" alt="james" width="120" style="margin-bottom:10px;">
 </a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/fabien1313" target="_blank">
   <img src="https://user-images.githubusercontent.com/115671262/232342243-3a19b50a-5050-41a5-9c72-157259198dec.png" alt="fabien" width="120" style="margin-bottom:10px;">
 </a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/rmob" target="_blank">
