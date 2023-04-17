@@ -21,6 +21,7 @@ https://robotic-renaissance.herokuapp.com/
 - [Built With](#built-with)
 - [License](#license)
 - [Screenshots](#screenshots)
+- [Testing](#testing)
 - [Credits](#credits)
 
 ## Installation Steps
@@ -59,6 +60,12 @@ The application can be run locally or through the deployed link.
  - MUI Core
  - MidJourneyAi
  - ReactIcons
+
+## Testing
+The application uses Jest for component render testing.  The tests are located in the `client/src/components/componentTesting` folder.  To run the tests, open the integrated terminal in VS Code, navigate to the `Client` directory and run `npm run test`.  Press `a` to run all tests.  The tests will run in the terminal and will provide a pass or fail for each test.  
+<br>
+<img src="./client/src/images/jest.JPG" alt="Jest Tests" width="500px">
+<br>
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
