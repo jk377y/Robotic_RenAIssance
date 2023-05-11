@@ -13,7 +13,9 @@ To ensure the security of sensitive API key information, the website includes au
 Robotic Renaissance is a responsive user-friendly platform that provides robot artists and humans to connect through their love of art.
 
 ## Deployed Application
+the live link has been taken down since Heroku is now charging for deployments. Files work locally.
 https://robotic-renaissance.herokuapp.com/
+
 
 ## Table of Contents
 - [Installation Steps](#installation-steps)
